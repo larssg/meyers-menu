@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Det velkendte - Portionspakket
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Butter chicken\n\nVarm ret\, halal: Butter chic
+ ken\n\nVarm ret\, vegetarisk: Butter tofu med kikærter og blomkål\n\nVar
+ m ret\, vegansk: Butter tofu med kikærter og blomkål\n\nTilbehør til va
+ rm ret: Basmatiris med kardemomme\n\nTopping til varm ret: Koriander\n\nDa
+ gens salat: Gulerodsråkost med rosiner\, bergamotte og appelsin. Toppet m
+ ed ristede kokosflager
+DTEND;TZID=Europe/Copenhagen:20260407T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260407T120000
+SEQUENCE:0
+SUMMARY:Butter chicken
+UID:meyers-menu-2026-04-07-det-velkendte---portionspakket
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Butter chicken
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Ragu Bianco - hvid ragout af gris og kalv med c
+ hampignoner\, gulerødder og bladeselleri\n\nVarm ret\, halal: Ragout med 
+ salsiccia af kalkun samt champignoner\, gulerødder og bladeselleri\n\nVar
+ m ret\, vegetarisk: Stegte gnochhi med cherrytomater\, courgetter\, peberf
+ rugter og ricottaost\n\nVarm ret\, vegansk: Gratineret pasta i fad med cre
+ met tomater\, grillet courgetter og basilikum\n\nTilbehør til varm ret: P
+ asta conchiglie med olivenolie\n\nTopping til varm ret: Ristede brødkrumm
+ er og persille\n\nDagens salat: Spidskål med æbler\, krydderurter og Mey
+ ers æblemost
+DTEND;TZID=Europe/Copenhagen:20260408T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260408T120000
+SEQUENCE:0
+SUMMARY:Ragu Bianco - hvid ragout af gris og kalv med champignoner\, guler
+ ødder og...
+UID:meyers-menu-2026-04-08-det-velkendte---portionspakket
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ragu Bianco - hvid ragout af gris og kalv med champignoner\, gu
+ lerødder og...
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Moussaka med oksekød\, auberginer\, løg\, tom
+ ater og kartofler\n\nVarm ret\, halal: Moussaka med oksekød\, auberginer\
+ , løg\, tomater og kartofler\n\nVarm ret\, vegetarisk: Moussaka med meyer
+ s bælgfrugter\, auberginer\, løg\, tomater og kartofler\n\nVarm ret\, ve
+ gansk: Moussaka med meyers bælgfrugter\, auberginer\, løg\, tomater og k
+ artofler\n\nDagens salat: Salat af hjertesalat med spinat\, glaskål og br
+ øndkarse vendt med saltet yoghurt\n\nTorsdagssødt: Brunet smør og misob
+ londie med hvid chokolade og valnødder
+DTEND;TZID=Europe/Copenhagen:20260409T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260409T120000
+SEQUENCE:0
+SUMMARY:Moussaka med oksekød\, auberginer\, løg\, tomater og kartofler
+UID:meyers-menu-2026-04-09-det-velkendte---portionspakket
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Moussaka med oksekød\, auberginer\, løg\, tomater og kartofle
+ r
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:pr. person)
+DTEND;TZID=Europe/Copenhagen:20260410T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260410T120000
+SEQUENCE:0
+SUMMARY:Byg selv frikadellesandwich (2 stk
+UID:meyers-menu-2026-04-10-det-velkendte---portionspakket
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Byg selv frikadellesandwich (2 stk
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

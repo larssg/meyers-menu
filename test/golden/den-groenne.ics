@@ -1,0 +1,527 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Den Grønne
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Massaman karry af tofu med karto
+ fler\, gulerødder og løg - indeholder peanuts\n\nDen ene lune ret\, vega
+ nsk: Massaman karry af tofu med kartofler\, gulerødder og løg - indehold
+ er peanuts\n\nTilbehør til den ene lune ret: Dampet jasmin ris\n\nTopping
+  til den ene lune ret:\nSalt syltet lime\nPeanuts\n\nDen anden lune ret: B
+ ok choi med hvidløg og ingefær og svampe sauce\n\nTilbehør til den ande
+ n lune ret: Ananas og litchi\n\nDesuden:\nBagte østershatte og enoki svam
+ pe vendt i tamarind dressing\, toppet med friteret vilde ris\nJackfrugtsal
+ at - med sødmayo\, radiser\, gulerødder\, edamame og sesam\n\nSalat:\nBl
+ omkålsslaab med citrongræs\, limeblade og chili\nSnittet kål med glask
+ ål\, bønnespirer og mangovinaigrette\n\nDagens brød: Gulerodsbrød\n\nD
+ agens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260720T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260720T120000
+SEQUENCE:0
+SUMMARY:Massaman karry af tofu med kartofler\, gulerødder og løg - indeho
+ lder peanuts
+UID:meyers-menu-2026-07-20-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Squash stegt med rosmarin\, citr
+ on\, hvidløg og oliven. Toppet med flager af parmesan\n\nDen ene lune ret
+ \, vegansk: Squashstegt med rosmarin\, citron\, hvidløg og oliven\n\nTilb
+ ehør til den ene lune ret: Økologisk pasta vendt med pesto\n\nTopping ti
+ l den ene lune ret:\nGremolata\nSprød brødkrumme\n\nDen anden lune ret: 
+ Bladbeder og spinat med pure af smørbønner\n\nTilbehør til den anden lu
+ ne ret: Syltet antipasti\n\nDesuden:\nMozzarella\, jordbær\, balsamico og
+  sort peber\nGrillede aubergine og brændte løg tapanade med soltørret t
+ omat\, basilikum\, pistacie og grønne oliven\n\nSalat:\nHvide bønner\, b
+ agte gulerod\, artiskokker\, rødløg\, salvie og kapers\nBaby salat blade
+ r\, figner\, radicchio og balsamico\n\nDagens brød: Hvedebrød\n\nDagens 
+ rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260721T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260721T120000
+SEQUENCE:0
+SUMMARY:Squash stegt med rosmarin\, citron\, hvidløg og oliven...
+UID:meyers-menu-2026-07-21-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Stegte sommerkål med gulerods p
+ ure\n\nDen ene lune ret\, vegansk: Stegte sommerkål med gulerods pure\n\n
+ Tilbehør til den ene lune ret: Dampet kartofler med persille og løvstikk
+ e\n\nTopping til den ene lune ret: Karl johan remoulade\n\nDen anden lune 
+ ret: Sommergrøntsagsgryde med Meyers lollandsk rosiner\n\nTilbehør til d
+ en anden lune ret: Ærter og sukkerærter\n\nTopping til den anden lune re
+ t: Urtesalat\n\nDesuden:\nBlomkålscouscous\, mandelcreme og røget mandle
+ r\nCreme med kartoffel med ærter\, persillerod\, rygeost\, radiser\, urte
+ olie og karse\n\nSalat:\nBroccoli med tranebær\, hasselnødder\, kørvel\
+ , grønne flækærter og citroncreme\nCrudité af radise og gulerod\, pers
+ ille\, savoykål og ristede solsikkekerner\n\nDagens brød: Olivenbrød\n\
+ nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Mandarin\, gurkemeje
+  & ingefær
+DTEND;TZID=Europe/Copenhagen:20260722T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260722T120000
+SEQUENCE:0
+SUMMARY:Stegte sommerkål med gulerods pure
+UID:meyers-menu-2026-07-22-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: New Orleans style Gumbo med røg
+ et tempeh\, bladselleri\, peberfrugt\n\nDen ene lune ret\, vegansk: New Or
+ leans style Gumbo med røget tempeh\, bladselleri\, peberfrugt\n\nTilbehø
+ r til den ene lune ret: Flirty rice\n\nTopping til den ene lune ret:\nPers
+ ille\, citronskal og forårsløg\nFermenteret chili salsa\n\nDen anden lun
+ e ret: Creole majskolber\n\nTilbehør til den anden lune ret: Spicy creole
+ r dip til majs\n\nDesuden:\nCruditeer og blue cheese ranch\nRefried beans 
+ toppet med tomatsalsa med jalapeno\nSprøde fladbrød\n\nSalat:\nMexicansk
+  majssalat a la esquitas med cremet hvid ost\nIceberg\, persille\, bladsel
+ leri\, salatløg\, agurk og tomat\n\nDagens brød: Ølandsbrød\n\nDagens 
+ rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Ymerkoldskål med kammerju
+ nkere
+DTEND;TZID=Europe/Copenhagen:20260723T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260723T120000
+SEQUENCE:0
+SUMMARY:New Orleans style Gumbo med røget tempeh\, bladselleri\, peberfrug
+ t
+UID:meyers-menu-2026-07-23-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Gulerodstærte med karry og citr
+ ontimian\n\nDen ene lune ret\, vegansk: Bagt polenta med gulerødder\, kar
+ ry og citrontimian\n\nTilbehør til den ene lune ret: Knuste kartofler med
+  creme fraiche og urter\n\nTopping til den ene lune ret:\nTaffelsennep\nKe
+ tchup med estragon\n\nDen anden lune ret: Veggie dog\n\nTilbehør til den 
+ anden lune ret: Ristet løg\n\nTopping til den anden lune ret: Æblesalsa 
+ med grønne tomater og løvstikke\n\nDesuden:\nSalat af tomater\, agurker\
+ , meloner\, fersken\, og gedeost\nRoastbeet\, vegansk remoulade\, rødløg
+ \, syltede agurk og peberrod\n\nSalat:\nGrillet og rå blomkål\, tomater\
+ , linser og urter\nSlaw af majroer\, æbler\, hvidkål\, persille og creme
+ t dressing\n\nDagens brød: Hørfrøbrød\n\nDagens rugbrød: Økologisk r
+ ugbrød
+DTEND;TZID=Europe/Copenhagen:20260724T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260724T120000
+SEQUENCE:0
+SUMMARY:Gulerodstærte med karry og citrontimian
+UID:meyers-menu-2026-07-24-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Stegt blomkål med hvide bønner
+ \, champignon og sommergrønt i hvidvinsauce\n\nDen ene lune ret\, vegansk
+ : Stegt blomkål med hvide bønner\, champignon og sommergrønt i hvidvins
+ auce\n\nTilbehør til den ene lune ret: Kogte kartofler\n\nTopping til den
+  ene lune ret:\nHakket persille og purløg\nSyltet zittauerløg med gurkem
+ eje\n\nDen anden lune ret: Solbær braiseret rødbeder med balsamico bagte
+  radiccio\n\nTilbehør til den anden lune ret: Creme fraiche med estragon\
+ n\nTopping til den anden lune ret: Friteret boghvede\n\nDesuden:\nTomathum
+ mus\, bagte tomater og løvstikke\nSvampesalat med syltede løg og asparge
+ s\n\nSalat:\nPerlespelt\, agurk\, radisse\, soltørret tomat\, dild\, kore
+ nder og hasselnødder\nRåkost af gulerødder\, æbler\, appelsinsaft og s
+ olsikkekerner\n\nDagens brød: Let maltet brød\n\nDagens rugbrød: Økolo
+ gisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260727T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260727T120000
+SEQUENCE:0
+SUMMARY:Stegt blomkål med hvide bønner\, champignon og sommergrønt i hvi
+ dvinsauce
+UID:meyers-menu-2026-07-27-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Mexicanske krydrede jordskokker\
+ , queso fresco og ristede græskarkerner\n\nDen ene lune ret\, vegansk: Me
+ xicanske krydrede jordskokker\, og ristede græskarkerner\n\nTilbehør til
+  den ene lune ret: Bløde taco tortilla - 2 stk. pr. person\n\nTopping til
+  den ene lune ret:\nKoriander\nSalsa tatemata - salsa af brændte ancho ch
+ ili\n\nDen anden lune ret: Grillet majs og peberfrugt med oregano og chili
+ \n\nTilbehør til den anden lune ret: Fermenteret habanero sauce med mango
+ \n\nDesuden:\nCervice af bagte gule beder med litchi leche de tigre og æb
+ ler\nKrydret bønnedip toppet med grov pico de gallo\, jalapeno og cornchi
+ ps\n\nSalat:\nQuinoa\, bagte sødekartofler\, sorte bønner\, syltet græs
+ kar\, majs\, salatløg og koriander\nSpidskål\, gulerods cruditér\, agur
+ ker\, forårsløg\, pepitas og tomatillo dressing\n\nDagens brød: Pan gal
+ lego - spansk inspireret brød med græskarkerner\n\nDagens rugbrød: Øko
+ logisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260728T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260728T120000
+SEQUENCE:0
+SUMMARY:Mexicanske krydrede jordskokker\, queso fresco og ristede græskark
+ erner
+UID:meyers-menu-2026-07-28-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Flækærtedahl med knoldselleri 
+ og grønkål\, med brunet smørchhonk\n\nDen ene lune ret\, vegansk: Flæk
+ ærtedahl med knoldselleri og grønkål\n\nTilbehør til den ene lune ret:
+  Basmati ris\n\nTopping til den ene lune ret:\nRå syltet ingefær\nÆble 
+ og stikkelsbær chutney\n\nDen anden lune ret: Jeera aloo - kartofler med 
+ spidskommen\n\nTilbehør til den anden lune ret: Kokos raita med mynte\n\n
+ Topping til den anden lune ret: Vadouvan cashewnødder\n\nDesuden:\nPunjab
+  violet gulerødder med tahin\, nigella og indisk urte salat.\nKikærtesal
+ at med bagte aubergine og tandoori-mayo\n\nSalat:\nIndisk kartoffel salat 
+ med ærter\, chili\, krydret yoghurt og tadka\nRødbede\, kål\, tranebær
+  og solbær\n\nDagens brød: Hvedebrød med knækket hvede\n\nDagens rugbr
+ ød: Økologisk rugbrød\n\nOnsdagsshot: Agurk\, æble & squash
+DTEND;TZID=Europe/Copenhagen:20260729T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260729T120000
+SEQUENCE:0
+SUMMARY:Flækærtedahl med knoldselleri og grønkål\, med brunet smørchho
+ nk
+UID:meyers-menu-2026-07-29-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Bagte selleri med grov sennepssa
+ uce og ristede mandler\n\nDen ene lune ret\, vegansk: Bagte selleri med gr
+ ov sennepsvinaigrette og ristede mandler\n\nTilbehør til den ene lune ret
+ : Ovn stegte kartofler\n\nTopping til den ene lune ret:\nKruspersille\nSyl
+ tet gulerødder med dildfrø\n\nDen anden lune ret: Grønne minestrone med
+  sommergrønt og suppehorn\n\nTilbehør til den anden lune ret: Basilikums
+ alat\n\nDesuden:\nGrov ærte- og hestebønnecreme med mynte toppet med rad
+ isersalat\nFrisk ost creme og syltet agurk i hjemmelavet hyldeblomst eddik
+ e og brombær\n\nSalat:\nBønnesalat med vinagrette\, cornichoner\, løg\,
+  persille og løvstikke\nFrissé\, mizuna\, squash\, citronmelise\, purlø
+ g og hindbær\n\nDagens brød: Sødmælksfranskbrød med sesam\n\nDagens r
+ ugbrød: Økologisk rugbrød\n\nTorsdagssødt: Citronmåne
+DTEND;TZID=Europe/Copenhagen:20260730T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260730T120000
+SEQUENCE:0
+SUMMARY:Bagte selleri med grov sennepssauce og ristede mandler
+UID:meyers-menu-2026-07-30-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Jerk marineret sød kartofler\, 
+ grillet løg og lime\n\nDen ene lune ret\, vegansk: Jerk marineret sød ka
+ rtofler\, grillet løg og lime\n\nTilbehør til den ene lune ret: Tomatise
+ ret ris med sorte bønner\n\nTopping til den ene lune ret: Chimmichurri\n\
+ nDen anden lune ret: Jamaicansk karrygryderet med kokos\, black eyed peas\
+ , grønkål\, kartofler\, løg og peberfrugt\n\nTilbehør til den anden lu
+ ne ret: Spicy mango salsa\n\nDesuden:\nJackfruit\, forårsløg\, majs\, ag
+ urk\, og blegselleri\nCremet majsdip med macadamianødder\, toppet med gri
+ llet ananas og jalapeno\nBanana chips\n\nSalat:\nPeanutsalat\, tomater\, a
+ nanas\, løg og agurk med røget chili dressing\nJamaicansk coleslaw\n\nDa
+ gens brød: Kernebrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260731T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260731T120000
+SEQUENCE:0
+SUMMARY:Jerk marineret sød kartofler\, grillet løg og lime
+UID:meyers-menu-2026-07-31-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Sommergrønt og gule tip ærter 
+ i karry sauce\n\nDen ene lune ret\, vegansk: Vegansk karry med sommergrøn
+ t\n\nTilbehør til den ene lune ret: Løse ris\n\nTopping til den ene lune
+  ret:\nRistet kokos\nMango chutney\n\nDen anden lune ret: Stegte spidskål
+  med citronvinaigrette\n\nTilbehør til den anden lune ret: Løvstikke aio
+ li\n\nTopping til den anden lune ret: Rugbrødschips\n\nDesuden:\nDansk os
+ t med abrikose marmelade med mandler\, og kiks\nGulerodstatar med rygeost 
+ creme\, estragon\, syltede sennepsfrø og cornichoner\n\nSalat:\nPastasala
+ t med bagte butternut\, salatost\, agurk\, sorte oliven og hvidløgsdressi
+ ng\nKålsalat med stegte svampe\, stegte løg\, bønnespirer\, frisk lime 
+ og crispy rice\n\nDagens brød: Italiensk landbrød\n\nDagens rugbrød: Ø
+ kologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260803T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260803T120000
+SEQUENCE:0
+SUMMARY:Sommergrønt og gule tip ærter i karry sauce
+UID:meyers-menu-2026-08-03-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Græsk kikærtegryde med oliven\
+ , soltørrede tomater og feta\n\nDen ene lune ret\, vegansk: Græsk kikær
+ tegryde med oliven og soltørrede tomater\n\nTilbehør til den ene lune re
+ t: Stegte kartofler med oregano og citron\n\nTopping til den ene lune ret:
+ \nPersille\nTzatziki af squash\n\nDen anden lune ret: Grillede grøntsager
+  med rosmarin og hvidløg\n\nTilbehør til den anden lune ret: Syltede peb
+ erfrugter\n\nDesuden:\nBagte fennikel\, spicy tomattapenade og pistacie\nP
+ isket feta med oliven\n\nSalat:\nSalat af perlecouscous\, stegte aubergine
+ \, forårsløg\, dild og citron\nGrøn salat\, tomater\, agurker\, grønpe
+ ber\, rødløg og mynte\n\nDagens brød: Kartoffel-timianbrød\n\nDagens r
+ ugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260804T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260804T120000
+SEQUENCE:0
+SUMMARY:Græsk kikærtegryde med oliven\, soltørrede tomater og feta
+UID:meyers-menu-2026-08-04-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Tofu satay med krydret peanutsau
+ ce og stegt peberfrugt\, gulerødder og løg\n\nDen ene lune ret\, vegansk
+ : Tofu satay med krydret peanutsauce og stegt peberfrugt\, gulerødder og 
+ løg\n\nTilbehør til den ene lune ret: Dampede jasminris\n\nTopping til d
+ en ene lune ret:\nChili\, forårsløg og koriander\nLynsyltede agurker\n\n
+ Den anden lune ret: Tom kha af tofu og østerhatte med thai basilikum\n\nT
+ ilbehør til den anden lune ret: Thai basilikum\n\nTopping til den anden l
+ une ret: Lime både\n\nDesuden:\nBrændte agurker med ingefær- miso og go
+ akarse\nÆggesalat med vandkastanjer og forårsløg\n\nSalat:\nHaricot ver
+ t\, squash\, edammebønner\, ingefær\, chili og ristet sesam\nViolet spid
+ skål\, ananas\, mynte\, cashewnødder og forårsløg\n\nDagens brød: Hve
+ debrød\n\nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Passionsfr
+ ugt\, mango og citrongræs
+DTEND;TZID=Europe/Copenhagen:20260805T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260805T120000
+SEQUENCE:0
+SUMMARY:Tofu satay med krydret peanutsauce og stegt peberfrugt\, gulerødde
+ r og løg
+UID:meyers-menu-2026-08-05-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Ovnbagt blomkål med brunet smø
+ rsauce\, fennikel og blegselleri\n\nDen ene lune ret\, vegansk: Ovnbagt bl
+ omkål vegansk smørsauce fennikel og blegselleri - indeholder mandler\n\n
+ Tilbehør til den ene lune ret: Linser og brunoise af grøntsager vendt me
+ d persille og hvidløgsolie\n\nTopping til den ene lune ret:\nDild og fris
+ sé\nSprød ristet brødkrumme\n\nDen anden lune ret: Bouillabaisse de jar
+ din\n\nTilbehør til den anden lune ret: Creme fraiche med citron og hvidl
+ øg\n\nTopping til den anden lune ret: Zittauerløg syltet i rødvinseddik
+ e med sennepsfrø og sort peber\n\nDesuden:\nAspargesbroccoli med sauce gi
+ briche\nDip af hvide bønner og confiteret hvidløg toppet med karameliser
+ et løg og salvie\n\nSalat:\nOrzo\, selleri bagt med sherry eddike\, semi 
+ dried tomat\, løvstikke og friseè\nGlaskål\, æble\, brøndkarse\, ært
+ eskud\, gulerødder\, og citron\n\nDagens brød: Fransk løgbrød\n\nDagen
+ s rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Peanutbutter cookie med 
+ chokolade - indeholder peanuts
+DTEND;TZID=Europe/Copenhagen:20260806T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260806T120000
+SEQUENCE:0
+SUMMARY:Ovnbagt blomkål med brunet smørsauce\, fennikel og blegselleri
+UID:meyers-menu-2026-08-06-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Sommerfrikassé af hvide bønner
+  med sommerkål og dild\n\nDen ene lune ret\, vegansk: Sommerfrikassé af 
+ hvide bønner med sommerkål og dild\n\nTilbehør til den ene lune ret: Ko
+ gte kartofler vendt løvstikkesmør\n\nTopping til den ene lune ret:\nUrte
+ salat af purløg\, kørvel og estragon\nHyldeblomst syltet glaskål\n\nDen
+  anden lune ret: Bagte rødbede med lun kirsebær vinaigrette og friteret 
+ kapers\n\nTilbehør til den anden lune ret: Røgede hasselnødder\n\nDesud
+ en:\nGulerodshummus toppet med tomatsalat og estragon\nFuglekvidder af bol
+ chebeder og lollandsk rosiner\n\nSalat:\nPerlespelt\, stegte løg og squas
+ h\, persille\, grovsennep og rapskimolie\nHjertesalat\, pære\, beder\, mi
+ tzuna og ristet kerner\n\nDagens brød: Gulerodsbrød\n\nDagens rugbrød: 
+ Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260807T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260807T120000
+SEQUENCE:0
+SUMMARY:Sommerfrikassé af hvide bønner med sommerkål og dild
+UID:meyers-menu-2026-08-07-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Gul thai karry med tofu\, græsk
+ ar\, gulerod og gule peberfrugt\n\nDen ene lune ret\, vegansk: Gul thai ka
+ rry med tofu\, græskar\, gulerødder og gule peberfrugter\n\nTilbehør ti
+ l den ene lune ret: Dampede jasminris\n\nTopping til den ene lune ret:\nLi
+ me både\nIngefærsyltet savoykål\n\nDen anden lune ret: Dampet pakchoy m
+ ed thailandsk vinaigrette\n\nTilbehør til den anden lune ret: Lime både\
+ n\nTopping til den anden lune ret: Friteret hvidløg\n\nDesuden:\nThai dam
+ pet æggekage med forårsløg\, ramsløg og chili crisp\nTamarin marinered
+ e østershatte\n\nSalat:\nBroccoli og linser laab med citrongræs\, limebl
+ ade\, chili og solsikkekerner\nKinakål\, syltede gulerødder\, forårslø
+ g og peanuts\n\nDagens brød: Solsikkebrød\n\nDagens rugbrød: Økologisk
+  rugbrød
+DTEND;TZID=Europe/Copenhagen:20260810T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260810T120000
+SEQUENCE:0
+SUMMARY:Gul thai karry med tofu\, græskar\, gulerod og gule peberfrugt
+UID:meyers-menu-2026-08-10-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Grøn farsbrød med porre\n\nDen
+  ene lune ret\, vegansk: Grøn farsbrød med porre\n\nTilbehør til den en
+ e lune ret: Kogte kartofler vendt med persille og rapskimsolie\n\nTopping 
+ til den ene lune ret:\nKrus persille\nRabarber kompot og agurkesalat\n\nDe
+ n anden lune ret: Sommergrønt gryde med greenway ærter\n\nTilbehør til 
+ den anden lune ret: Brændt porre aioli\n\nTopping til den anden lune ret:
+  Croutoner med olivenolie og havsalt\n\nDesuden:\nLet røget tomat tatar\,
+  valnødder\, ahornsirup og syltede sennepsfrø\nJordskokke pålægssalat 
+ med peberrod\, dild og kapers\n\nSalat:\nPasta med romesco\nRødbede råko
+ st med solbær og solsikkekerner\n\nDagens brød: Hvedebrød\n\nDagens rug
+ brød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260811T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260811T120000
+SEQUENCE:0
+SUMMARY:Grøn farsbrød med porre
+UID:meyers-menu-2026-08-11-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Vegetar biriyani med lollandske 
+ rosiner\, selleri og kartofler\n\nDen ene lune ret\, vegansk: Vegetar biri
+ yani med lollandske rosiner\, selleri og kartofler\n\nTopping til den ene 
+ lune ret: Mynteyoghurt\n\nDen anden lune ret: Peberfrugter\, hvidkål og h
+ aricots verts i karryolie\n\nTilbehør til den anden lune ret: Mango chutn
+ ey\n\nTopping til den anden lune ret: Karry ristede cashewnødder\n\nDesud
+ en:\nGrillede auberginer\, kokosflager samt sauce af mynte og kokos\nJackf
+ rugt salat\, majs\, blegselleri\, peberfrugter og tabasco\n\nSalat:\nGrøn
+ ne linser\, ærter\, gulerødder\, butternut\, frisk chili og karrydressin
+ g\nIceberg salat\, tomater\, agurker\, radiser og dild\n\nDagens brød: Fr
+ ansk landbrød\n\nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Æb
+ le\, ingefær & citron
+DTEND;TZID=Europe/Copenhagen:20260812T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260812T120000
+SEQUENCE:0
+SUMMARY:Vegetar biriyani med lollandske rosiner\, selleri og kartofler
+UID:meyers-menu-2026-08-12-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Tagine af kikærter\, gulerødde
+ r\, abrikos\, saltet citron og harissa\n\nDen ene lune ret\, vegansk: Tagi
+ ne af kikærter\, gulerødder\, abrikos\, saltet citron og harissa\n\nTilb
+ ehør til den ene lune ret: Lun cous cous vendt med olivenolie\n\nTopping 
+ til den ene lune ret:\nKnuste mandler og sesam\nTfaya - morrokansk rødlø
+ gs chutney med rosiner\n\nDen anden lune ret: Harissa bagte blomkål - ind
+ eholder pinjekerner\n\nTilbehør til den anden lune ret: Syltet mix at gr
+ øntsager og oliven\n\nTopping til den anden lune ret: Yoghurt med græske
+ rkerne tahin og bagte citron\n\nDesuden:\nGederulle dækket i frysetørred
+ e bær\, dadel sirup\, bagte druer og urtesalat med frisk chili\nCremet ma
+ ndel og tofucreme med urter\, hvidløg\, spinat og citron\n\nSalat:\nEmmer
+  salat med rucola\, valnødder\, gule peberfrugter\, cherrytomater\, dild 
+ og chermoula\nRød og hvid spidskål\, melon\, persille\, hvidløg\, citro
+ n og forårsløg\n\nDagens brød: Foccaciabrød med rosmarin\n\nDagens rug
+ brød: Økologisk rugbrød\n\nTorsdagssødt: Olivenolie kage med blå birk
+ es
+DTEND;TZID=Europe/Copenhagen:20260813T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260813T120000
+SEQUENCE:0
+SUMMARY:Tagine af kikærter\, gulerødder\, abrikos\, saltet citron og hari
+ ssa
+UID:meyers-menu-2026-08-13-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Veggie stew med majs\, blegselle
+ ri\, gulerødder og vilde svampe\n\nDen ene lune ret\, vegansk: Veggie ste
+ w med majs\, blegselleri\, gulerødder og vilde svampe\n\nTilbehør til de
+ n ene lune ret: Rigatoni pasta\n\nTopping til den ene lune ret:\nPurløg\n
+ Dild pickles og syltede rødløg\n\nDen anden lune ret: Ristede søde kart
+ ofler med hot honey\n\nTilbehør til den anden lune ret: Chipotle mayo\n\n
+ Desuden:\nHaricots verts og cherrytomater med chipotle bønnesmash\nTrippl
+ e cheese dip med cruditéer\n\nSalat:\nCowboy Caviar - sorte bønner\, rø
+ dløg\, peberfrugter\, limejuice\, koriander\, majs og paprika\nCremet col
+ eslaw af spidskål\, gulerødder og purløg\n\nDagens brød: Kærnemælksb
+ rød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260814T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260814T120000
+SEQUENCE:0
+SUMMARY:Veggie stew med majs\, blegselleri\, gulerødder og vilde svampe
+UID:meyers-menu-2026-08-14-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Paneer tikka masala\n\nDen ene l
+ une ret\, vegansk: Chana masala\n\nTilbehør til den ene lune ret: Basmati
+ ris med gulerødder\n\nTopping til den ene lune ret:\nKoriander\nChutney p
+ å blommer og tamarin med ingefær\n\nDen anden lune ret: Bagte butternut 
+ squash med flækærtedahl\n\nTilbehør til den anden lune ret: Ristet koko
+ s\n\nDesuden:\nChoila - indisk svampesalat\nKarrygrillet squash med granat
+ æbler og indisk yoghurtdip på aubergine\n\nSalat:\nIndisk kartoffelsalat
+  med ærter\, chili\, krydret yoghurt og tadke\nSprød salat af spidskål\
+ , savoykål\, mango og sennepsfrø\n\nDagens brød: Valnøddebrød\n\nDage
+ ns rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260817T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260817T120000
+SEQUENCE:0
+SUMMARY:Paneer tikka masala
+UID:meyers-menu-2026-08-17-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Bagte blomkål med sommerfrikass
+ é af hvide bønner\, nye gulerødder og sommerløg\n\nDen ene lune ret\, 
+ vegansk: Bagte blomkål med sommerfrikassé af hvide bønner\, nye gulerø
+ dder og sommerløg\n\nTilbehør til den ene lune ret: Dampede kartofler\n\
+ nTopping til den ene lune ret:\nPurløg\nNordisk gremolata med persille\, 
+ peberrod og grønne ærter\n\nDen anden lune ret: Æggekage med gulerødde
+ r\, karry og citrontimian\n\nTilbehør til den anden lune ret: Solbærketc
+ hup\n\nDesuden:\nSellerimad - på røget peberselleri med remoulade af kar
+ l johan svampe og kapers\nGrøn spread af stegt squash\, purløg\, hvidlø
+ g og ærter\n\nSalat:\nSalat af nordiske korn sorter\, æble\, bolsjebeder
+ \, grønkål\, persille og salatost\nGrønne bønner\, endivie\, bulls blo
+ od\, tørrede tranebær\, solsikkekerner og rapskimvinaigrette\n\nDagens b
+ rød: Durumbrød med bornholmsk durummel\n\nDagens rugbrød: Økologisk ru
+ gbrød
+DTEND;TZID=Europe/Copenhagen:20260818T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260818T120000
+SEQUENCE:0
+SUMMARY:Bagte blomkål med sommerfrikassé af hvide bønner\, nye gulerødd
+ er og sommerløg
+UID:meyers-menu-2026-08-18-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Bede bourguignon\n\nDen ene lune
+  ret\, vegansk: Bede bourguignon\n\nTilbehør til den ene lune ret: Linser
+ \, grøntsagsbrunoise og vinaigrette\n\nTopping til den ene lune ret:\nSal
+ tristede mandler\nSyltede rødløg med sennepsfrø\n\nDen anden lune ret: 
+ Braiseret fennikel med stikkelsbær\n\nTilbehør til den anden lune ret: F
+ ennikel tzatziki med dild\n\nDesuden:\nCamembert med kvæde gele og figner
+ \nTomat og avocadocreme med crispy løg samt hvidløg toppet med karse\n\n
+ Salat:\nPasta\, ærter\, peberfrugter\, soltørrede tomater\, oliven\, mer
+ ian og kapers\nRød spidskål\, solbær og æbler\n\nDagens brød: Fransk 
+ landbrød\n\nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Blodappe
+ lsin\, gulerødder og ingefær
+DTEND;TZID=Europe/Copenhagen:20260819T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260819T120000
+SEQUENCE:0
+SUMMARY:Bede bourguignon
+UID:meyers-menu-2026-08-19-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Safransauce med gulerødder\, po
+ rre og jordskokker\n\nDen ene lune ret\, vegansk: Safran sauce med gulerø
+ dder\, porre og jordskokker - indeholder mandler\n\nTilbehør til den ene 
+ lune ret: Økologisk pasta\n\nTopping til den ene lune ret:\nGremolata\nRi
+ stede brødkrummer med timian\n\nDen anden lune ret: Grillede auberginer m
+ ed honning og balsamiskeddike\n\nTilbehør til den anden lune ret: Rucola 
+ pesto - indeholder mandler\n\nTopping til den anden lune ret: Olivenmix\n\
+ nDesuden:\nRomanescokål med spread af rød peberfrugt\, pistacienødder o
+ g rød basilikum\nÆggesalat med giardinera\, grana og basilikum\n\nSalat:
+ \nMeyers ærter\, bagt selleri\, rosiner\, persille og estragon\nSalat af 
+ tomater\, mozzarella\, agurker\, basilikum og olivenolie\n\nDagens brød: 
+ Focacciabrød med rosmarin\n\nDagens rugbrød: Økologisk rugbrød\n\nTors
+ dagssødt: Rytterkage
+DTEND;TZID=Europe/Copenhagen:20260820T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260820T120000
+SEQUENCE:0
+SUMMARY:Safransauce med gulerødder\, porre og jordskokker
+UID:meyers-menu-2026-08-20-den-grønne
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Chili sin carne af sorte bønner
+ \, tomater\, løg\, rødder og spidskommen\n\nDen ene lune ret\, vegansk: 
+ Chili sin carne af sorte bønner\, tomater\, løg\, rødder og spidskommen
+ \n\nTilbehør til den ene lune ret: Nachos\n\nTopping til den ene lune ret
+ : Creme fraiche\n\nDen anden lune ret: Bagte kartofler med tex og krydderi
+ er\n\nTilbehør til den anden lune ret: Revet cheddar\n\nTopping til den a
+ nden lune ret: Salsa\n\nDesuden:\nGrillede peberfrugter med chili\, lime\,
+  queso fresco\, goa karse og pepitas\nCerviche på beder\, passionsfrugt\,
+  koriander\, løg og agurker\n\nSalat:\nSort quinoa\, salatost\, peberfrug
+ ter\, majs\, spidskål\, syltede rødløg og piment\nGulerodssalat med gr
+ øn tabasco\, lime\, passionsfrugt og kerner\n\nDagens brød: Kærnemælks
+ brød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260821T130000
+DTSTAMP:20260818T231406Z
+DTSTART;TZID=Europe/Copenhagen:20260821T120000
+SEQUENCE:0
+SUMMARY:Chili sin carne af sorte bønner\, tomater\, løg\, rødder og spid
+ skommen
+UID:meyers-menu-2026-08-21-den-grønne
+END:VEVENT
+END:VCALENDAR

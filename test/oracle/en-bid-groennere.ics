@@ -1,0 +1,83 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - En bid grønnere
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Carbonara med bacon og svampe\n\nVarm ret\, hal
+ al: Carbonara med kalkunbacon og svampe\n\nVarm ret\, vegetar: Cabonara me
+ d tempeh og svampe\n\nVarm ret\, vegansk: Cremet pasta sauce af tempeh og 
+ svampe\n\nTilbehør til varm ret: Pasta\n\nKondiment 1: Brødkrummer med p
+ armesan og sort peber\n\nDen anden lune ret: Fadbagte caponata\n\nDen ande
+ n\, tilbehør: Giardinera\n\nDesuden 1: Pisket ricotta\, grønne asparges\
+ , citronskal og bagte cherrytomater\n\nDesuden 2: Midelhavs viniagrette me
+ d spread af pistacie og confiteret hvidløg\n\nSalat 1: Haricots verts\, h
+ vide bønner\, rødløg\, syltede cherrytomater\, sorte og grønne oliven\
+ , merian samt persille\n\nSalat 2: Baby salatblade\, mizuna\, spinat\, ruc
+ ola og soltørrede tomater med italiensk dressing\n\nDagens brød: Hvedebr
+ ød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260407T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260407T120000
+SEQUENCE:0
+SUMMARY:Carbonara med bacon og svampe
+UID:meyers-menu-2026-04-07-en-bid-grønnere
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Kylling i karry med gulerødder og pastinak\n\n
+ Varm ret\, halal: Kylling i karry med gulerødder og pastinak\n\nVarm ret\
+ , vegetar: Stegt blomkål med flækærter i karry sauce\n\nVarm ret\, vega
+ nsk: Stegt blomkål med flækærter i karry sauce\n\nTilbehør til varm re
+ t: Løse ris\n\nTopping til varm ret: Ristede kokosflager\n\nKondiment 1: 
+ Rabarberchutney\n\nDen anden lune ret: Langtidsbagte rødbeder med kapersv
+ inaigrette\n\nDen anden\, tilbehør: Friteret salvie\n\nDesuden 1: Confite
+ ret græskar\, løgkompot\, karse og kerner\n\nDesuden 2: Rørte kartofler
+  med rygeost\, radiser\, purløg og løvstikke\n\nSalat 1: Lollandske rosi
+ ner\, tomater\, bagte knoldselleri\, blegselleri \, løg\, løvstikke og s
+ ennepsvinaigrette\n\nSalat 2: Endive med korender\, glaskål\, dild\, broc
+ coli og hasselnødder\n\nDagens brød: Majsbrød\n\nDagens rugbrød: Økol
+ ogisk rugbrød\n\nOnsdagsshot: Jordbær\, rød peberfrugt og chili
+DTEND;TZID=Europe/Copenhagen:20260408T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260408T120000
+SEQUENCE:0
+SUMMARY:Kylling i karry med gulerødder og pastinak
+UID:meyers-menu-2026-04-08-en-bid-grønnere
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Stegt og marineret nakkefilet af gris med mexic
+ anske krydderier\n\nVarm ret\, halal: Stegt og marineret kalkun med mexica
+ nske krydderier\n\nVarm ret\, vegetar: Refried beans med mexicansk krydred
+ e bagte søde kartofler og queso fresco\n\nVarm ret\, vegansk: Refried bea
+ ns med mexicansk krydrede bagte søde kartofler med ristede græskarkerner
+ \n\nTilbehør til varm ret: Bulgur\, quinoa og sorte bønner\n\nTopping ti
+ l varm ret: Koriander\n\nKondiment 1: Salsa verde\n\nDen anden lune ret: M
+ ajskolber samt smør med chili og oregano\n\nDen anden\, tilbehør: Spicy 
+ pepitas\n\nDesuden 1: Ceviche af bagte gule beder med mango leche de tigre
+  og æbler\n\nDesuden 2: Green goddess dip med friteret tortillas\n\nSalat
+  1: Ensalada de Garbanzos - kikærter\, peberfrugter\, rød spidskål\, ma
+ js\, lime og chiliolie\n\nSalat 2: Spinat\, gulerodscruditéer\, agurker\,
+  syltede grønne tomater og forårsløg\n\nDagens brød: Ølbrød med kern
+ er\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Brunet smør 
+ og misoblondie med hvid chokolade og valnødder
+DTEND;TZID=Europe/Copenhagen:20260409T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260409T120000
+SEQUENCE:0
+SUMMARY:Stegt og marineret nakkefilet af gris med mexicanske krydderier
+UID:meyers-menu-2026-04-09-en-bid-grønnere
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:pr. person)
+DTEND;TZID=Europe/Copenhagen:20260410T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260410T120000
+SEQUENCE:0
+SUMMARY:Cheeseburger (1 stk
+UID:meyers-menu-2026-04-10-en-bid-grønnere
+END:VEVENT
+END:VCALENDAR

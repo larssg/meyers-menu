@@ -1,0 +1,116 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Den Grønne
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Carbonara med tempeh og svampe\n
+ \nDen ene lune ret\, vegansk: Cremet pastasauce af tempeh og svampe\n\nTil
+ behør til den ene lune ret: Pasta\n\nTopping til den ene lune ret 2: Brø
+ dkrummer med parmesan og sort peber\n\nDen anden lune ret: Fadbagte capona
+ ta\n\nTilbehør til den anden lune ret: Giardinera\n\nDesuden 1: Pisket ri
+ cotta\, grønne asparges\, citronskal og bagte cherrytomater\n\nDesuden 2:
+  Middelhavsvinaigrette med spread af pistacie og confiteret hvidløg\n\nSa
+ lat 1: Haricots verts\, hvide bønner\, rødløg\, syltede cherrytomater\,
+  sorte og grønne oliven\, merian samt persille\n\nSalat 2: Baby salatblad
+ e\, mizuna\, spinat\, rucola og soltørrede tomater med italiensk dressing
+ \n\nDagens brød: Hvedebrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260407T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260407T120000
+SEQUENCE:0
+SUMMARY:Carbonara med tempeh og svampe
+UID:meyers-menu-2026-04-07-den-grønne
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Carbonara med tempeh og svampe
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Stegt blomkål med flækærter i
+  karry sauce\n\nDen ene lune ret\, vegansk: Stegt blomkål med flækærter
+  i karry sauce\n\nTilbehør til den ene lune ret: Løse ris\n\nTopping til
+  den ene lune ret: Ristede kokosflager\n\nTopping til den ene lune ret 2: 
+ Rabarberchutney\n\nDen anden lune ret: Langtidsbagte rødbeder med kapersv
+ inaigrette\n\nTilbehør til den anden lune ret: Friteret salvie\n\nDesuden
+  1: Confiteret græskar\, løgkompot\, karse og kerner\n\nDesuden 2: Rørt
+ e kartofler med rygeost\, radiser\, purløg og løvstikke\n\nSalat 1: Loll
+ andske rosiner\, tomater\, bagte knoldselleri\, blegselleri \, løg\, løv
+ stikke og sennepsvinaigrette\n\nSalat 2: Endive med korender\, glaskål\, 
+ dild\, broccoli og hasselnødder\n\nDagens brød: Majsbrød\n\nDagens rugb
+ rød: Økologisk rugbrød\n\nOnsdagsshot: Jordbær\, rød peberfrugt og ch
+ ili
+DTEND;TZID=Europe/Copenhagen:20260408T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260408T120000
+SEQUENCE:0
+SUMMARY:Stegt blomkål med flækærter i karry sauce
+UID:meyers-menu-2026-04-08-den-grønne
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Stegt blomkål med flækærter i karry sauce
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Refried beans med mexicansk kryd
+ rede og bagte søde kartofler samt queso fresco\n\nDen ene lune ret\, vega
+ nsk: Refried beans med mexicansk krydrede og bagte søde kartofler med ris
+ tede græskarkerner\n\nTilbehør til den ene lune ret: Bulgur\, quinoa og 
+ sorte bønner\n\nTopping til den ene lune ret: Koriander\n\nTopping til de
+ n ene lune ret 2: Salsa verde\n\nDen anden lune ret: Majskolber samt smør
+  med chili og oregano\n\nTilbehør til den anden lune ret: Spicy pepitas\n
+ \nDesuden 1: Ceviche af bagte gule beder med mango leche de tigre og æble
+ r\n\nDesuden 2: Green goddess dip med friteret tortillas\n\nSalat 1: Ensal
+ ada de Garbanzos - kikærter\, peberfrugter\, rød spidskål\, majs\, lime
+  og chiliolie\n\nSalat 2: Spinat\, gulerodscruditéer\, agurker\, syltede 
+ grønne tomater og forårsløg\n\nDagens brød: Ølbrød med kerner\n\nDag
+ ens rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Brunet smør og misobl
+ ondie med hvid chokolade og valnødder
+DTEND;TZID=Europe/Copenhagen:20260409T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260409T120000
+SEQUENCE:0
+SUMMARY:Refried beans med mexicansk krydrede og bagte søde kartofler samt 
+ queso fresco
+UID:meyers-menu-2026-04-09-den-grønne
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Refried beans med mexicansk krydrede og bagte søde kartofler s
+ amt queso fresco
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Den ene lune ret\, vegetarisk: Vegetarbøffer lavet på sorte b
+ ønner og butternut squash med cheddarost\n\nDen ene lune ret\, vegansk: B
+ urgerbøffer lavet på sorte bønner og butternut squash\n\nTilbehør til 
+ den ene lune ret: Sesam burgerboller\n\nTopping til den ene lune ret 2: Bu
+ rgeragurker syltede og vendt i dild\n\nDen anden lune ret: Bagte kartoffel
+ både med røget paprika\n\nTilbehør til den anden lune ret: Ristet løg 
+ med eddike pulver- til burger\n\nTopping til den anden lune ret: Burgerdre
+ ssing\n\nDesuden 1: Grillet forårsløg\, bagte blomkål\, knust avocado m
+ ed limegremolata\n\nDesuden 2: Cruditéer og blue cheese ranch\n\nSalat 1:
+  Pastaskruer med vinaigrette\, oliven\, peberfrugter\, ærter og tomater\n
+ \nSalat 2: Iceberg\, tomater og løg\n\nDagens brød: Burgerboller med ses
+ am\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260410T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260410T120000
+SEQUENCE:0
+SUMMARY:Vegetarbøffer lavet på sorte bønner og butternut squash med ched
+ darost
+UID:meyers-menu-2026-04-10-den-grønne
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vegetarbøffer lavet på sorte bønner og butternut squash med 
+ cheddarost
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

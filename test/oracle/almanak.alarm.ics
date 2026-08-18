@@ -1,0 +1,99 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Almanak
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Carbonara med bacon og svampe\n\nVarm ret\, hal
+ al: Carbonara med kalkunbacon og svampe\n\nVarm ret\, vegetar: Carbonara m
+ ed tempeh og svampe\n\nVarm ret\, vegansk: Cremet pasta sauce af tempeh og
+  svampe\n\nTilbehør til varm ret: Pasta\n\nKondiment 1: Brødkrummer med 
+ parmesan og sort peber\n\nDelikatesse 1: Luftørret okse salami\, tomattap
+ enade\, ristede mandler og grillede peberfrugter\n\nDelikatesse 2: Hønses
+ alat med stegte svampe og asparges\n\nSalat 1: Haricots verts\, hvide bøn
+ ner\, rødløg\, syltede cherrytomater\, sorte og grønne oliven\, merian 
+ samt persille\n\nSalat 2: Baby salatblade\, mizuna\, spinat\, rucola og so
+ ltørrede tomater med italiensk dressing\n\nDagens brød: Hvedebrød\n\nDa
+ gens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260407T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260407T120000
+SEQUENCE:0
+SUMMARY:Carbonara med bacon og svampe
+UID:meyers-menu-2026-04-07-almanak
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Carbonara med bacon og svampe
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Kylling i karry med gulerødder og pastinak\n\n
+ Varm ret\, halal: Kylling i karry med gulerødder og pastinak\n\nVarm ret\
+ , vegetar: Stegte blomkål med flækærter i karrysauce\n\nVarm ret\, vega
+ nsk: Stegt blomkål med flækærter i karry sauce\n\nTilbehør til varm re
+ t: Løse ris\n\nTopping til varm ret: Ristede kokosflager\n\nKondiment 1: 
+ Rabarberchutney\n\nDelikatesse 1: Hamburgerryg med italiensk salat\n\nDeli
+ katesse 2: Rejesalat\, dild\, cornichoner\, glaskål og kapers\n\nSalat 1:
+  Lollandske rosiner\, tomater\, bagte knoldselleri\, blegselleri\, løg\, 
+ løvstikke og sennepsvinaigrette\n\nSalat 2: Endive med korender\, glaskå
+ l\, dild og broccoli\n\nDagens brød: Majsbrød\n\nDagens rugbrød: Økolo
+ gisk rugbrød\n\nOnsdagsshot: Jordbær\, rød peberfrugt og chili
+DTEND;TZID=Europe/Copenhagen:20260408T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260408T120000
+SEQUENCE:0
+SUMMARY:Kylling i karry med gulerødder og pastinak
+UID:meyers-menu-2026-04-08-almanak
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Kylling i karry med gulerødder og pastinak
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Stegt og marineret nakkefilet af gris med mexic
+ anske krydderier\n\nVarm ret\, halal: Stegt og marineret kalkun med mexica
+ nske krydderier\n\nVarm ret\, vegetar: Refried beans med mexicansk krydred
+ e bagte søde kartofler og queso fresco\n\nVarm ret\, vegansk: Refried bea
+ ns med mexicansk krydrede bagte søde kartofler med ristede græskarkerner
+ \n\nTilbehør til varm ret: Bulgur\, quinoa og sorte bønner\n\nTopping ti
+ l varm ret: Koriander\n\nKondiment 1: Salsa verde\n\nDelikatesse 1: Lime m
+ arineret kylling med salsa falsa\n\nDelikatesse 2: Ærteguacamole og spicy
+  tomatsalsa samt nachos\n\nSalat 1: Ensalada de Garbanzos - kikærter\, pe
+ berfrugter\, rød spidskål\, majs\, lime og chiliolie\n\nSalat 2: Spinat\
+ , gulerodscruditéer\, agurker\, syltede grønne tomater og forårsløg\n\
+ nDagens brød: Ølbrød med kerner\n\nDagens rugbrød: Økologisk rugbrød
+ \n\nTorsdagssødt: Brunet smør og misoblondie med hvid chokolade og valn
+ ødder
+DTEND;TZID=Europe/Copenhagen:20260409T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260409T120000
+SEQUENCE:0
+SUMMARY:Stegt og marineret nakkefilet af gris med mexicanske krydderier
+UID:meyers-menu-2026-04-09-almanak
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Stegt og marineret nakkefilet af gris med mexicanske krydderier
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:pr. person)
+DTEND;TZID=Europe/Copenhagen:20260410T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260410T120000
+SEQUENCE:0
+SUMMARY:Cheeseburger (1 stk
+UID:meyers-menu-2026-04-10-almanak
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cheeseburger (1 stk
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,527 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Meyers til frokost Aarhus
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: "Marry me chicken" Stegt kyllingebryst i creme
+ t sauce med soltørret tomat\, oregano og parmesan\n\nVarm ret\, halal: "M
+ arry me chicken" Stegt kyllingebryst i cremet sauce med soltørret tomat\,
+  oregano og parmesan\n\nVarm ret\, vegetar: "Marry me" NO meat balls i cre
+ met sauce med soltørret tomat\, oregano og parmesan (5 stk pr pers)\n\nVa
+ rm ret\, vegansk: "Marry me" NO meat balls i cremet sauce med soltørret t
+ omat og oregano (5 stk pr person)\n\nTilbehør til varm ret: Pasta linguin
+ e vendt med olivenolie\n\nTopping til varm ret: Basilikum\n\nPålæg:\nRos
+ marin marineret svinenakke med oliven-tapenade\, semitørrede tomater og f
+ ennikel\nKalkunpastrami med rød pesto og marinerede artiskokhjerter\n\nSa
+ lat:\nBeluga linser med squash\, palmekål og grøn chili\nSprød salat me
+ d revet broccoli\, gulerødder\, grønne æbler og forårsløg\n\nDagens b
+ rød: Surdejs fuldkors brød med sesam og Peanuts\n\nDagens rugbrød: Øko
+ logisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260720T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260720T120000
+SEQUENCE:0
+SUMMARY:"Marry me chicken" Stegt kyllingebryst i cremet sauce med soltørre
+ t tomat\,...
+UID:meyers-menu-2026-07-20-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Moussaka med oksekød\, auberginer\, løg\, to
+ mater og kartofler\n\nVarm ret\, halal: Moussaka med oksekød\, auberginer
+ \, løg\, tomater og kartofler\n\nVarm ret\, vegetar: Moussaka med meyers 
+ bælgfrugter\, auberginer\, løg\, tomater og kartofler\n\nVarm ret\, vega
+ nsk: Moussaka med meyers bælgfrugter\, auberginer\, løg\, tomater og kar
+ tofler\n\nPålæg:\nÆg med rejer\, mayonnaise\, citroner og dild\nRøget 
+ medister med rygeost salat og sprød rugbrød\n\nSalat:\nStegt romanesco m
+ ed Anicia linser med edamamebønner\, forårsløg. Toppet med ristet cashe
+ wnødder\nSalat af romaine\, frillice med spinat\, glaskål og brøndkarse
+  toppet med saltet yoghurt\n\nDagens brød: Surdejsbrød med grahamsmel og
+  gulerod\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260721T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260721T120000
+SEQUENCE:0
+SUMMARY:Moussaka med oksekød\, auberginer\, løg\, tomater og kartofler
+UID:meyers-menu-2026-07-21-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Middelhavskrydrede og stegte kyllingeoverlår 
+ - (1 stk. pr. person)\n\nVarm ret\, halal: Middelhavskrydrede og stegte ky
+ llingeoverlår - (1 stk. pr. person)\n\nVarm ret\, vegetar: Middelhavskryd
+ ret og grillet squash med cremet polenta\n\nVarm ret\, vegansk: Middelhavs
+ krydret og grillet squash med cremet polenta\n\nTilbehør til varm ret: Ta
+ bouleh af bulgur med kål\, soltørret tomat\, løg\, persille og citron\n
+ \nTopping til varm ret: Yoghurt og harissa dressing\n\nPålæg:\nSkiver af
+  Frikadelle med grov svamperemoulade\, syltede ribs og hjemmeristede løg\
+ nKalveleverpostej med syltede rødbeder og ristede svampe\n\nSalat:\nKikæ
+ rtesalat med blomkålscouscous\, spidskål og mynte\nBagte persillerødder
+  med hjertesalat\, rød spidskål\, persille og citron. Toppet med dukkah 
+ af græskarkerner\n\nDagens brød: Focaccia med soltørret tomat og rosmar
+ in olie\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260722T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260722T120000
+SEQUENCE:0
+SUMMARY:Middelhavskrydrede og stegte kyllingeoverlår -
+UID:meyers-menu-2026-07-22-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Panang karry med gris\, peberfrugter\, gulerø
+ dder\, bambus\, peanutbutter og kokosmælk\n\nVarm ret\, halal: Panang kar
+ ry med kylling\, peberfrugter\, gulerødder\, bambus\, peanutbutter og kok
+ osmælk\n\nVarm ret\, vegetar: Panang karry med røget tofu\, peberfrugter
+ \, gulerødder\, bambus\, peanutbutter og kokosmælk\n\nVarm ret\, vegansk
+ : Panang karry med røget tofu\, peberfrugter\, gulerødder\, bambus\, pea
+ nutbutter og kokosmælk\n\nTilbehør til varm ret: Jasminris med kaffir li
+ me\n\nTopping til varm ret: Koriander\n\nPålæg:\nOksesalami med urtemayo
+ nnaise og syltede radiser\nKalkunbryst med citron og timian hertil kompot 
+ af piement og urtecreme\n\nSalat:\nPerlebygsalat med grønne ærter\, cour
+ gette\, dild toppet med ruccula\nRød spidskål med kinakål\, glaskål\, 
+ lime og ristet peanuts\n\nDagens brød: Surdejs ølandshvedebrød\n\nDagen
+ s rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Koldskål
+DTEND;TZID=Europe/Copenhagen:20260723T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260723T120000
+SEQUENCE:0
+SUMMARY:Panang karry med gris\, peberfrugter\, gulerødder\, bambus\, peanu
+ tbutter og...
+UID:meyers-menu-2026-07-23-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Barbeque marineret nakkekotelet (1 stk)\n\nVar
+ m ret\, halal: Barbeque marineret kalkuncuvette\n\nVarm ret\, vegetar: Tæ
+ rte (portion) med hårdt ristede rød og gul peber\, cremede kikærter rø
+ rt med citron og toppet med hakkede semidried tomater og merian 1 stk pr p
+ erson\n\nVarm ret\, vegansk: Tærte (portion) med hårdt ristede rød og g
+ ul peber\, cremede kikærter rørt med citron og toppet med hakkede semidr
+ ied tomater og merian 1 stk pr person\n\nTilbehør til varm ret: Krydrede 
+ ovnbagte kartofler\n\nTopping til varm ret: Coleslaw\n\nPålæg:\nKyllinge
+ salat med karry og forårsløg\nUrtemarineret roastbeef med peberrodsmayo 
+ og syltede løg\n\nSalat:\nGrønkål\, cous cous af simone kål\, citronvi
+ naigrette toppet med saltede græskarkerner\nPanzanella med Meyers hvedebr
+ ød\, tomater\, rødløg\, agurker\, basilikum. Toppet med balsamico glaze
+ \n\nDagens brød: Surdejsbrød med fuldkorshvede og hvedekerner\n\nDagens 
+ rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260724T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260724T120000
+SEQUENCE:0
+SUMMARY:Barbeque marineret nakkekotelet
+UID:meyers-menu-2026-07-24-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Koreansk Bulgogi med okse med løg\, gulerod\,
+  napa kål og forårsløg\n\nVarm ret\, halal: Koreansk Bulgogi med okse m
+ ed løg\, gulerod\, napa kål og forårsløg\n\nVarm ret\, vegetar: Korean
+ sk Bulgogi med tæmpeh med løg\, gulerod\, napa kål og forårsløg\n\nVa
+ rm ret\, vegansk: Koreansk Bulgogi med tæmpeh med løg\, gulerod\, napa k
+ ål og forårsløg\n\nTilbehør til varm ret: Gule thai nudler\n\nTopping 
+ til varm ret: Kimchi\n\nPålæg:\nKarrysild med kapers\, æbler og rødlø
+ g\nKyllingeterrine med svampe. Hertil sennepscreme\, stegte champignoner o
+ g cornichoner\n\nSalat:\nSalat med pak choy med svampe\, spinat og ruccula
+ . Toppet med sprød spirerblanding\nSpicy koreansk agurksalat med edamame 
+ bønner forårsløg\, sesam og chili\n\nDagens brød: Surdejs malt brød\n
+ \nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260727T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260727T120000
+SEQUENCE:0
+SUMMARY:Koreansk Bulgogi med okse med løg\, gulerod\, napa kål og forårs
+ løg
+UID:meyers-menu-2026-07-27-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Ristaffel med kylling i karry med løg og æbl
+ er\n\nVarm ret\, halal: Ristaffel med kylling i karry med løg og æbler\n
+ \nVarm ret\, vegetar: Kikærter og blomkål i karry med gulerod\, løg og 
+ æbler\n\nVarm ret\, vegansk: Kikærter og blomkål i karry med gulerod\, 
+ løg og æbler\n\nTilbehør til varm ret: Parboiled ris\n\nTopping til var
+ m ret: Ristet kokos - Rosin - Bananchips - Saltede peanuts - Mangochutney\
+ n\nPålæg:\nFuglekvidder af gris med syltede blomkål og purløg\nPaprika
+ pølse med soltørret tomat mayonnaise og karse\n\nSalat:\nCitronbagte gul
+ erødder med sortøjebønner\, hvedebrøds knas\, sumak\, yoghurt og mynte
+ \nSavoykål og voksbønner\, estragon\, rysteribs og sherry eddike vinaigr
+ ette\n\nDagens brød: Surdejsbrød med solsikkekerner\n\nDagens rugbrød: 
+ Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260728T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260728T120000
+SEQUENCE:0
+SUMMARY:Ristaffel med kylling i karry med løg og æbler
+UID:meyers-menu-2026-07-28-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Souvlaki af gris med grillede rødløg\, peber
+ frugter og kartofler\n\nVarm ret\, halal: Souvlaki af kylling med grillede
+  rødløg\, peberfrugter og kartofler\n\nVarm ret\, vegetar: Souvlaki af h
+ alloumi med grillede rødløg\, peberfrugter og kartofler\n\nVarm ret\, ve
+ gansk: Souvlaki af grillede rødløg\, peberfrugter og kartofler\n\nTilbeh
+ ør til varm ret: Fladbrød - 1 stk. pr. person\n\nTopping til varm ret: C
+ remet hvidløgsdressing\n\nPålæg:\nHytteost rørt med urter og toppet me
+ d rødløg hertil sprød rugbrød\nGammeldags rullepølse af velfærdsgris
+  med sort peber\, sky og rå løg\n\nSalat:\nHvedekernesalat med kikærter
+  med fennikel\, mynte og citron\nGræsk salat med tomater\, agurker\, rød
+ løg\, oregano\, kalamata oliven og salatost\n\nDagens brød: Græskar sur
+ dejsbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260729T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260729T120000
+SEQUENCE:0
+SUMMARY:Souvlaki af gris med grillede rødløg\, peberfrugter og kartofler
+UID:meyers-menu-2026-07-29-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Torsk i fad med fennikel\, løg og en cremet c
+ itronsauce\n\nVarm ret\, halal: Torsk i fad med fennikel\, løg og en crem
+ et citronsauce\n\nVarm ret\, vegetar: Stegt blomkål med ingridærter\, da
+ mpede fennikel\, gulerod og hvidvinssauce toppet med ristede solsikkekerne
+ r (\n\nVarm ret\, vegansk: Stegt blomkål med ingridærter\, dampede fenni
+ kel\, gulerod og hvidvinssauce toppet med ristede solsikkekerner\n\nTilbeh
+ ør til varm ret: Kold kartoffelsalat af nye kartofler vendt med ærter\, 
+ tomat\, citron og dild\n\nPålæg:\nMiddelhavs krydret og stegt svinekam m
+ ed romesco og syltet fennikel\nTomater med purløgsmayonnaise\, syltede sk
+ alotteløg og karse\n\nSalat:\nSalat af grønne bønner med spinat\, sylte
+ de rødløg og salatost. Toppet med røget mandler\nGulerods råkost med r
+ osiner\, appelsinsaft. Toppet med ristet kokosflager\n\nDagens brød: Grah
+ am surdejsbrød\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdagssødt: 
+ Banan Kage
+DTEND;TZID=Europe/Copenhagen:20260730T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260730T120000
+SEQUENCE:0
+SUMMARY:Torsk i fad med fennikel\, løg og en cremet citronsauce
+UID:meyers-menu-2026-07-30-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Gourmet hotdog med ristet kyllinge og ostepøl
+ se\n\nVarm ret\, halal: Gourmet hotdog med ristet kyllinge og ostepølse\n
+ \nVarm ret\, vegetar: Gourmet hotdog med ristet vegansk pølse ( 1 stk )\n
+ \nVarm ret\, vegansk: Gourmet hotdog med ristet vegansk pølse ( 1 stk )\n
+ \nTilbehør til varm ret: Hotdog brød (1 stk)\n\nTopping til varm ret: Sa
+ lvie ketchup - Havtorn remulade - Ramsløgs sennep - Hjemmelavet agurkesal
+ at - Ristede løg\n\nPålæg:\nGrøn æggesalat med asparges\, kapers og k
+ rydderurter\nFrikadeller af okse med tzatziki\, fennikel og krydderurter\n
+ \nSalat:\nCremet kartoffelsalat med ærter\, radiser\, forårsløg og kryd
+ derurter\nHjertesalat med tomater\, syltet skalotteløg og persille\n\nDag
+ ens brød: Fuldkorns surdejsbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260731T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260731T120000
+SEQUENCE:0
+SUMMARY:Gourmet hotdog med ristet kyllinge og ostepølse
+UID:meyers-menu-2026-07-31-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Boller i karry af gris - 3 stk. pr. person\n\n
+ Varm ret\, halal: Kyllingeboller i karry 3 stk pr person\n\nVarm ret\, veg
+ etar: No meat balls" 5 stk pr person i karry med gulerødder\, løg og æb
+ ler\n\nVarm ret\, vegansk: No meat balls" 5 stk pr person i karry med gule
+ rødder\, løg og æbler\n\nTilbehør til varm ret: Jasmin ris\n\nTopping 
+ til varm ret: Mangochutney\n\nPålæg:\nOksespegepølse med sennepscreme o
+ g drueagurker\nKyllingebryst med grillede forårsløg og grov grøntsags p
+ ickles\n\nSalat:\nMeyers grønne linser vendt i ramsløg vinaigrette med v
+ oksbønner og cherrytomater\nSpidskålssalat med fennikel\, soltørrede tr
+ anebær og ristede solsikkekerner hertil kærnemælksdressing med urter\n\
+ nDagens brød: Italiensk landbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260803T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260803T120000
+SEQUENCE:0
+SUMMARY:Boller i karry af gris - 3 stk. pr. person
+UID:meyers-menu-2026-08-03-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Byg selv burritos med stegt oksekød\, Meyers 
+ sorte bønner\, chipotle marineret soltørret tomat\, majs og salatløg\n\
+ nVarm ret\, halal: Byg selv burritos med stegt oksekød\, Meyers sorte bø
+ nner\, chipotle marineret soltørret tomat\, majs og salatløg\n\nVarm ret
+ \, vegetar: Byg selv burritos med refried beans\, pulled stegte svampe og 
+ majs\n\nVarm ret\, vegansk: Byg selv burritos med refried beans\, pulled s
+ tegte svampe og majs\n\nTilbehør til varm ret: Hvede tortillas - 1 stk. p
+ r. person\n\nTopping til varm ret: Cremet chipotle/yoghurt dressing\n\nPå
+ læg:\nKartoffelmad med persillecreme og syltede løg\nRøget filet af gri
+ s med røræg\, cherrytomater og purløg\n\nSalat:\nPasta salat med fusill
+ i\, cherrytomater\, majs og ærter vendt i grøn pesto\nDampet broccoli me
+ d iceberg\, agurker og forårsløg vendt med ingefær\, thaibasilikum og s
+ esam\n\nDagens brød: Kartoffel-timianbrød\n\nDagens rugbrød: Økologisk
+  rugbrød
+DTEND;TZID=Europe/Copenhagen:20260804T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260804T120000
+SEQUENCE:0
+SUMMARY:Byg selv burritos med stegt oksekød\, Meyers sorte bønner\, chipo
+ tle marineret...
+UID:meyers-menu-2026-08-04-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Gammeldags æggekage med bacon\, kartofler\, o
+ g cherrytomater\n\nVarm ret\, halal: Gammeldags æggekage med kyllingebaco
+ n\, kartofler\, og cherrytomater\n\nVarm ret\, vegetar: Æggekage med kart
+ ofler\, rødløg og cherrytomater\n\nVarm ret\, vegansk: Stegte grøntsage
+ r på bund af blomkålspuré hertil grillet tæmpeh\n\nTopping til varm re
+ t: Purløg\n\nPålæg:\nTunsalat med ærter\, majs\, peberfrugter\, kapers
+  og rødløg\nKyllingefrikadeller med langtidsbagte tomater serveret med s
+ picy tatarsauce\n\nSalat:\nMungbønner vendt i urtevinaigrette med haricot
+  verts\, rød peberfrugt\, persille og syltet rødløg\nSprøde grønne sa
+ later med fennikel\, frissé\, radicchio\, estragon og ristede mandler ven
+ dt æblemostvinaigrette\n\nDagens brød: Hvedebrød\n\nDagens rugbrød: Ø
+ kologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260805T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260805T120000
+SEQUENCE:0
+SUMMARY:Gammeldags æggekage med bacon\, kartofler\, og cherrytomater
+UID:meyers-menu-2026-08-05-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling sauté marengo - Kyllinge overlår i t
+ omatsauce\, svampe og urter - 1 stk pr person\n\nVarm ret\, halal: Kylling
+  sauté marengo - Kyllinge overlår i tomatsauce\, svampe og urter - 1 stk
+  pr person\n\nVarm ret\, vegetar: Grillet courgette a la marengo med tomat
+ sauce med hvidvin\, svampe og urter\n\nVarm ret\, vegansk: Grillet courget
+ te a la marengo med tomatsauce med hvidvin\, svampe og urter\n\nTilbehør 
+ til varm ret: Pasta Tagliatelle\n\nTopping til varm ret: Hakket persille\n
+ \nPålæg:\nKalve og kalkun chorizo med cremet krydret pebermayonnaise\nKr
+ ydret leverpostej med syltet rødbeder og cornichoner\n\nSalat:\nSalat af 
+ hjertesalat\, agurk\, nye kartofler og dild. Hertil kærnemælksdressing m
+ ed dildolie\nRødbederåkost med solbær\, estragon og ristede solsikkerke
+ rner\n\nDagens brød: Franskløgbrød\n\nDagens rugbrød: Økologisk rugbr
+ ød\n\nTorsdagssødt: Peanutbutter cookie med chokolade - indeholder peanu
+ ts
+DTEND;TZID=Europe/Copenhagen:20260806T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260806T120000
+SEQUENCE:0
+SUMMARY:Kylling sauté marengo - Kyllinge overlår i tomatsauce\, svampe og
+  urter - 1 stk...
+UID:meyers-menu-2026-08-06-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Dan Dan Nudler- Let spicy sauce med krydret sv
+ inekød med grøntsager og sesam\n\nVarm ret\, halal: Dan Dan Nudler- Let 
+ spicy sauce med krydret oksekød med grøntsager og sesam\n\nVarm ret\, ve
+ getar: Dan Dan noodles - Let spicy sauce med vegansk hakket og grillet tof
+ u med grøntsager\n\nVarm ret\, vegansk: Dan Dan noodles - Let spicy sauce
+  med vegansk hakket og grillet tofu med grøntsager\n\nTilbehør til varm 
+ ret: Hvedenudler\n\nTopping til varm ret: Forårsløg og rød chili\n\nPå
+ læg:\nRullepølse af kalv med italiensk salat og rødløg\nKalkunpastrami
+  med mild chili mayo og marinerede artiskokhjerter\n\nSalat:\nSprød ærte
+ salat med edamame\, radiser\, koriander og ristede cashewnødder hertil li
+ me- og ingefærdressing.\nKachumbersalat med tomater\, agurker\, rødløg 
+ og grøn chili\n\nDagens brød: Gulerodsbrød\n\nDagens rugbrød: Økologi
+ sk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260807T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260807T120000
+SEQUENCE:0
+SUMMARY:Dan Dan Nudler- Let spicy sauce med krydret svinekød med grøntsag
+ er og sesam
+UID:meyers-menu-2026-08-07-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Frikassé af kylling i peberrodssauce med knol
+ dselleri og porrer\n\nVarm ret\, halal: Frikassé af kylling i peberrodssa
+ uce med knoldselleri og porrer\n\nVarm ret\, vegetar: Stegt og let røget 
+ knoldselleri med puré af hvide bønner\, stegte østershatte og grov urte
+ pesto\n\nVarm ret\, vegansk: Stegt og let røget knoldselleri med puré af
+  hvide bønner\, stegte østershatte og grov urtepesto\n\nTilbehør til va
+ rm ret: Dampede kartofler med urtesalt\n\nTopping til varm ret: Høvlet pe
+ berrod og purløg\n\nPålæg:\nGrov skinkesalat med sennep\, rødløg og p
+ urløg\nOksefarsbrød med kaperscreme og grillet peber\n\nSalat:\nBelugali
+ nser vendt i æblevinaigrette med bagte rødbeder\, persille\, syrlige lø
+ g og ristede kerner\nBagte peberfrugter vendt med frilice\, friske krydder
+ urter og kapers\n\nDagens brød: Valnøddebrød med surdej og fuldkornshve
+ de\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260810T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260810T120000
+SEQUENCE:0
+SUMMARY:Frikassé af kylling i peberrodssauce med knoldselleri og porrer
+UID:meyers-menu-2026-08-10-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Grillpølse (1 stk. pr. person)\n\nVarm ret\, 
+ halal: Grillpølse af kylling og kalkun (1 stk. pr. person)\n\nVarm ret\, 
+ vegetar: Stegte veggie pølser (1 stk. pr. person)\n\nVarm ret\, vegansk: 
+ Stegte veggie pølser (1 stk. pr. person)\n\nTilbehør til varm ret: Creme
+ t kartoffelsalat med ærter\, radiser og purløg\n\nTopping til varm ret: 
+ Salvie ketchup og rørt sennep\n\nPålæg:\nSpicy hummus med soltørrede t
+ omater og persille\nKyllingeterrine med grøn pesto og syltede rødløg\n\
+ nSalat:\nBagt blomkål med agurker\, frisée og babyspinat hertil cremet p
+ esto\nSprøde grønne salater med ærter\, mizuna og syltede skalotteløg\
+ n\nDagens brød: Ciabatta på surdej og rugmel\n\nDagens rugbrød: Økolog
+ isk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260811T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260811T120000
+SEQUENCE:0
+SUMMARY:Grillpølse
+UID:meyers-menu-2026-08-11-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kreatopita - indbagt oksekødstærte med tomat
+ er\, kartofler og merian\n\nVarm ret\, halal: Kreatopita - indbagt oksekø
+ dstærte med tomater\, kartofler og merian\n\nVarm ret\, vegetar: Spanakop
+ ita - indbagt græsk tærte med kartoffel\, spinat\, løg og feta\n\nVarm 
+ ret\, vegansk: Spanakopita - indbagt græsk tærte med kartoffel\, spinat\
+ , løg og vegansk ost\n\nPålæg:\nFiskefrikadeller med havtorn remoulade 
+ og citroner\nKrosalami med sort peber\, rødløg og artiskokcreme\n\nSalat
+ :\nStegte persillerødder med hjertesalat\, radicchio og krydderurter. Top
+ pet med ristede mandelflager\nGræsk salat med tomater\, agurker\, oregano
+ \, kalamata oliven og salatost\n\nDagens brød: Surdejsbrød på grahamsme
+ l\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260812T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260812T120000
+SEQUENCE:0
+SUMMARY:Kreatopita - indbagt oksekødstærte med tomater\, kartofler og mer
+ ian
+UID:meyers-menu-2026-08-12-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Vietnamesisk stirfry med gris\, ingefærsauce\
+ , bok choy\, gulerødder\, citrongræs og løg\n\nVarm ret\, halal: Vietna
+ mesisk stirfry med okse\, ingefærsauce\, bok choy\, gulerødder\, citrong
+ ræs og løg\n\nVarm ret\, vegetar: Vietnamesisk stirfry med tofu\, ingef
+ ærsauce\, gulerødder\, bok choy\, citrongræs og løg\n\nVarm ret\, vega
+ nsk: Vietnamesisk stirfry med tofu\, ingefærsauce\, bok choy\, gulerødde
+ r\, citrongræs og løg\n\nTilbehør til varm ret: Dampede ris med limebla
+ de\n\nTopping til varm ret: Syltede grøntsager\, chilimayo og koriander\n
+ \nPålæg:\nPaprikapølse på kalkun med friskost og sprøde agurker\nHalv
+ e æg med mayonnaise\, cherrytomater og rødløg\n\nSalat:\nNudelsalat med
+  stegte svampe\, gulerødder og forårsløg\nPak choy med kinaradiser\, sp
+ inat og rucola. Toppet med sprød spirerblanding\n\nDagens brød: Gulerods
+ brød med græskakerner og grov ølandshvede\n\nDagens rugbrød: Økologis
+ k rugbrød\n\nTorsdagssødt: Drømmekage
+DTEND;TZID=Europe/Copenhagen:20260813T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260813T120000
+SEQUENCE:0
+SUMMARY:Vietnamesisk stirfry med gris\, ingefærsauce\, bok choy\, gulerød
+ der\, citrongræs og...
+UID:meyers-menu-2026-08-13-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling cacciatore med kyllingeoverlår\, grø
+ nne oliven og stegte grøntsager (1 stk. pr. person)\n\nVarm ret\, halal: 
+ Kylling cacciatore med kyllingeoverlår\, grønne oliven og stegte grønts
+ ager (1 stk. pr. person)\n\nVarm ret\, vegetar: Tempeh cacciatore med grø
+ nne oliven\, rødløg og stegte grøntsager\n\nVarm ret\, vegansk: Tempeh 
+ cacciatore med grønne oliven\, rødløg og stegte grøntsager\n\nTilbehø
+ r til varm ret: Pasta fusili vendt med olivenolie\n\nTopping til varm ret:
+  Basilikum\n\nPålæg:\nMortadella med grøn oliventapenade\, semitørrede
+  tomater og fennikel\nKalveleverpostej med syltede rødbeder og ristede sv
+ ampe\n\nSalat:\nPerlespelt vendt i citronvinaigrette med grillede squash\,
+  persille og ristede hørfrø\nFennikel vendt i appelsinvinaigrette med ag
+ urker\, dild\, syltede rødløg og ristede solsikkekerner\n\nDagens brød:
+  Surdejs trekornsbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260814T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260814T120000
+SEQUENCE:0
+SUMMARY:Kylling cacciatore med kyllingeoverlår\, grønne oliven og stegte 
+ grøntsager
+UID:meyers-menu-2026-08-14-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling korma med kokos og mandler\n\nVarm ret
+ \, halal: Kylling korma med kokos og mandler\n\nVarm ret\, vegetar: Kikær
+ te korma med søde kartofler\, blomkål\, babyspinat\, kokos og mandler\n\
+ nVarm ret\, vegansk: Kikærte korma med søde kartofler\, blomkål\, babys
+ pinat\, kokos og mandler\n\nTilbehør til varm ret: Basmatiris med kardemo
+ mme\n\nTopping til varm ret: Koriander og raita\n\nPålæg:\nRødbede humm
+ us med bagte rødbeder\, estragon og ristede græskarkerner\nUngdyr rullep
+ ølse med sennepscreme\, sky\, løg og karse\n\nSalat:\nBagt blomkål med 
+ agurker\, frisée og babyspinat. Hertil yoghurtdressing\nSlaw af rød spid
+ skål med revet gulerødder\, rødløg\, forårsløg\, appelsin og lime\n\
+ nDagens brød: Valnøddebrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260817T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260817T120000
+SEQUENCE:0
+SUMMARY:Kylling korma med kokos og mandler
+UID:meyers-menu-2026-08-17-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Frikadeller med skysauce (2 stk. pr. person)\n
+ \nVarm ret\, halal: Oksefrikadeller med skysauce (2 stk. pr. person)\n\nVa
+ rm ret\, vegetar: Cremet risotto med græskar\, østershatte\, bagte løg 
+ og ristede græskarkerner\n\nVarm ret\, vegansk: Cremet risotto med græsk
+ ar\, østershatte\, bagte løg og ristede græskarkerner'\n\nTilbehør til
+  varm ret: Dampede kartofler\n\nTopping til varm ret: Sennepssyltede gule 
+ beder\n\nPålæg:\nÆggesalat med karry\nKalkunchorizo med salsa verde og 
+ bagte tomater\n\nSalat:\nRød quinoa med rå broccoli\, syltet butternut s
+ quash og persille\nHjertesalat vendt i kærnemælksdressing med grillede m
+ ajs\, karse og solsikkekerner\n\nDagens brød: Fransk landbrød\n\nDagens 
+ rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260818T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260818T120000
+SEQUENCE:0
+SUMMARY:Frikadeller med skysauce
+UID:meyers-menu-2026-08-18-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Berbere stegte kyllingeoverlår (1 stk. pr. pe
+ rson)\n\nVarm ret\, halal: Berbere stegte kyllingeoverlår (1 stk. pr. per
+ son)\n\nVarm ret\, vegetar: Berbere stegte søde kartofler med krydrede to
+ mater og løgsauce\n\nVarm ret\, vegansk: Berbere stegte søde kartofler m
+ ed krydrede tomater og løgsauce\n\nTilbehør til varm ret: Couscous med r
+ ødløg\, citronskal\, squash\, forårsløg\, persille og mynte\n\nTopping
+  til varm ret: Dressing af lime og krydderurter\n\nPålæg:\nRoastbeef med
+  estragonmayonnaise og syrlige skalotteløg\nMarineret og stegt svinekam m
+ ed romesco og syltet græskar\n\nSalat:\nSalat af kikærter\, hvidkål\, g
+ rønkål\, gulerødder og forårsløg vendt med citron samt sennepsfrø. T
+ oppet med ristede peanuts\nZarsa salat med tomater\, rødløg\, courgetter
+  og mild chili\n\nDagens brød: Surdejs malt brød\n\nDagens rugbrød: Øk
+ ologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260819T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260819T120000
+SEQUENCE:0
+SUMMARY:Berbere stegte kyllingeoverlår
+UID:meyers-menu-2026-08-19-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Quiche Lorraine med løg\, bacon og emmentaler
+  (1 tærte til 4 personer)\n\nVarm ret\, halal: Quiche Lorraine med løg\,
+  kylling og emmentaler (1 tærte til 4 personer)\n\nVarm ret\, vegetar: T
+ ærte med squash\, cherrytomater og feta (1 tærte til 4 personer)\n\nVarm
+  ret\, vegansk: Tærte med squash\, cherrytomater og cremet vegansk ost (1
+  tærte til 4 personer)\n\nPålæg:\nSennepsstegt kyllingebryst med grov s
+ ennepscreme og cornichoner\nOksesalami med pepperonatta og mizuna\n\nSalat
+ :\nStegte persillerødder med hjertesalat\, radicchio og krydderurter\nKå
+ lsalat med sprød blomkål\, grønne æbler og ristede solsikkekerner\n\nD
+ agens brød: Surdejs brød med peanuts\n\nDagens rugbrød: Økologisk rugb
+ rød
+DTEND;TZID=Europe/Copenhagen:20260820T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260820T120000
+SEQUENCE:0
+SUMMARY:Quiche Lorraine med løg\, bacon og emmentaler
+UID:meyers-menu-2026-08-20-meyers-til-frokost-aarhus
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Klassisk lasagne med oksekød\, tomater\, bech
+ amel og mozzarella\n\nVarm ret\, halal: Klassisk lasagne med oksekød\, to
+ mater\, bechamel og mozzarella\n\nVarm ret\, vegetar: Lasagne med sojakød
+ \, tomater\, bechamel og mozzarella\n\nVarm ret\, vegansk: Lasagne med soj
+ akød\, tomater\, bechamel og vegansk ost\n\nPålæg:\nHamburgerryg med it
+ aliensk salat og sprøde agurker\nVitello tonnato - kalvesteg med tuncreme
+  og kapers\n\nSalat:\nSalat af Meyers bønner\, haricots verts\, rucola og
+  mizuna. Hertil blommevinaigrette\nKachumbersalat med tomater\, agurker\, 
+ løg og grøn chili\n\nDagens brød: Surdejs brød med fuldkorn\n\nDagens 
+ rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260821T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260821T120000
+SEQUENCE:0
+SUMMARY:Klassisk lasagne med oksekød\, tomater\, bechamel og mozzarella
+UID:meyers-menu-2026-08-21-meyers-til-frokost-aarhus
+END:VEVENT
+END:VCALENDAR

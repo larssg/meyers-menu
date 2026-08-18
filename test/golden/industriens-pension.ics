@@ -1,0 +1,557 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Industriens pension
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Massaman karry af okse med kartofler og guler
+ ødder - indeholder peanut\n\nVarm ret\, halal: Massaman karry af okse med
+  kartofler og gulerødder - indeholder peanut\n\nVarm ret\, vegetar: Massa
+ man karry af tofu med kartofler\, gulerødder og løg - indeholder peanuts
+ \n\nVarm ret\, vegansk: Massaman karry af tofu med kartofler\, gulerødder
+  og løg - indeholder peanuts\n\nTilbehør til varm ret: Dampet jasmin ris
+ \n\nTopping til varm ret: Salt syltet lime\n\nKondiment: Peanuts\n\nDelika
+ tesser:\nTunsalat - med sødmayo\, radiser\, gulerødder\, edamame og sesa
+ m\nRøget rullepølse med sky\, rødløg og karse\nKyllingebryst med rødk
+ arry mayonnaise\, syltede daikon og mynte\nBagte østershatte og enoki sva
+ mpe vendt i tamarind dressing\, toppet med friteret vilde ris\n\nSalater:\
+ nBlomkålsslaab med citrongræs\, limeblade og chili\nSnittet kål med gla
+ skål\, bønnespirer og mangovinaigrette\n\nDagens brød: Gulerodsbrød\n\
+ nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260720T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260720T120000
+SEQUENCE:0
+SUMMARY:Massaman karry af okse med kartofler og gulerødder - indeholder pe
+ anut
+UID:meyers-menu-2026-07-20-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kyllinglår stegt med hvidløg\, rosmarin\, ci
+ tron og oliven - 1stk pr. kuv\n\nVarm ret\, halal: Kyllinglår stegt med h
+ vidløg\, rosmarin\, citron og oliven - 1stk pr. kuv\n\nVarm ret\, vegetar
+ : Squash stegt med rosmarin\, citron\, hvidløg og oliven. Toppet med flag
+ er af parmesan\n\nVarm ret\, vegansk: Squashstegt med rosmarin\, citron\, 
+ hvidløg og oliven\n\nTilbehør til varm ret: Økologisk pasta vendt med p
+ esto\n\nTopping til varm ret: Gremolata\n\nKondiment: Sprød brødkrummer\
+ n\nDelikatesser:\nFisketerin med thousand island dressing\, kapers\, dild 
+ og tomat\nSkiver af grisenakke\, sauce pikant\, artiskok og rucola\nHønse
+ salat med piment mayo\nMozzarella\, jordbær\, balsamico og sort peber\n\n
+ Salater:\nHvide bønner\, bagte gulerod\, artiskokker\, rødløg\, salvie 
+ og kapers\nBaby salat blader\, figner\, radicchio og balsamico\n\nDagens b
+ rød: Hvedebrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260721T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260721T120000
+SEQUENCE:0
+SUMMARY:Kyllinglår stegt med hvidløg\, rosmarin\, citron og oliven - 1stk
+  pr. kuv
+UID:meyers-menu-2026-07-21-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Stegt nakkekam af gris med sommergrønt og beu
+ rre monte\n\nVarm ret\, halal: Kalkun med sommergrønt og beurre monte\n\n
+ Varm ret\, vegetar: Stegte sommerkål med gulerods pure\n\nVarm ret\, vega
+ nsk: Stegte sommerkål med gulerods pure\n\nTilbehør til varm ret: Dampet
+  kartofler med persille og løvstikke\n\nKondiment: Karl johan remoulade\n
+ \nDelikatesser:\nLaksesalat\, glaskål\, peberrod\, kapers og creme\nWiene
+ rsalat med kartofler\, syltede drueagurker\, rødløg og tabasco\nKalkunp
+ ålæg\, syltede tomater\, karrycreme og frisee\nBlomkålscouscous\, mande
+ lcreme og røget mandler\n\nSalater:\nBroccoli med tranebær\, hasselnødd
+ er\, kørvel\, grønne flækærter og citroncreme\nCrudité af radise og g
+ ulerod\, persille\, savoykål og ristede solsikkekerner\n\nDagens brød: O
+ livenbrød\n\nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Mandari
+ n\, gurkemeje & ingefær
+DTEND;TZID=Europe/Copenhagen:20260722T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260722T120000
+SEQUENCE:0
+SUMMARY:Stegt nakkekam af gris med sommergrønt og beurre monte
+UID:meyers-menu-2026-07-22-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: New Orleans style Gumbo med kylling\, krydret 
+ pølse af kalkun\, rejer\, muslingefond og tomat\n\nVarm ret\, halal: New 
+ Orleans style Gumbo med kylling\, krydret pølse af kalkun\, rejer\, musli
+ ngefond og tomat\n\nVarm ret\, vegetar: New Orleans style Gumbo med røget
+  tempeh\, bladselleri\, peberfrugt\n\nVarm ret\, vegansk: New Orleans styl
+ e Gumbo med røget tempeh\, bladselleri\, peberfrugt\n\nTilbehør til varm
+  ret: Flirty rice\n\nTopping til varm ret: Persille\, citronskal og forår
+ sløg\n\nKondiment: Fermenteret chili salsa\n\nDelikatesser:\nKrebsehalesa
+ lat med drueagurker\, æbler asparges og urter\nHonningskinke\, italiensk 
+ salat\, syltede grønne tomater og urtesalat\nKartoffelmad med bacon\, chi
+ potlemayo\, purløg og syltede rødløg\nCruditeer og blue cheese ranch\n\
+ nSalater:\nMexicansk majssalat a la esquitas med cremet hvid ost\nIceberg\
+ , persille\, bladselleri\, salatløg\, agurk og tomat\n\nDagens brød: Øl
+ andsbrød\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Ymerko
+ ldskål med kammerjunkere
+DTEND;TZID=Europe/Copenhagen:20260723T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260723T120000
+SEQUENCE:0
+SUMMARY:New Orleans style Gumbo med kylling\, krydret pølse af kalkun\, re
+ jer\,...
+UID:meyers-menu-2026-07-23-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Stegt medister af gris med æble og timian - 2
+  stk pr kuv\n\nVarm ret\, halal: Okse pølse - 2.stk pr. kuv.\n\nVarm ret\
+ , vegetar: Gulerodstærte med karry og citrontimian\n\nVarm ret\, vegansk:
+  Bagt polenta med gulerødder\, karry og citrontimian\n\nTilbehør til var
+ m ret: Knuste kartofler med creme fraiche og urter\n\nTopping til varm ret
+ : Timian\n\nKondiment:\nKetchup med estragon\nTaffelsennep\n\nDelikatesser
+ :\nRejer\, kogte økologiske æg med mayonnaise\, tomat og dild\nKyllingeb
+ ryst med estragon creme\, syltede rødløg\, sprøde løg og karse\nRoastb
+ eef\, remoulade\, rødløg\, syltede agurk og peberrod\nSalat af tomater\,
+  agurker\, meloner\, fersken\, og gedeost\n\nSalater:\nGrillet og rå blom
+ kål\, tomater\, linser og urter\nSlaw af majroer\, æbler\, hvidkål\, pe
+ rsille og cremet dressing\n\nDagens brød: Hørfrøbrød\n\nDagens rugbrø
+ d: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260724T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260724T120000
+SEQUENCE:0
+SUMMARY:Stegt medister af gris med æble og timian - 2 stk pr kuv
+UID:meyers-menu-2026-07-24-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling og champignon i hvidvinsauce med somme
+ rgrønt\n\nVarm ret\, halal: Kylling og champignon i kylling fond med somm
+ ergrønt\n\nVarm ret\, vegetar: Stegt blomkål med hvide bønner\, champig
+ non og sommergrønt i hvidvinsauce\n\nVarm ret\, vegansk: Stegt blomkål m
+ ed hvide bønner\, champignon og sommergrønt i hvidvinsauce\n\nTilbehør 
+ til varm ret: Kogte kartofler\n\nTopping til varm ret: Hakket persille og 
+ purløg\n\nKondiment: Syltet zittauerløg med gurkemeje\n\nDelikatesser:\n
+ Fiskefrikadeller\, remoulade\, citron \, agurk og dild\nHjemmelavet leverp
+ ostej af gris med stegte løg\, bacon og asier\nNakkefillet med bagte rød
+ beder\, æble-gastrik\, friskost\, peberrod\, mandler og brøndkarse\nToma
+ thummus\, bagte tomater og løvstikke\n\nSalater:\nPerlespelt\, agurk\, ra
+ disse\, soltørret tomat\, dild\, korender og hasselnødder\nRåkost af gu
+ lerødder\, æbler\, appelsinsaft og solsikkekerner\n\nDagens brød: Let m
+ altet brød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260727T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260727T120000
+SEQUENCE:0
+SUMMARY:Kylling og champignon i hvidvinsauce med sommergrønt
+UID:meyers-menu-2026-07-27-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Carnitas af gris - langstidstegt pulled gris m
+ ed mexicanske krydrede jordskokker\n\nVarm ret\, halal: Carnitas af pulled
+  kalkun med mexicansk krydderier\n\nVarm ret\, vegetar: Mexicanske krydred
+ e jordskokker\, queso fresco og ristede græskarkerner\n\nVarm ret\, vegan
+ sk: Mexicanske krydrede jordskokker\, og ristede græskarkerner\n\nTilbeh
+ ør til varm ret: Bløde taco tortilla - 2 stk. pr. person\n\nTopping til 
+ varm ret: Koriander\n\nKondiment: Salsa tatemata - salsa af brændte ancho
+  chili\n\nDelikatesser:\nCeviche inspireret sej- Let bagt på agurk\, chil
+ i\, syltede rødløg og lime\nRoastbeef med remoulade\, syltede rødløg\,
+  sprøde løg og karse\nKyllingebryst\, krydret bønnedip toppet med grov 
+ pico de gallo\, jalapeno og cornchips\nCervice af bagte gule beder med lit
+ chi leche de tigre og æbler\n\nSalater:\nQuinoa\, bagte sødekartofler\, 
+ sorte bønner\, syltet græskar\, majs\, salatløg og koriander\nSpidskål
+ \, gulerods cruditér\, agurker\, forårsløg\, pepitas og tomatillo dress
+ ing\n\nDagens brød: Pan gallego - spansk inspireret brød med græskarker
+ ner\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260728T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260728T120000
+SEQUENCE:0
+SUMMARY:Carnitas af gris - langstidstegt pulled gris med mexicanske krydred
+ e jordskokker
+UID:meyers-menu-2026-07-28-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Rogan josh af lam og okse\n\nVarm ret\, halal:
+  Rogan josh af lam og okse\n\nVarm ret\, vegetar: Flækærtedahl med knold
+ selleri og grønkål\, med brunet smørchhonk\n\nVarm ret\, vegansk: Flæk
+ ærtedahl med knoldselleri og grønkål\n\nTilbehør til varm ret: Basmati
+  ris\n\nTopping til varm ret: Rå syltet ingefær\n\nKondiment: Æble og s
+ tikkelsbær chutney\n\nDelikatesser:\nFiskefilet\, saucetatar\, citron \, 
+ agurk og dild\nKyllingebryst\, tamarin\, kernecrust på nigella og senneps
+ frø med urte salat\nÆggesalat med bacon\, æbler og blegselleri\nPunjab 
+ violet gulerødder med tahin\, nigella og indisk urte salat.\n\nSalater:\n
+ Indisk kartoffel salat med ærter\, chili\, krydret yoghurt og tadka\nRød
+ bede\, kål\, tranebær og solbær\n\nDagens brød: Hvedebrød med knække
+ t hvede\n\nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Agurk\, æ
+ ble & squash
+DTEND;TZID=Europe/Copenhagen:20260729T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260729T120000
+SEQUENCE:0
+SUMMARY:Rogan josh af lam og okse
+UID:meyers-menu-2026-07-29-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Sprængt hamburgerryg med grov sennepssauce\n\
+ nVarm ret\, halal: Kalkun med grov sennepssauce\n\nVarm ret\, vegetar: Bag
+ te selleri med grov sennepssauce og ristede mandler\n\nVarm ret\, vegansk:
+  Bagte selleri med grov sennepsvinaigrette og ristede mandler\n\nTilbehør
+  til varm ret: Ovn stegte kartofler\n\nTopping til varm ret: Kruspersille\
+ n\nKondiment: Syltet gulerødder med dildfrø\n\nDelikatesser:\nKarrysilde
+ salat\, med æbler\, druekapers\, rødløg\, dild og æg\nSpegepølse af o
+ kse med æble remoulade\, syltede agurker \, sprøde løg og karse\nRejesa
+ lat med tomater\, løg\, cornichoner\, mayonnaise og citron\nGrov ærte- o
+ g hestebønnecreme med mynte toppet med radisersalat\n\nSalater:\nBønnesa
+ lat med vinagrette\, cornichoner\, løg\, persille og løvstikke\nFrissé\
+ , mizuna\, squash\, citronmelise\, purløg og hindbær\n\nDagens brød: S
+ ødmælksfranskbrød med sesam\n\nDagens rugbrød: Økologisk rugbrød\n\n
+ Torsdagssødt: Citronmåne
+DTEND;TZID=Europe/Copenhagen:20260730T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260730T120000
+SEQUENCE:0
+SUMMARY:Sprængt hamburgerryg med grov sennepssauce
+UID:meyers-menu-2026-07-30-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Jerk marineret kyllingelår med lime - 1 stk p
+ r kuv\n\nVarm ret\, halal: Jerk marineret kyllingelår med lime - 1 stk pr
+  kuv\n\nVarm ret\, vegetar: Jerk marineret sød kartofler\, grillet løg o
+ g lime\n\nVarm ret\, vegansk: Jerk marineret sød kartofler\, grillet løg
+  og lime\n\nTilbehør til varm ret: Tomatiseret ris med sorte bønner\n\nK
+ ondiment: Chimmichurri\n\nDelikatesser:\nRøget sild\, radisse\, kapers\, 
+ friskost og brøndkarse\nRullepølse af gris med rørt sennep\, sky\, rød
+ løg og karse\nTunsalat\, forårsløg\, majs\, agurk\, og blegselleri\nJac
+ kfruit\, forårsløg\, majs\, agurk\, og blegselleri\n\nSalater:\nJamaican
+ sk coleslaw\nPeanutsalat\, tomater\, ananas\, løg og agurk med røget chi
+ li dressing\n\nDagens brød: Kernebrød\n\nDagens rugbrød: Økologisk rug
+ brød
+DTEND;TZID=Europe/Copenhagen:20260731T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260731T120000
+SEQUENCE:0
+SUMMARY:Jerk marineret kyllingelår med lime - 1 stk pr kuv
+UID:meyers-menu-2026-07-31-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Boller i karry af gris - 3stk. pr. kuvert\n\nV
+ arm ret\, halal: Kylling og sommergrønt I karry\n\nVarm ret\, vegetar: So
+ mmergrønt og gule tip ærter i karry sauce\n\nVarm ret\, vegansk: Vegansk
+  karry med sommergrønt\n\nTilbehør til varm ret: Løse ris\n\nTopping ti
+ l varm ret: Ristet kokos\n\nKondiment: Mango chutney\n\nDelikatesser:\nÆg
+ \, rejer\, citronmayonnaise og dild\nStegt kylling bryst med sauce tatar\n
+ Gulerodstatar med rygeost creme\, estragon\, syltede sennepsfrø og cornic
+ honer\n\nSalater:\nPastasalat med bagte butternut\, salatost\, agurk\, sor
+ te oliven og hvidløgsdressing\nKålsalat med stegte svampe\, stegte løg\
+ , bønnespirer\, frisk lime og crispy rice\n\nDagens brød: Italiensk land
+ brød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260803T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260803T120000
+SEQUENCE:0
+SUMMARY:Boller i karry af gris - 3stk. pr. kuvert
+UID:meyers-menu-2026-08-03-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Souvlaki af okse tykkam med grillet grønt\n\n
+ Varm ret\, halal: Souvlaki af okse tykkam med grillet grønt\n\nVarm ret\,
+  vegetar: Græsk kikærtegryde med oliven\, soltørrede tomater og feta\n\
+ nVarm ret\, vegansk: Græsk kikærtegryde med oliven og soltørrettomat\n\
+ nTilbehør til varm ret: Stegte kartofler med oregano og citron\n\nTopping
+  til varm ret: Persille\n\nKondiment: Tzatziki af squash\n\nDelikatesser:\
+ nTorskerogn med remoulade\, agurker\, tomater og dild\nSkinkesalat\, purl
+ øg\, cornichoner\, skyr og ravigote\nKalkun pålæg\, salsa verde\, artis
+ kokker og ruccola\nBagt fennikel\, spicy tomattapenade og pistacie\n\nSala
+ ter:\nSalat af perlecouscous\, stegt aubergine\, forårsløg\, dild og cit
+ ron\nGrøn salat\, tomater\, agurker\, grøn peber\, rødløg og mynte\n\n
+ Dagens brød: Kartoffel-timianbrød\n\nDagens rugbrød: Økologisk rugbrø
+ d
+DTEND;TZID=Europe/Copenhagen:20260804T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260804T120000
+SEQUENCE:0
+SUMMARY:Souvlaki af okse tykkam med grillet grønt
+UID:meyers-menu-2026-08-04-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling satay - drumsticks af kylling med kryd
+ ret peanutsauce - 2 stk pr kuv\n\nVarm ret\, halal: Kylling satay - drumst
+ icks af kylling med krydret peanutsauce - 2 stk pr kuv\n\nVarm ret\, veget
+ ar: Tofu satay med krydret peanutsauce og stegt peberfrugt\, gulerødder o
+ g løg\n\nVarm ret\, vegansk: Tofu satay med krydret peanutsauce og stegt 
+ peberfrugt\, gulerødder og løg\n\nTilbehør til varm ret: Dampede jasmin
+ ris\n\nTopping til varm ret: Chili\, forårsløg og koriander\n\nKondiment
+ : Lynsyltede agurker\n\nDelikatesser:\nLaksesalat\, glaskål\, peberrod\, 
+ kapers og creme\nSvinenakke med thai crack sauce og urtesalat\nSommersalat
+  - Rygeost creme\, radiser\, agurker\, grillet forårsløg og purløg\nBr
+ ændte agurker med ingefærmiso og goakarse\n\nSalater:\nHaricot vert\, sq
+ uash\, edammebønner\, ingefær\, chili og ristet sesam\nViolet spidskål\
+ , ananas\, mynte\, cashewnødder og forårsløg\n\nDagens brød: Hvedebrø
+ d\n\nDagens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Passionsfrugt\, 
+ mango og citrongræs
+DTEND;TZID=Europe/Copenhagen:20260805T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260805T120000
+SEQUENCE:0
+SUMMARY:Kylling satay - drumsticks af kylling med krydret peanutsauce - 2 s
+ tk pr kuv
+UID:meyers-menu-2026-08-05-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Nakke af gris med brunet smør sauce\, fennike
+ l og blegselleri\n\nVarm ret\, halal: Kalkun med brunet smør sauce\, fenn
+ ikel og blegselleri\n\nVarm ret\, vegetar: Ovnbagt blomkål med brunet sm
+ ørsauce\, fennikel og blegselleri\n\nVarm ret\, vegansk: Ovnbagt blomkål
+  vegansk smørsauce fennikel og blegselleri - indeholder mandler\n\nTilbeh
+ ør til varm ret: Linser og brunoise af grøntsager vendt med persille og 
+ hvidløgsolie\n\nTopping til varm ret: Dild og frisée\n\nKondiment: Sprø
+ de og ristede brødkrummer\n\nDelikatesser:\nRejer\, æg og tomat med mayo
+ \nHønsesalat med karry og æbler\nRoastbeef\, peberrodscreme\, syltede r
+ ødbeder\, rodfrugtchips og brøndkarse\nAspargesbroccoli med sauce gibric
+ he\n\nSalater:\nOrzo\, selleri bagt med sherryeddike\, semidried tomater\,
+  løvstikke og frisèe\nGlaskål\, æble\, brøndkarse\, ærteskud\, guler
+ ødder og citron\n\nDagens brød: Fransk løgbrød\n\nDagens rugbrød: Øk
+ ologisk rugbrød\n\nTorsdagssødt: Peanutbutter cookie med chokolade - ind
+ eholder peanuts
+DTEND;TZID=Europe/Copenhagen:20260806T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260806T120000
+SEQUENCE:0
+SUMMARY:Nakke af gris med brunet smør sauce\, fennikel og blegselleri
+UID:meyers-menu-2026-08-06-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Sommerfrikassé af kylling med sommergrønt og
+  dild\n\nVarm ret\, halal: Sommerfrikassé af kylling med sommergrønt og 
+ dild\n\nVarm ret\, vegetar: Sommerfrikassé af hvide bønner med sommerkå
+ l og dild\n\nVarm ret\, vegansk: Sommerfrikassé af hvide bønner med somm
+ erkål og dild\n\nTilbehør til varm ret: Kogte kartofler vendt løvstikke
+ smør\n\nTopping til varm ret: Urtesalat af purløg\, kørvel og estragon\
+ n\nKondiment: Hyldeblomst syltet glaskål\n\nDelikatesser:\nRøget laks me
+ d sommersalat på rygeost creme\, radiser\, agurker\, grillet forårsløg 
+ og purløg\nKamsteg med svær\, kirsebærsyltet rødkål og syltede agurke
+ r\nFuglekvidder af fjerkræ\, bolsjebeder\, rødløg\, kørvel\, sylt og s
+ ort peber\nGulerodshummus toppet med tomatsalat og estragon\n\nSalater:\nP
+ erlespelt\, stegte løg og squash\, persille\, grov sennep og rapskimolie\
+ nHjertesalat\, pære\, beder\, mitzuna og ristede kerner\n\nDagens brød: 
+ Gulerodsbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260807T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260807T120000
+SEQUENCE:0
+SUMMARY:Sommerfrikassé af kylling med sommergrønt og dild
+UID:meyers-menu-2026-08-07-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Gul thai karry med gris\, græskar\, gulerødd
+ er og gule peberfrugter\n\nVarm ret\, halal: Gul thai karry med kylling\, 
+ græskar\, gulerødder og gule peberfrugter\n\nVarm ret\, vegetar: Gul tha
+ i karry med tofu\, græskar\, gulerødder og gule peberfrugter\n\nVarm ret
+ \, vegansk: Gul thai karry med tofu\, græskar\, gulerødder og gule peber
+ frugter\n\nTilbehør til varm ret: Dampede jasminris\n\nTopping til varm r
+ et: Koriander\n\nKondiment: Ingefærsyltet savoykål\n\nDelikatesser:\nTha
+ i dampet æggekage med forårsløg\, ramsløg og chili crisp\nFiskefrikade
+ ller\, remoulade\, citron\, syltede agurker og dild\nKogt okse med daikon\
+ , hvidløgssauce og knuste cashewnødder\nTamarin vinaigrette svampesalat 
+ med svinenakke\n\nSalater:\nBroccoli og linser laab med citrongræs\, lime
+ blade\, chili og solsikkekerner\nKinakål\, syltede gulerødder\, forårsl
+ øg og peanuts\n\nDagens brød: Solsikkebrød\n\nDagens rugbrød: Økologi
+ sk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260810T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260810T120000
+SEQUENCE:0
+SUMMARY:Gul thai karry med gris\, græskar\, gulerødder og gule peberfrugt
+ er
+UID:meyers-menu-2026-08-10-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kalkun à la danoise - med skysauce og timian\
+ n\nVarm ret\, halal: Kalkun à la danoise - med skysauce og timian\n\nVarm
+  ret\, vegetar: Grøn farsbrød med porre\n\nVarm ret\, vegansk: Grøn far
+ sbrød med porre\n\nTilbehør til varm ret: Kogte kartofler vendt med pers
+ ille og rapskimsolie\n\nTopping til varm ret: Krus persille\n\nKondiment:\
+ nRabarberkompot\nAgurkesalat\n\nDelikatesser:\nLet røget tomattatar\, val
+ nødder\, ahornsirup og syltede sennepsfrø\nRejesalat med thousand island
+  dressing\nWeinersalat af gris\nSpegepølse af okse med remoulade og sprø
+ de løg\n\nSalater:\nPasta med romesco\nRødbede råkost med solbær og so
+ lsikkekerner\n\nDagens brød: Hvedebrød\n\nDagens rugbrød: Økologisk ru
+ gbrød
+DTEND;TZID=Europe/Copenhagen:20260811T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260811T120000
+SEQUENCE:0
+SUMMARY:Kalkun à la danoise - med skysauce og timian
+UID:meyers-menu-2026-08-11-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling biriyani med selleri og kartofler\n\nV
+ arm ret\, halal: Kylling biriyani med selleri og kartofler\n\nVarm ret\, v
+ egetar: Vegetar biriyani med lollandske rosiner\, selleri og kartofler\n\n
+ Varm ret\, vegansk: Vegetar biriyani med lollandske rosiner\, selleri og k
+ artofler\n\nKondiment: Mynteyoghurt\n\nDelikatesser:\nGrillede auberginer\
+ , kokosflager samt sauce af mynte og kokos\nTunsalat\, majs\, blegselleri\
+ , peberfrugt\, tabasco og mayonnaise\nKalkunpålæg med chilimayo\, sylted
+ e rødløg og urtesalat\nMortadella af gris\, artiskokker\, pesto\, pistac
+ ienødder\, basilikum og rucola\n\nSalater:\nGrønne linser\, ærter\, gul
+ erødder\, butternut\, frisk chili og karrydressing\nIceberg salat\, tomat
+ er\, agurker\, radiser og dild\n\nDagens brød: Naan inspireret brød\n\nD
+ agens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Æble\, ingefær og ci
+ tron
+DTEND;TZID=Europe/Copenhagen:20260812T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260812T120000
+SEQUENCE:0
+SUMMARY:Kylling biriyani med selleri og kartofler
+UID:meyers-menu-2026-08-12-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Tagine af okse\, gulerødder\, abrikoser\, kik
+ ærter\, citron og harissa\n\nVarm ret\, halal: Tagine af okse\, gulerødd
+ er\, abrikoser\, kikærter\, citron og harissa\n\nVarm ret\, vegetar: Tagi
+ ne af kikærter\, gulerødder\, abrikos\, saltet citron og harissa\n\nVarm
+  ret\, vegansk: Tagine af kikærter\, gulerødder\, abrikos\, saltet citro
+ n og harissa\n\nTilbehør til varm ret: Lun couscous vendt med olivenolie\
+ n\nTopping til varm ret: Knuste mandler og sesam\n\nKondiment: Tfaya - mor
+ rokansk rødløgs chutney med rosiner\n\nDelikatesser:\nGederulle dækket 
+ i frysetørrede bær\, dadelsirup\, bagte druer og urtesalat med frisk chi
+ li\nTorskerognssalat\, løg\, ærter\, mayo\, citron og dild\nFennikelsala
+ mi af gris med tomattapenade\, rucola og sennepsurt\nHaydari\, grillet peb
+ erfrugt\, olivenolie og fladbrød\n\nSalater:\nEmmer salat med rucola\, va
+ lnødder\, gule peberfrugter\, cherrytomater\, dild og chermoula\nRød og 
+ hvid spidskål\, melon\, persille\, hvidløg\, citron og forårsløg\n\nDa
+ gens brød: Olivenbrød\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdag
+ ssødt: Olivenolie kage med blå birkes
+DTEND;TZID=Europe/Copenhagen:20260813T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260813T120000
+SEQUENCE:0
+SUMMARY:Tagine af okse\, gulerødder\, abrikoser\, kikærter\, citron og ha
+ rissa
+UID:meyers-menu-2026-08-13-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Chicken stew med majs\, svampe og gulerødder\
+ n\nVarm ret\, halal: Chicken stew med majs\, svampe og gulerødder\n\nVarm
+  ret\, vegetar: Veggie stew med majs\, blegselleri\, gulerødder og vilde 
+ svampe\n\nVarm ret\, vegansk: Veggie stew med majs\, blegselleri\, gulerø
+ dder og vilde svampe\n\nTilbehør til varm ret: Rigatoni pasta\n\nTopping 
+ til varm ret: Purløg\n\nKondiment: Dild pickles og syltede rødløg\n\nDe
+ likatesser:\nHaricots verts og cherrytomater med chipotle bønnesmash\nLak
+ setartar med gulerødder\, friskostcreme\, dild\, feldsalat og ristede ker
+ ner\nPastrami med dijonaise\, surkål\, cornichoner og kørvel\nSalat af r
+ ejer\, asparges\, rogn\, dild og creme\n\nSalater:\nCowboy Caviar - sorte 
+ bønner\, rødløg\, peberfrugter\, limejuice\, koriander\, majs og paprik
+ a\nCremet coleslaw af spidskål\, gulerødder og purløg\n\nDagens brød: 
+ Ølandsbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260814T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260814T120000
+SEQUENCE:0
+SUMMARY:Chicken stew med majs\, svampe og gulerødder
+UID:meyers-menu-2026-08-14-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Tikka masala med kylling\n\nVarm ret\, halal: 
+ Tikka masala med kylling\n\nVarm ret\, vegetar: Paneer tikka masala\n\nVar
+ m ret\, vegansk: Chana masala\n\nTilbehør til varm ret: Basmatiris med gu
+ lerødder\n\nTopping til varm ret: Koriander\n\nKondiment: Chutney på blo
+ mmer og tamarin med ingefær\n\nDelikatesser:\nChoila - indisk svampesalat
+ \nSildesalat serveret med dild\, kapers og rødløg\nRoastbeef med remoula
+ de\, syltede agurker\, ristede løg og karse\nNakkekam med grillede auberg
+ iner\, aubergine dip og granatæble\n\nSalater:\nIndisk kartoffelsalat med
+  ærter\, chili\, krydret yoghurt og tadke\nSprød salat af spidskål\, sa
+ voykål\, mango og sennepsfrø\n\nDagens brød: Valnøddebrød\n\nDagens r
+ ugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260817T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260817T120000
+SEQUENCE:0
+SUMMARY:Tikka masala med kylling
+UID:meyers-menu-2026-08-17-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Skinke med frikassé af nye gulerødder og som
+ merløg\n\nVarm ret\, halal: Sommerfrikassé af okse med gulerødder og so
+ mmerløg\n\nVarm ret\, vegetar: Bagte blomkål med sommerfrikassé af hvid
+ e bønner\, nye gulerødder og sommerløg\n\nVarm ret\, vegansk: Bagte blo
+ mkål med sommerfrikassé af hvide bønner\, nye gulerødder og sommerløg
+ \n\nTilbehør til varm ret: Dampede kartofler\n\nTopping til varm ret: Pur
+ løg\n\nKondiment: Nordisk gremolata med persille\, peberrod og grønne æ
+ rter\n\nDelikatesser:\nSellerimad - på røget peberselleri med remoulade 
+ af karl johan svampe og kapers\nFiskefrikadeller med sauce tartar\, tomate
+ r\, citron og dild\nDyrelægenes natmad med hjemmelavet leverpostej af gri
+ s med saltkød\, sky\, karse og rødløg\nHønsesalat af champignoner\, co
+ rnichoner\, stegte svampe\, mayonnaise\, estragon og sherryeddike\n\nSalat
+ er:\nSalat af nordiske korn sorter\, æble\, bolsjebeder\, grønkål\, per
+ sille og salatost\nGrønne bønner\, endivie\, bulls blood\, tørrede tran
+ ebær\, solsikkekerner og rapskimvinaigrette\n\nDagens brød: Durumbrød m
+ ed bornholmsk durummel\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260818T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260818T120000
+SEQUENCE:0
+SUMMARY:Skinke med frikassé af nye gulerødder og sommerløg
+UID:meyers-menu-2026-08-18-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Coq au vin - Kyllingeoverlår\, rødvinssauce\
+ , champignoner\, perleløg og gulerødder (1 stk. pr. person)\n\nVarm ret\
+ , halal: Kyllingelår\, knoldselleri\, perleløg og gulerødder (1 stk. pr
+ . person)\n\nVarm ret\, vegetar: Bede bourguignon\n\nVarm ret\, vegansk: B
+ ede bourguignon\n\nTilbehør til varm ret: Linser\, grøntsagsbrunoise og 
+ vinaigrette\n\nTopping til varm ret: Saltristede mandler\n\nKondiment: Syl
+ tede rødløg med sennepsfrø\n\nDelikatesser:\nCamembert med kvædegelé 
+ og figner\nTunsalat\, majs\, blegselleri\, peberfrugter\, tabasco og mayon
+ naise\nLandpaté af gris med sennep\, timian og surt\nTomat og avocadocrem
+ e med crispy løg samt hvidløg toppet med karse\n\nSalater:\nPasta\, ært
+ er\, peberfrugter\, soltørrede tomater\, oliven\, merian og kapers\nRød 
+ spidskål\, solbær og æbler\n\nDagens brød: Fransk landbrød\n\nDagens 
+ rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Blodappelsin\, gulerødder o
+ g ingefær
+DTEND;TZID=Europe/Copenhagen:20260819T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260819T120000
+SEQUENCE:0
+SUMMARY:Coq au vin - Kyllingeoverlår\, rødvinssauce\, champignoner\, perl
+ eløg og gulerødder
+UID:meyers-menu-2026-08-19-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kalkun med safran sauce og porre\n\nVarm ret\,
+  halal: Kalkun med safran sauce og porre\n\nVarm ret\, vegetar: Safran sau
+ ce med gulerødder\, porre og jordskokker\n\nVarm ret\, vegansk: Safran sa
+ uce med gulerødder\, porre og jordskokker\n\nTilbehør til varm ret: Øko
+ logisk pasta\n\nTopping til varm ret: Gremolata\n\nKondiment: Ristede brø
+ dkrummer med timian\n\nDelikatesser:\nRomanescokål med spread af rød peb
+ erfrugt\, pistacienødder og rød basilikum\nTorskerogns tarama\, tomater\
+ , dild og citron\nLufttørret skinke\, melon og basilikum\nRejecocktail\, 
+ thousand island dressing\, salat og tomater\n\nSalater:\nMeyers ærter\, b
+ agt selleri\, rosiner\, persille og estragon\nSalat af tomater\, mozzarell
+ a\, agurker\, basilikum og olivenolie\n\nDagens brød: Focacciabrød med r
+ osmarin\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Rytterka
+ ge
+DTEND;TZID=Europe/Copenhagen:20260820T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260820T120000
+SEQUENCE:0
+SUMMARY:Kalkun med safran sauce og porre
+UID:meyers-menu-2026-08-20-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Chili con carne med oksekød\, flere slags bø
+ nner og kakao\n\nVarm ret\, halal: Chili con carne med oksekød\, flere sl
+ ags bønner og kakao\n\nVarm ret\, vegetar: Chili sin carne af sorte bønn
+ er\, tomater\, løg\, rødder og spidskommen\n\nVarm ret\, vegansk: Chili 
+ sin carne af sorte bønner\, tomater\, løg\, rødder og spidskommen\n\nTi
+ lbehør til varm ret: Nachos\n\nKondiment:\nCreme fraiche\nSalsa\n\nDelika
+ tesser:\nGrillede peberfrugter med chili\, lime\, queso fresco\, goa karse
+  og pepitas\nCeviche på sej\, passionsfrugt\, koriander\, løg og agurker
+ \nPebersalami\, rødløg\, syltedeagurk og svampe remoulade\nNakkefilet\, 
+ avocado og ærte smash med basilikum samt jalapenos\n\nSalater:\nSort quin
+ oa\, salatost\, peberfrugter\, majs\, spidskål\, syltede rødløg og pime
+ nt\nGulerodssalat med grøn tabasco\, lime\, passionsfrugt og kerner\n\nDa
+ gens brød: Kærnemælksbrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260821T130000
+DTSTAMP:20260818T231408Z
+DTSTART;TZID=Europe/Copenhagen:20260821T120000
+SEQUENCE:0
+SUMMARY:Chili con carne med oksekød\, flere slags bønner og kakao
+UID:meyers-menu-2026-08-21-industriens-pension
+END:VEVENT
+END:VCALENDAR

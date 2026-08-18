@@ -1,0 +1,78 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Det velkendte
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Butter chicken\n\nVarm ret\, halal: Butter chic
+ ken\n\nVarm ret\, vegetar: Butter tofu med kikærter og blomkål\n\nVarm r
+ et\, vegansk: Butter tofu med kikærter og blomkål\n\nTilbehør til varm 
+ ret: Basmatiris med kardemomme\n\nTopping til varm ret: Koriander\n\nPål
+ æg 1: Fennikelsalami med pesto og syltet fennikel\n\nPålæg 2: Æg og ch
+ errytomater med mayonnaise\n\nSalat 1: Haricots verts med syltede rødløg
+  og salatost. Toppet med røgede mandler\n\nSalat 2: Gulerodsråkost med r
+ osiner\, bergamotte og appelsin. Toppet med ristede kokosflager\n\nDagens 
+ brød: Hvedebrød\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260407T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260407T120000
+SEQUENCE:0
+SUMMARY:Butter chicken
+UID:meyers-menu-2026-04-07-det-velkendte
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Ragu Bianco - hvid ragout af gris og kalv med c
+ hampignoner\, gulerødder og bladeselleri\n\nVarm ret\, halal: Ragout med 
+ salsiccia af kalkun samt champignoner\, gulerødder og bladeselleri\n\nVar
+ m ret\, vegetar: Stegte gnochhi med cherrytomater\, courgetter\, peberfrug
+ ter og ricottaost\n\nVarm ret\, vegansk: Gratineret pasta i fad med cremet
+  tomater\, grillet courgetter og basilikum\n\nTilbehør til varm ret: Past
+ a conchiglie med olivenolie\n\nTopping til varm ret: Ristede brødkrummer 
+ og persille\n\nPålæg 1: Kyllingebryst med grillede forårsløg og grove 
+ grøntsagspickles\n\nPålæg 2: Let røgede kartofler med urtemayonnaise o
+ g syltede rødløg\n\nSalat 1: Sennepsbagte rødder med sprøde salater og
+  frisée. Toppet med ristede solsikkekerner\n\nSalat 2: Spidskål med æbl
+ er\, krydderurter og Meyers æblemost\n\nDagens brød: Majsbrød\n\nDagens
+  rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260408T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260408T120000
+SEQUENCE:0
+SUMMARY:Ragu Bianco - hvid ragout af gris og kalv med champignoner\, guler
+ ødder og...
+UID:meyers-menu-2026-04-08-det-velkendte
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, alm: Moussaka med oksekød\, auberginer\, løg\, tom
+ ater og kartofler\n\nVarm ret\, halal: Moussaka med oksekød\, auberginer\
+ , løg\, tomater og kartofler\n\nVarm ret\, vegetar: Moussaka med meyers b
+ ælgfrugter\, auberginer\, løg\, tomater og kartofler\n\nVarm ret\, vegan
+ sk: Moussaka med meyers bælgfrugter\, auberginer\, løg\, tomater og kart
+ ofler\n\nPålæg 1: Fuglekvidder af gris med syltede blomkål og purløg\n
+ \nPålæg 2: Kalkunpastrami med rød pesto og marinerede artiskokhjerter\n
+ \nSalat 1: Stegt romanesco med Anicia linser\, edamamebønner og forårsl
+ øg. Toppet med ristede cashewnødder\n\nSalat 2: Salat af hjertesalat med
+  spinat\, glaskål og brøndkarse vendt med saltet yoghurt\n\nDagens brød
+ : Ølbrød med kerner\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdagss
+ ødt: Brunet smør og misoblondie med hvid chokolade og valnødder
+DTEND;TZID=Europe/Copenhagen:20260409T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260409T120000
+SEQUENCE:0
+SUMMARY:Moussaka med oksekød\, auberginer\, løg\, tomater og kartofler
+UID:meyers-menu-2026-04-09-det-velkendte
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:pr. person)
+DTEND;TZID=Europe/Copenhagen:20260410T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260410T120000
+SEQUENCE:0
+SUMMARY:Byg selv frikadellesandwich (2 stk
+UID:meyers-menu-2026-04-10-det-velkendte
+END:VEVENT
+END:VCALENDAR

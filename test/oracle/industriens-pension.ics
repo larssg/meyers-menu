@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Industriens pension
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Carbonara med bacon og svampe\n\nVarm ret\, ha
+ lal: Carbonara med kalkunbacon og svampe\n\nVarm ret\, vegetar: Carbonara 
+ med tempeh og svampe\n\nVarm ret\, vegansk: Cremet pasta sauce af tempeh o
+ g svampe\n\nTilbehør til varm ret: Pasta\n\nKondiment 1: Brødkrummer med
+  parmesan og sort peber\n\nDelikatesse 3: Hønsesalat med stegte svampe og
+  asparges\n\nDelikatesse 4: Skinkesalat - kartofler\, cornichoner og rødl
+ øg\n\nDelikatesse 5: Lufttørret oksesalami\, tomattapenade\, ristede man
+ dler og grillede peberfrugter\n\nDesuden 1: Pisket ricotta\, grønne aspar
+ ges\, citronskal og bagte cherrytomater\n\nSalat 1: Haricots verts\, hvide
+  bønner\, rødløg\, syltede cherrytomater\, sorte og grønne oliven\, me
+ rian samt persille.\n\nSalat 2: Baby salatblade\, mizuna\, spinat\, rucola
+  og soltørrede tomater med italiensk dressing.\n\nDagens brød: Hvedebrø
+ d\n\nDagens rugbrød: Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260407T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260407T120000
+SEQUENCE:0
+SUMMARY:Carbonara med bacon og svampe
+UID:meyers-menu-2026-04-07-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling i karry med gulerødder og pastinak\n\
+ nVarm ret\, halal: Kylling i karry med gulerødder og pastinak\n\nVarm ret
+ \, vegetar: Stegt blomkål med flækærter i karry sauce\n\nVarm ret\, veg
+ ansk: Stegt blomkål med flækærter i karry sauce\n\nTilbehør til varm r
+ et: Løse ris\n\nTopping til varm ret: Ristede kokosflager\n\nKondiment 1:
+  Rabarberchutney\n\nDelikatesse 3: Rejesalat\, dild\, cornichoner\, glask
+ ål og kapers\n\nDelikatesse 4: Spegepølse af okse\, remoulade\, syltede 
+ agurker og sprøde løg\n\nDelikatesse 5: Hamburgerryg med italiensk salat
+ \n\nDesuden 1: Confiteret græskar\, løgkompot\, karse og kerner\n\nSalat
+  1: Lollandske rosiner\, tomater\, bagte knoldselleri\, blegselleri \, lø
+ g\, løvstikke og sennepsvinaigrette\n\nSalat 2: Endivie med korender\, gl
+ askål\, dild\, broccoli og hasselnødder\n\nDagens brød: Majsbrød\n\nDa
+ gens rugbrød: Økologisk rugbrød\n\nOnsdagsshot: Jordbær\, rød peberfr
+ ugt og chili
+DTEND;TZID=Europe/Copenhagen:20260408T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260408T120000
+SEQUENCE:0
+SUMMARY:Kylling i karry med gulerødder og pastinak
+UID:meyers-menu-2026-04-08-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Stegt og marineret nakkefilet af gris med mexi
+ canske krydderier\n\nVarm ret\, halal: Stegt og marineret kalkun med mexic
+ anske krydderier\n\nVarm ret\, vegetar: Refried beans med mexicansk krydre
+ de bagte søde kartofler og queso fresco\n\nVarm ret\, vegansk: Refried be
+ ans med mexicansk krydrede bagte søde kartofler med ristede græskarkerne
+ r\n\nTilbehør til varm ret: Bulgur\, quinoa og sorte bønner\n\nTopping t
+ il varm ret: Koriander\n\nKondiment 1: Salsa verde\n\nDelikatesse 3: Cevic
+ he inspireret sej – let bagt torsk på agurker\, chili\, syltede rødlø
+ g og lime\n\nDelikatesse 4: Nakke af gris med ærteguacamole og spicey tom
+ atsalsa\n\nDelikatesse 5: Limemarineret kylling med salsa falsa\n\nDesuden
+  1: Ceviche af bagte gule beder med mango leche de tigre og æbler\n\nSala
+ t 1: Ensalada de Garbanzos - kikærter\, peberfrugter\, rød spidskål\, m
+ ajs\, lime og chiliolie\n\nSalat 2: Spinat\, gulerodscruditéer\, agurker\
+ , syltede grønne tomater og forårsløg\n\nDagens brød: Ølbrød med ker
+ ner\n\nDagens rugbrød: Økologisk rugbrød\n\nTorsdagssødt: Brunet smør
+  og misoblondie med hvid chokolade og valnødder
+DTEND;TZID=Europe/Copenhagen:20260409T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260409T120000
+SEQUENCE:0
+SUMMARY:Stegt og marineret nakkefilet af gris med mexicanske krydderier
+UID:meyers-menu-2026-04-09-industriens-pension
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Cheeseburger (1 stk. pr. person)\n\nVarm ret\,
+  halal: Cheeseburger (1 stk. pr. person)\n\nVarm ret\, vegetar: Vegetarbø
+ ffer lavet på sorte bønner og butternut squash med cheddarost\n\nVarm re
+ t\, vegansk: Burgerbøffer lavet på sorte bønner og butternut squash\n\n
+ Tilbehør til varm ret: Sesam burgerboller\n\nKondiment 1: Burgeragurker s
+ yltede vendt med dild\n\nKondiment 2: Burgerdressing\n\nDelikatesse 3: Tun
+ salat á la mcconaughey\, majs\, drueagurker\, wasabi og æbler\n\nDelikat
+ esse 4: BBQ-ristet nakkekam med coleslaw\n\nDelikatesse 5: Kogt landskinke
+ \, vesterhavsost og dijonaise\n\nDesuden 1: Grillet forårsløg\, bagte bl
+ omkål\, knust avocado med limegremolata\n\nSalat 1: Pastaskruer med vinai
+ grette\, oliven\, peberfrugter\, ærter og tomater\n\nSalat 2: Iceberg\, t
+ omater og løg\n\nDagens brød: Burgerboller med sesam\n\nDagens rugbrød:
+  Økologisk rugbrød
+DTEND;TZID=Europe/Copenhagen:20260410T130000
+DTSTAMP:20260818T232603Z
+DTSTART;TZID=Europe/Copenhagen:20260410T120000
+SEQUENCE:0
+SUMMARY:Cheeseburger
+UID:meyers-menu-2026-04-10-industriens-pension
+END:VEVENT
+END:VCALENDAR
