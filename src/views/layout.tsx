@@ -80,7 +80,7 @@ function renderShell(children: Child): string {
         <div class="container mx-auto px-4 max-w-3xl relative">
           <div class="absolute right-4 top-0 hidden sm:flex items-center gap-1">
             <a
-              href="https://github.com/larssg/meyers-menu-calendar"
+              href="https://github.com/larssg/meyers-menu"
               target="_blank"
               class="btn-ghost"
               title="Built by Lars Sehested"
@@ -116,7 +116,7 @@ function renderShell(children: Child): string {
               Open-source friendly &middot; Feedback welcome
             </p>
             <a
-              href="https://github.com/larssg/meyers-menu-calendar"
+              href="https://github.com/larssg/meyers-menu"
               target="_blank"
               class="inline-block text-ink-faint hover:text-ink transition-colors"
               title="View my GitHub"
