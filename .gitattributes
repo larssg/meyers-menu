@@ -1,0 +1,7 @@
+# iCalendar is CRLF-terminated by spec. These files are byte-exact oracles for the
+# folding and serialisation tests, so git must not normalise their line endings.
+*.ics -text
+
+# The captured homepage and the render snapshot are compared verbatim.
+test/golden/home.html -text
+test/__snapshots__/home.html -text
