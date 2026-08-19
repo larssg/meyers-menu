@@ -9,6 +9,13 @@ export interface MenuDay {
   details: string
   /** Menu type *name* as it appears on meyers.dk, e.g. "Det velkendte". */
   menuType: string
+  /**
+   * Set on entries recovered from the retired .NET app's own .ics output, where
+   * mainDish and details already hold the *rendered* SUMMARY and DESCRIPTION.
+   * Re-running them through cleanupTitle/formatDescription would corrupt them,
+   * so the serialiser emits them verbatim. Fresh scrapes never set this.
+   */
+  prerendered?: boolean
 }
 
 /** Port of Meyers.Core.Models.MenuType. Ids are stable and must never be renumbered. */
@@ -41,4 +48,6 @@ export interface MenuEntry {
   menuItems: string[]
   mainDish: string
   details: string
+  /** See MenuDay.prerendered. */
+  prerendered?: boolean
 }

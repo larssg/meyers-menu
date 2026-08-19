@@ -181,12 +181,17 @@ export function generateCalendar(menuDays: MenuDay[], options: GenerateCalendarO
     )
   } else {
     for (const menuDay of menuDays) {
-      const title = menuDay.mainDish
-        ? cleanupTitle(menuDay.mainDish)
-        : `Meyers Menu - ${menuDay.dayName}`
-      const description = menuDay.mainDish
-        ? (menuDay.details ? formatDescription(menuDay.details) : formatMenuItemsGrouped(menuDay.menuItems))
-        : formatMenuItemsGrouped(menuDay.menuItems)
+      // Backfilled entries already hold rendered text; rendering again corrupts it.
+      const title = menuDay.prerendered
+        ? menuDay.mainDish
+        : menuDay.mainDish
+          ? cleanupTitle(menuDay.mainDish)
+          : `Meyers Menu - ${menuDay.dayName}`
+      const description = menuDay.prerendered
+        ? menuDay.details
+        : menuDay.mainDish
+          ? (menuDay.details ? formatDescription(menuDay.details) : formatMenuItemsGrouped(menuDay.menuItems))
+          : formatMenuItemsGrouped(menuDay.menuItems)
 
       pushEvent(eventUid(menuDay.date, menuDay.menuType), title, description, menuDay.date)
     }

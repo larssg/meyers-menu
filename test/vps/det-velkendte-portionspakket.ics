@@ -1,0 +1,430 @@
+BEGIN:VCALENDAR
+PRODID:Meyers Menu Calendar - Det velkendte - Portionspakket
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+VERSION:2.0
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Copenhagen
+X-LIC-LOCATION:Europe/Copenhagen
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: "Marry me chicken" Stegt kyllingebryst i creme
+ t sauce med soltørret tomat\, oregano og parmesan\n\nVarm ret\, halal: "M
+ arry me chicken" Stegt kyllingebryst i cremet sauce med soltørret tomat\,
+  oregano og parmesan\n\nVarm ret\, vegetarisk: "Marry me" NO meat balls i 
+ cremet sauce med soltørret tomat\, oregano og parmesan (5 stk pr pers)\n\
+ nVarm ret\, vegansk: "Marry me" NO meat balls i cremet sauce med soltørre
+ t tomat og oregano (5 stk pr pers)\n\nTilbehør til varm ret: Pasta lingui
+ ne vendt med olivenolie\n\nTopping til varm ret: Basilikum\n\nDagens salat
+ : Sprød salat med revet broccoli\, gulerødder\, grønne æbler og forår
+ sløg
+DTEND;TZID=Europe/Copenhagen:20260720T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260720T120000
+SEQUENCE:0
+SUMMARY:"Marry me chicken" Stegt kyllingebryst i cremet sauce med soltørre
+ t tomat\,...
+UID:meyers-menu-2026-07-20-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Moussaka med oksekød\, auberginer\, løg\, to
+ mater og kartofler\n\nVarm ret\, halal: Moussaka med oksekød\, auberginer
+ \, løg\, tomater og kartofler\n\nVarm ret\, vegetarisk: Moussaka med meye
+ rs bælgfrugter\, auberginer\, løg\, tomater og kartofler\n\nVarm ret\, v
+ egansk: Moussaka med meyers bælgfrugter\, auberginer\, løg\, tomater og 
+ kartofler\n\nDagens salat: Salat af romaine\, frillice med spinat\, glask
+ ål og brøndkarse toppet med saltet yoghurt
+DTEND;TZID=Europe/Copenhagen:20260721T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260721T120000
+SEQUENCE:0
+SUMMARY:Moussaka med oksekød\, auberginer\, løg\, tomater og kartofler
+UID:meyers-menu-2026-07-21-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Middelhavskrydrede og stegte kyllingeoverlår 
+ - (1 stk. pr. person)\n\nVarm ret\, halal: Middelhavskrydrede og stegte ky
+ llingeoverlår - (1 stk. pr. person)\n\nVarm ret\, vegetarisk: Middelhavsk
+ rydret og grillet squash med cremet polenta\n\nVarm ret\, vegansk: Middelh
+ avskrydret og grillet squash med cremet polenta\n\nTilbehør til varm ret:
+  Tabouleh af bulgur med kål\, soltørret tomat\, løg\, persille og citro
+ n\n\nTopping til varm ret: Yoghurt og harissa dressing\n\nDagens salat: Ba
+ gte persillerødder med hjertesalat\, rød spidskål\, persille og citron.
+  Toppet med dukkah af græskarkerner
+DTEND;TZID=Europe/Copenhagen:20260722T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260722T120000
+SEQUENCE:0
+SUMMARY:Middelhavskrydrede og stegte kyllingeoverlår -
+UID:meyers-menu-2026-07-22-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Panang karry med gris\, peberfrugter\, gulerø
+ dder\, bambus\, peanutbutter og kokosmælk\n\nVarm ret\, halal: Panang kar
+ ry med kylling\, peberfrugter\, gulerødder\, bambus\, peanutbutter og kok
+ osmælk\n\nVarm ret\, vegetarisk: Panang karry med røget tofu\, peberfrug
+ ter\, gulerødder\, bambus\, peanutbutter og kokosmælk\n\nVarm ret\, vega
+ nsk: Panang karry med røget tofu\, peberfrugter\, gulerødder\, bambus\, 
+ peanutbutter og kokosmælk\n\nTilbehør til varm ret: Jasminris med kaffir
+  lime\n\nTopping til varm ret: Koriander\n\nDagens salat: Rød spidskål m
+ ed kinakål\, glaskål\, lime og ristet peanuts\n\nTorsdagssødt: Ymerkold
+ skål med kammerjunkere
+DTEND;TZID=Europe/Copenhagen:20260723T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260723T120000
+SEQUENCE:0
+SUMMARY:Panang karry med gris\, peberfrugter\, gulerødder\, bambus\, peanu
+ tbutter og...
+UID:meyers-menu-2026-07-23-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Barbeque marineret nakkekotelet (1 stk. pr. pe
+ rson)\n\nVarm ret\, halal: Barbeque marineret kalkuncuvette\n\nVarm ret\, 
+ vegetarisk: Tærte (portion) med hårdt ristede rød og gul peber\, cremed
+ e kikærter rørt med citron og toppet med hakkede semidried tomater og me
+ rian 1 stk pr person\n\nVarm ret\, vegansk: Tærte (portion) med hårdt ri
+ stede rød og gul peber\, cremede kikærter rørt med citron og toppet med
+  hakkede semidried tomater og merian 1 stk pr person\n\nTilbehør til varm
+  ret: "Krydrede ovnbagte kartofler "\n\nTopping til varm ret: Coleslaw\n\n
+ Dagens salat: Panzanella med Meyers hvedebrød\, tomater\, rødløg\, agur
+ ker\, basilikum. Toppet med balsamico glaze
+DTEND;TZID=Europe/Copenhagen:20260724T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260724T120000
+SEQUENCE:0
+SUMMARY:Barbeque marineret nakkekotelet
+UID:meyers-menu-2026-07-24-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Koreansk Bulgogi med okse med løg\, gulerod\,
+  napa kål og forårsløg\n\nVarm ret\, halal: Koreansk Bulgogi med okse m
+ ed løg\, gulerod\, napa kål og forårsløg\n\nVarm ret\, vegetarisk: Kor
+ eansk Bulgogi med tæmpeh med løg\, gulerod\, napa kål og forårsløg\n\
+ nVarm ret\, vegansk: Koreansk Bulgogi med tæmpeh med løg\, gulerod\, nap
+ a kål og forårsløg\n\nTilbehør til varm ret: Gule thai nudler\n\nToppi
+ ng til varm ret: Kimchi\n\nDagens salat: Spicy koreansk agurksalat med eda
+ mame bønner forårsløg\, sesam og chili
+DTEND;TZID=Europe/Copenhagen:20260727T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260727T120000
+SEQUENCE:0
+SUMMARY:Koreansk Bulgogi med okse med løg\, gulerod\, napa kål og forårs
+ løg
+UID:meyers-menu-2026-07-27-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Ristaffel med kylling i karry med løg og æbl
+ er\n\nVarm ret\, halal: Ristaffel med kylling i karry med løg og æbler\n
+ \nVarm ret\, vegetarisk: Kikærter og blomkål i karry med gulerod\, løg 
+ og æbler\n\nVarm ret\, vegansk: Kikærter og blomkål i karry med gulerod
+ \, løg og æbler\n\nTilbehør til varm ret: Parboiled ris\n\nTopping til 
+ varm ret: Ristet kokos - Rosin - Bananchips - Saltede peanuts - Mangochutn
+ ey\n\nDagens salat: Savoykål og voksbønner\, estragon\, rysteribs og she
+ rry eddike vinaigrette
+DTEND;TZID=Europe/Copenhagen:20260728T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260728T120000
+SEQUENCE:0
+SUMMARY:Ristaffel med kylling i karry med løg og æbler
+UID:meyers-menu-2026-07-28-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Souvlaki af gris med grillede rødløg\, peber
+ frugter og kartofler\n\nVarm ret\, halal: Souvlaki af kylling med grillede
+  rødløg\, peberfrugter og kartofler\n\nVarm ret\, vegetarisk: Souvlaki a
+ f halloumi med grillede rødløg\, peberfrugter og kartofler\n\nVarm ret\,
+  vegansk: Souvlaki af grillede rødløg\, peberfrugter og kartofler\n\nTil
+ behør til varm ret: Fladbrød (1 stk. pr. person)\n\nTopping til varm ret
+ : Cremet hvidløgsdressing\n\nDagens salat: Græsk salat med tomater\, agu
+ rker\, rødløg\, oregano\, kalamataoliven og salatost
+DTEND;TZID=Europe/Copenhagen:20260729T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260729T120000
+SEQUENCE:0
+SUMMARY:Souvlaki af gris med grillede rødløg\, peberfrugter og kartofler
+UID:meyers-menu-2026-07-29-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Torsk i fad med fennikel\, løg og cremet sauc
+ e lavet med cider\n\nVarm ret\, halal: Torsk i fad med fennikel\, løg og 
+ en cremet citronsauce\n\nVarm ret\, vegetarisk: Stegt blomkål med ingrid
+ ærter\, dampede fennikel\, gulerod og hvidvinssauce toppet med ristede so
+ lsikkekerner (\n\nVarm ret\, vegansk: Stegt blomkål med ingridærter\, da
+ mpede fennikel\, gulerod og hvidvinssauce toppet med ristede solsikkekerne
+ r (\n\nTilbehør til varm ret: Kold kartoffelsalat af nye kartofler vendt 
+ med ærter\, tomat\, citron og dild\n\nDagens salat: "Gulerods råkost med
+  rosiner\, appelsinsaft. Toppet med ristet kokosflager "\n\nTorsdagssødt:
+  Citronmåne
+DTEND;TZID=Europe/Copenhagen:20260730T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260730T120000
+SEQUENCE:0
+SUMMARY:Torsk i fad med fennikel\, løg og cremet sauce lavet med cider
+UID:meyers-menu-2026-07-30-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Gourmet hotdog med ristet kyllinge og ostepøl
+ se\n\nVarm ret\, halal: Gourmet hotdog med ristet kyllinge og ostepølse\n
+ \nVarm ret\, vegetarisk: Gourmet hotdog med ristet vegansk pølse ( 1 stk 
+ )\n\nVarm ret\, vegansk: Gourmet hotdog med ristet vegansk pølse ( 1 stk 
+ )\n\nTilbehør til varm ret: Hotdog brød (1 stk)\n\nTopping til varm ret:
+  Salvie ketchup - Havtorn remulade - Ramsløgs sennep - Hjemmelavet agurke
+ salat - Ristede løg\n\nDagens salat: Hjertesalat med tomater\, syltet ska
+ lotteløg og persille
+DTEND;TZID=Europe/Copenhagen:20260731T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260731T120000
+SEQUENCE:0
+SUMMARY:Gourmet hotdog med ristet kyllinge og ostepølse
+UID:meyers-menu-2026-07-31-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: "Boller i karry af gris - 3 stk. pr. person\n\
+ nVarm ret\, halal: "Kyllingeboller i karry 3 stk pr person\n\nVarm ret\, v
+ egetarisk: No meat balls" 5 stk pr person i karry med gulerødder\, løg o
+ g æbler\n\nVarm ret\, vegansk: No meat balls" 5 stk pr person i karry med
+  gulerødder\, løg og æbler\n\nTilbehør til varm ret: Jasmin ris\n\nTop
+ ping til varm ret: Mango chutney\n\nDagens salat: Spidskålssalat med fenn
+ ikel\, soltørrede tranebær og ristede solsikkekerner hertil kærnemælks
+ dressing med urter
+DTEND;TZID=Europe/Copenhagen:20260803T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260803T120000
+SEQUENCE:0
+SUMMARY:"Boller i karry af gris - 3 stk. pr. person
+UID:meyers-menu-2026-08-03-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Byg selv burritos med stegt oksekød\, Meyers 
+ sorte bønner\, chipotle marineret soltørret tomat\, majs og salatløg\n\
+ nVarm ret\, halal: Byg selv burritos med stegt oksekød\, Meyers sorte bø
+ nner\, chipotle marineret soltørret tomat\, majs og salatløg\n\nVarm ret
+ \, vegetarisk: Byg selv burritos med refried beans\, pulled stegte svampe 
+ og majs\n\nVarm ret\, vegansk: Byg selv burritos med refried beans\, pulle
+ d stegte svampe og majs\n\nTilbehør til varm ret: Hvede tortillas (1 stk.
+  pr. person)\n\nTopping til varm ret: Cremet chipotle/yoghurt dressing\n\n
+ Dagens salat: Dampet broccoli med iceberg\, agurker og forårsløg vendt m
+ ed lime vinaigrette og chili
+DTEND;TZID=Europe/Copenhagen:20260804T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260804T120000
+SEQUENCE:0
+SUMMARY:Byg selv burritos med stegt oksekød\, Meyers sorte bønner\, chipo
+ tle marineret...
+UID:meyers-menu-2026-08-04-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Gammeldags æggekage med bacon\, kartofler\, o
+ g cherrytomater\n\nVarm ret\, halal: Gammeldags æggekage med kyllingebaco
+ n\, kartofler\, og cherrytomater\n\nVarm ret\, vegetarisk: Æggekage med k
+ artofler\, rødløg og cherrytomater\n\nVarm ret\, vegansk: Stegte grønts
+ ager på bund af blomkålspuré hertil grillet tæmpeh\n\nTopping til varm
+  ret: Purløg\n\nDagens salat: Sprøde grønne salater med fennikel\, fris
+ sé\, radicchio\, estragon og ristede mandler vendt æblemostvinaigrette
+DTEND;TZID=Europe/Copenhagen:20260805T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260805T120000
+SEQUENCE:0
+SUMMARY:Gammeldags æggekage med bacon\, kartofler\, og cherrytomater
+UID:meyers-menu-2026-08-05-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling sauté marengo - Kyllinge overlår i t
+ omatsauce\, svampe og urter - 1 stk pr person\n\nVarm ret\, halal: Kylling
+  sauté marengo - Kyllinge overlår i tomatsauce\, svampe og urter - 1 stk
+  pr person\n\nVarm ret\, vegetarisk: Grillet courgette a la marengo med to
+ matsauce med hvidvin\, svampe og urter\n\nVarm ret\, vegansk: Grillet cour
+ gette a la marengo med tomatsauce med hvidvin\, svampe og urter\n\nTilbeh
+ ør til varm ret: Pasta Tagliatelle\n\nTopping til varm ret: Hakket persil
+ le\n\nDagens salat: Rødbederåkost med solbær\, estragon og ristede sols
+ ikkerkerner\n\nTorsdagssødt: Peanutbutter cookie med chokolade - indehold
+ er peanuts
+DTEND;TZID=Europe/Copenhagen:20260806T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260806T120000
+SEQUENCE:0
+SUMMARY:Kylling sauté marengo - Kyllinge overlår i tomatsauce\, svampe og
+  urter - 1 stk...
+UID:meyers-menu-2026-08-06-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Dan Dan Nudler- Let spicy sauce med krydret sv
+ inekød med grøntsager og sesam\n\nVarm ret\, halal: Dan Dan Nudler- Let 
+ spicy sauce med krydret oksekød med grøntsager og sesam\n\nVarm ret\, ve
+ getarisk: Dan Dan noodles - Let spicy sauce med vegansk hakket og grillet 
+ tofu med grøntsager\n\nVarm ret\, vegansk: Dan Dan noodles - Let spicy sa
+ uce med vegansk hakket og grillet tofu med grøntsager\n\nTilbehør til va
+ rm ret: Hvedenudler\n\nTopping til varm ret: Forårsløg og rød chili\n\n
+ Dagens salat: Kachumbersalat med tomater\, agurker\, rødløg og grøn chi
+ li
+DTEND;TZID=Europe/Copenhagen:20260807T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260807T120000
+SEQUENCE:0
+SUMMARY:Dan Dan Nudler- Let spicy sauce med krydret svinekød med grøntsag
+ er og sesam
+UID:meyers-menu-2026-08-07-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Frikassé af kylling i peberrodssauce med knol
+ dselleri og porrer\n\nVarm ret\, halal: Frikassé af kylling i peberrodssa
+ uce med knoldselleri og porrer\n\nVarm ret\, vegetarisk: Stegt og let røg
+ et knoldselleri med puré af hvide bønner\, stegte østershatte og grov u
+ rtepesto\n\nVarm ret\, vegansk: Stegt og let røget knoldselleri med puré
+  af hvide bønner\, stegte østershatte og grov urtepesto\n\nTilbehør til
+  varm ret: Dampede kartofler med urtesalt\n\nTopping til varm ret: Høvlet
+  peberrod og purløg\n\nDagens salat: Bagte peberfrugter vendt med frilice
+ \, friske krydderurter og kapers
+DTEND;TZID=Europe/Copenhagen:20260810T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260810T120000
+SEQUENCE:0
+SUMMARY:Frikassé af kylling i peberrodssauce med knoldselleri og porrer
+UID:meyers-menu-2026-08-10-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Grillpølse (1 stk. pr. person)\n\nVarm ret\, 
+ halal: Grillpølse af kylling og kalkun (1 stk. pr. person)\n\nVarm ret\, 
+ vegetarisk: Stegte veggie pølser (1 stk. pr. person)\n\nVarm ret\, vegans
+ k: Stegte veggie pølser (1 stk. pr. person)\n\nTilbehør til varm ret: Cr
+ emet kartoffelsalat med ærter\, radiser\, og purløg\n\nTopping til varm 
+ ret: Salvie ketchup og rørt sennep\n\nDagens salat: Sprøde grønne salat
+ er med ærter\, mizuna og syltede skalotteløg
+DTEND;TZID=Europe/Copenhagen:20260811T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260811T120000
+SEQUENCE:0
+SUMMARY:Grillpølse
+UID:meyers-menu-2026-08-11-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kreatopita - indbagt oksekødstærte med tomat
+ er\, kartofler og merian\n\nVarm ret\, halal: Kreatopita - indbagt oksekø
+ dstærte med tomater\, kartofler og merian\n\nVarm ret\, vegetarisk: Spana
+ kopita - Indbagt græsk tærte med kartoffel\, spinat\, løg og feta\n\nVa
+ rm ret\, vegansk: Spanakopita - Indbagt græsk tærte med kartoffel\, spin
+ at\, løg og vegansk ost\n\nDagens salat: Græsk salat med tomater\, agurk
+ er\, oregano\, kalamata oliven og salatost
+DTEND;TZID=Europe/Copenhagen:20260812T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260812T120000
+SEQUENCE:0
+SUMMARY:Kreatopita - indbagt oksekødstærte med tomater\, kartofler og mer
+ ian
+UID:meyers-menu-2026-08-12-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Vietnamesisk stirfry med gris\, ingefærsauce\
+ , bok choy\, gulerødder\, citrongræs og løg\n\nVarm ret\, halal: Vietna
+ mesisk stirfry med okse\, ingefærsauce\, bok choy\, gulerødder\, citrong
+ ræs og løg\n\nVarm ret\, vegetarisk: Vietnamesisk stirfry med tofu\, ing
+ efærsauce\, gulerødder\, bok choy\, citrongræs og løg\n\nVarm ret\, ve
+ gansk: Vietnamesisk stirfry med tofu\, ingefærsauce\, bok choy\, gulerød
+ der\, citrongræs og løg\n\nTilbehør til varm ret: Dampede ris med limeb
+ lade\n\nTopping til varm ret: Syltede grøntsager\, chilimayo og koriander
+ \n\nDagens salat: Pak choy med kinaradiser\, spinat og rucola. Toppet med 
+ sprød spirerblanding\n\nTorsdagssødt: Olivenolie kage med blå birkes
+DTEND;TZID=Europe/Copenhagen:20260813T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260813T120000
+SEQUENCE:0
+SUMMARY:Vietnamesisk stirfry med gris\, ingefærsauce\, bok choy\, gulerød
+ der\, citrongræs og...
+UID:meyers-menu-2026-08-13-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling cacciatore med kyllingeoverlår\, grø
+ nne oliven og stegte grøntsager (1 stk. pr. person)\n\nVarm ret\, halal: 
+ Kylling cacciatore med kyllingeoverlår\, grønne oliven og stegte grønts
+ ager (1 stk. pr. person)\n\nVarm ret\, vegetarisk: Tempeh cacciatore med g
+ rønne oliven\, rødløg og stegte grøntsager\n\nVarm ret\, vegansk: Temp
+ eh cacciatore med grønne oliven\, rødløg og stegte grøntsager\n\nTilbe
+ hør til varm ret: Pasta fusili vendt med olivenolie\n\nTopping til varm r
+ et: Basilikum\n\nDagens salat: Fennikel vendt i appelsinvinaigrette med ag
+ urker\, dild\, syltede rødløg og ristede solsikkekerner
+DTEND;TZID=Europe/Copenhagen:20260814T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260814T120000
+SEQUENCE:0
+SUMMARY:Kylling cacciatore med kyllingeoverlår\, grønne oliven og stegte 
+ grøntsager
+UID:meyers-menu-2026-08-14-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Kylling korma med kokos og mandler\n\nVarm ret
+ \, halal: Kylling korma med kokos og mandler\n\nVarm ret\, vegetarisk: Kik
+ ærte korma med søde kartofler\, blomkål\, babyspinat\, kokos og mandler
+ \n\nVarm ret\, vegansk: Kikærte korma med søde kartofler\, blomkål\, ba
+ byspinat\, kokos og mandler\n\nTilbehør til varm ret: Basmati ris med kar
+ demomme\n\nTopping til varm ret: Koriander og raita\n\nDagens salat: Slaw 
+ af rød spidskål med revet gulerødder\, rødløg\, forårsløg\, appelsi
+ n og lime
+DTEND;TZID=Europe/Copenhagen:20260817T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260817T120000
+SEQUENCE:0
+SUMMARY:Kylling korma med kokos og mandler
+UID:meyers-menu-2026-08-17-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Frikadeller med skysauce ( 2 stk. pr. person)\
+ n\nVarm ret\, halal: Oksefrikadeller med skysauce ( 2 stk. pr. person)\n\n
+ Varm ret\, vegetarisk: Cremet risotto med græskar\, østershatte\, bagte 
+ løg og ristede græskarkerner\n\nVarm ret\, vegansk: Cremet risotto med g
+ ræskar\, østershatte\, bagte løg og ristede græskarkerner\n\nTilbehør
+  til varm ret: Dampede kartofler\n\nTopping til varm ret: Sennepssyltede g
+ ule beder\n\nDagens salat: Hjertesalat vendt i kærnemælksdressing med gr
+ illede majs\, karse og solsikkekerner
+DTEND;TZID=Europe/Copenhagen:20260818T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260818T120000
+SEQUENCE:0
+SUMMARY:Frikadeller med skysauce
+UID:meyers-menu-2026-08-18-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Berbere stegte kyllingeoverlår (1 stk. pr. pe
+ rson)\n\nVarm ret\, halal: Berbere stegte kyllingeoverlår (1 stk. pr. per
+ son)\n\nVarm ret\, vegetarisk: Berbere stegte søde kartofler med krydrede
+  tomater og løgsauce\n\nVarm ret\, vegansk: Berbere stegte søde kartofle
+ r med krydrede tomater og løgsauce\n\nTilbehør til varm ret: Couscous me
+ d rødløg\, citronskal\, squash\, forårsløg\, persille og mynte\n\nTopp
+ ing til varm ret: Dressing af lime og krydderurter\n\nDagens salat: Zarsa 
+ salat med tomater\, rødløg\, courgetter og mild chili
+DTEND;TZID=Europe/Copenhagen:20260819T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260819T120000
+SEQUENCE:0
+SUMMARY:Berbere stegte kyllingeoverlår
+UID:meyers-menu-2026-08-19-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Quiche Lorraine med løg\, bacon og emmentaler
+  (1 tærte til 4 personer).\n\nVarm ret\, halal: Quiche Lorraine med løg\
+ , kylling og emmentaler (1 tærte til 4 personer)\n\nVarm ret\, vegetarisk
+ : Tærte med squash\, cherrytomater og feta (1 tærte til 4 personer).\n\n
+ Varm ret\, vegansk: Tærte med squash\, cherrytomater og cremet vegansk os
+ t (1 tærte til 4 personer).\n\nDagens salat: Kålsalat med sprød blomkå
+ l\, grønne æbler og ristede solsikkekerner\n\nTorsdagssødt: Rytterkage
+DTEND;TZID=Europe/Copenhagen:20260820T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260820T120000
+SEQUENCE:0
+SUMMARY:Quiche Lorraine med løg\, bacon og emmentaler
+UID:meyers-menu-2026-08-20-det-velkendte---portionspakket
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Varm ret\, kød: Klassisk lasagne med oksekød\, tomater\, bech
+ amel og mozzarella\n\nVarm ret\, halal: Klassisk lasagne med oksekød\, to
+ mater\, bechamel og mozzarella\n\nVarm ret\, vegetarisk: Lasagne med sojak
+ ød\, tomater\, bechamel og mozzarella\n\nVarm ret\, vegansk: Lasagne med 
+ sojakød\, tomater\, bechamel og vegansk ost\n\nDagens salat: Kachumbersal
+ at med tomater\, agurker\, løg og grøn chili
+DTEND;TZID=Europe/Copenhagen:20260821T130000
+DTSTAMP:20260818T231407Z
+DTSTART;TZID=Europe/Copenhagen:20260821T120000
+SEQUENCE:0
+SUMMARY:Klassisk lasagne med oksekød\, tomater\, bechamel og mozzarella
+UID:meyers-menu-2026-08-21-det-velkendte---portionspakket
+END:VEVENT
+END:VCALENDAR

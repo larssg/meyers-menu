@@ -165,5 +165,6 @@ export function toMenuDays(store: MenuStore, entries: MenuEntry[]): MenuDay[] {
     mainDish: entry.mainDish,
     details: entry.details,
     menuType: findTypeById(store, entry.menuTypeId)?.name ?? '',
+    ...(entry.prerendered ? { prerendered: true } : {}),
   }))
 }

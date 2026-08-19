@@ -29,6 +29,9 @@ npm run deploy
 - Get "today" from `copenhagenDate()` in `src/time.ts`, never `new Date()` inline. Dates
   are `YYYY-MM-DD` strings, not instants.
 - A scrape returning zero menu days must never overwrite stored data.
+- Entries with `prerendered: true` hold already-rendered SUMMARY/DESCRIPTION recovered
+  from the old .NET app. Never run them through `cleanupTitle` or `formatDescription`;
+  `formatDescription` is not idempotent and will corrupt them.
 - The weekly preview in `src/views/home.tsx` is server-rendered for crawlers and
   re-rendered by `public/js/menu-app.js`. Both must emit the same markup.
 

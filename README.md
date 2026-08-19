@@ -77,6 +77,9 @@ pushes to `main` deploy automatically.
 - `test/units.test.ts` scraper helpers, config codec, date maths and store merging.
 - `test/golden/` are real feeds captured from the live .NET app, used to verify the
   75-octet line folding.
+- `test/backfill-fidelity.test.ts` proves the recovered history in `test/vps/` regenerates
+  byte-identically. It caught that `formatDescription` is not idempotent, which is why
+  backfilled entries are flagged `prerendered`.
 
 ## Constraints worth knowing
 
@@ -89,3 +92,7 @@ pushes to `main` deploy automatically.
 - **The weekly preview is server-rendered** so crawlers see menu content. `menu-app.js`
   re-renders it on selection changes and must emit the same markup.
 - A scrape returning zero menu days never overwrites good data.
+- **Backfilled entries are `prerendered`.** History recovered from the retired .NET app
+  (`tools/backfill-from-vps.mjs`) stores the already-rendered SUMMARY and DESCRIPTION.
+  Passing those back through `cleanupTitle`/`formatDescription` corrupts them, so the
+  serialiser emits them verbatim. Fresh scrapes never set the flag.
