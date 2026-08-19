@@ -47,6 +47,16 @@ and the markup `menu-app.js` re-renders against. Do not turn it on.
 and `test/fixtures`. Those are byte-exact oracles; formatting them breaks the parity,
 folding and backfill-fidelity tests.
 
+## Dependencies
+
+Dependabot runs weekly, configured in `.github/dependabot.yml`. Two rules worth knowing:
+`wrangler`/`@cloudflare/*`/`vitest` are grouped **including majors** because they
+interlock and split PRs cannot go green; `tooling` majors are held out so they arrive
+as standalone PRs. `hono`, the only runtime dependency, is never grouped.
+
+TypeScript is on the 7.x native port. It provides `tsc` only, no `tsserver`, so an
+editor set to "use workspace TypeScript" needs its own bundled copy instead.
+
 ## Conventions
 
 - Views are Hono JSX in `src/views/`. `Layout` uses the `html` tagged template; use

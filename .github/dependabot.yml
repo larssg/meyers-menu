@@ -9,25 +9,32 @@ updates:
     labels:
       - 'dependencies'
       - 'npm'
-    open-pull-requests-limit: 3
+    open-pull-requests-limit: 5
     groups:
-      # wrangler, miniflare and vitest-pool-workers interlock, and
-      # vitest-pool-workers peer-depends on an exact vitest minor. Bumping any of
-      # them alone tends to break the test run, so they move together.
+      # Deliberately includes majors. wrangler, miniflare and vitest-pool-workers
+      # interlock, and vitest-pool-workers peer-depends on an exact vitest minor,
+      # so splitting their majors apart produces PRs that are individually broken
+      # and cannot go green on their own.
       cloudflare:
         patterns:
           - 'wrangler'
           - '@cloudflare/*'
           - 'vitest'
           - '@vitest/*'
+      # Independent tools, so majors are held out and arrive as their own PR where
+      # the changelog can be read before merging. typescript 5 -> 7 swapped in the
+      # native port and dropped tsserver; that deserved its own review.
       tooling:
         patterns:
           - 'prettier'
           - 'typescript'
           - 'tailwindcss'
           - '@tailwindcss/*'
-    # hono is the only runtime dependency and is deliberately left ungrouped so
-    # its updates get reviewed on their own.
+        update-types:
+          - 'minor'
+          - 'patch'
+    # hono is the only runtime dependency and is left ungrouped so every update to
+    # it gets reviewed on its own.
 
   - package-ecosystem: 'github-actions'
     directory: '/'
@@ -38,6 +45,8 @@ updates:
       - 'github-actions'
     open-pull-requests-limit: 3
     groups:
+      # Action majors are low-risk here and fully exercised by the workflow itself,
+      # so they stay grouped.
       actions:
         patterns:
           - '*'
