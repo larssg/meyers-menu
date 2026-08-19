@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "hono": "^4.13.3"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

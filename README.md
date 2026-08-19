@@ -40,6 +40,8 @@ Add `?alarm=true` to any calendar feed for a 5-minute reminder on each event.
 
 ## Development
 
+Node 24 (pinned in `mise.toml`, matching CI).
+
 ```bash
 npm install
 npm run dev          # wrangler dev on http://localhost:8787

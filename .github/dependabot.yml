@@ -1,0 +1,43 @@
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+      - 'npm'
+    open-pull-requests-limit: 3
+    groups:
+      # wrangler, miniflare and vitest-pool-workers interlock, and
+      # vitest-pool-workers peer-depends on an exact vitest minor. Bumping any of
+      # them alone tends to break the test run, so they move together.
+      cloudflare:
+        patterns:
+          - 'wrangler'
+          - '@cloudflare/*'
+          - 'vitest'
+          - '@vitest/*'
+      tooling:
+        patterns:
+          - 'prettier'
+          - 'typescript'
+          - 'tailwindcss'
+          - '@tailwindcss/*'
+    # hono is the only runtime dependency and is deliberately left ungrouped so
+    # its updates get reviewed on their own.
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+      - 'github-actions'
+    open-pull-requests-limit: 3
+    groups:
+      actions:
+        patterns:
+          - '*'
