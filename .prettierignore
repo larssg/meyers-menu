@@ -1,0 +1,16 @@
+node_modules
+.wrangler
+package-lock.json
+
+# Build output
+public/css/app.css
+
+# Byte-exact test oracles. Reformatting these breaks the parity, folding and
+# backfill-fidelity tests, which compare against them verbatim.
+test/golden
+test/oracle
+test/vps
+test/__snapshots__
+
+# Scraped page fixture, kept exactly as served.
+test/fixtures

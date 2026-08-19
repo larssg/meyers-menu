@@ -5,89 +5,94 @@
  * scraper and CalendarService over the same fixture. Any divergence here means the
  * port changed behaviour, which for the .ics files would break live subscriptions.
  */
-import { describe, expect, it } from 'vitest'
-import fixtureHtml from './fixtures/meyers-menu-page-foodop.html?raw'
-import oracleMenuDays from './oracle/menudays.json'
-import { parseNuxtData } from '../src/scrape'
-import { generateCalendar } from '../src/ical'
-import { generateSlug } from '../src/util/slug'
-import type { MenuDay } from '../src/types'
+import { describe, expect, it } from 'vitest';
+import fixtureHtml from './fixtures/meyers-menu-page-foodop.html?raw';
+import oracleMenuDays from './oracle/menudays.json';
+import { parseNuxtData } from '../src/scrape';
+import { generateCalendar } from '../src/ical';
+import { generateSlug } from '../src/util/slug';
+import type { MenuDay } from '../src/types';
 
 // Pinned to the fixture's data window (April 7-10, 2026), matching FixtureToday in C#.
-const FIXTURE_TODAY = '2026-04-08'
-const parsed = parseNuxtData(fixtureHtml)
+const FIXTURE_TODAY = '2026-04-08';
+const parsed = parseNuxtData(fixtureHtml);
 
 describe('scraper parity', () => {
   it('produces the same menu days as the C# scraper', () => {
-    expect(parsed).toEqual(oracleMenuDays as MenuDay[])
-  })
+    expect(parsed).toEqual(oracleMenuDays as MenuDay[]);
+  });
 
   it('extracts every menu type from the fixture', () => {
-    expect(new Set(parsed.map((d) => d.menuType)).size).toBe(7)
-  })
-})
+    expect(new Set(parsed.map((d) => d.menuType)).size).toBe(7);
+  });
+});
 
 /**
  * DTSTAMP is generation time, so it is the one field that legitimately differs
  * between two runs. Everything else must match byte for byte.
  */
 function normalise(ics: string): string {
-  return ics.replace(/^DTSTAMP:.*$/gm, 'DTSTAMP:NORMALISED')
+  return ics.replace(/^DTSTAMP:.*$/gm, 'DTSTAMP:NORMALISED');
 }
 
 describe('iCal parity', () => {
-  const byType = new Map<string, MenuDay[]>()
+  const byType = new Map<string, MenuDay[]>();
   for (const day of parsed) {
-    const bucket = byType.get(day.menuType)
-    if (bucket) bucket.push(day)
-    else byType.set(day.menuType, [day])
+    const bucket = byType.get(day.menuType);
+    if (bucket) bucket.push(day);
+    else byType.set(day.menuType, [day]);
   }
 
   for (const [typeName, days] of byType) {
-    const slug = generateSlug(typeName)
-    const sorted = [...days].sort((a, b) => a.date.localeCompare(b.date))
+    const slug = generateSlug(typeName);
+    const sorted = [...days].sort((a, b) => a.date.localeCompare(b.date));
 
     it(`matches the C# feed for ${typeName}`, async () => {
-      const oracle = await import(`./oracle/${slug}.ics?raw`)
-      const generated = generateCalendar(sorted, { menuTypeName: typeName })
-      expect(normalise(generated)).toBe(normalise(oracle.default))
-    })
+      const oracle = await import(`./oracle/${slug}.ics?raw`);
+      const generated = generateCalendar(sorted, { menuTypeName: typeName });
+      expect(normalise(generated)).toBe(normalise(oracle.default));
+    });
 
     it(`matches the C# alarm feed for ${typeName}`, async () => {
-      const oracle = await import(`./oracle/${slug}.alarm.ics?raw`)
-      const generated = generateCalendar(sorted, { menuTypeName: typeName, includeAlarms: true })
-      expect(normalise(generated)).toBe(normalise(oracle.default))
-    })
+      const oracle = await import(`./oracle/${slug}.alarm.ics?raw`);
+      const generated = generateCalendar(sorted, { menuTypeName: typeName, includeAlarms: true });
+      expect(normalise(generated)).toBe(normalise(oracle.default));
+    });
   }
 
   it('matches the C# placeholder feed when there is no menu data', async () => {
-    const oracle = await import('./oracle/_empty.ics?raw')
+    const oracle = await import('./oracle/_empty.ics?raw');
     const generated = generateCalendar([], {
       menuTypeName: 'Custom Menu Selection',
       today: FIXTURE_TODAY,
-    })
+    });
     // The placeholder event's date is "today", which differs between the two runs.
-    const stripDates = (s: string) => normalise(s).replace(/(DTSTART|DTEND)([^:]*):\d{8}T/g, '$1$2:DATE T')
-    expect(stripDates(generated)).toBe(stripDates(oracle.default))
-  })
-})
+    const stripDates = (s: string) =>
+      normalise(s).replace(/(DTSTART|DTEND)([^:]*):\d{8}T/g, '$1$2:DATE T');
+    expect(stripDates(generated)).toBe(stripDates(oracle.default));
+  });
+});
 
 describe('line folding', () => {
   it('reproduces the folding of every captured live feed', async () => {
-    const goldens = import.meta.glob('./golden/*.ics', { query: '?raw', import: 'default', eager: true })
-    expect(Object.keys(goldens).length).toBeGreaterThan(0)
+    const goldens = import.meta.glob('./golden/*.ics', {
+      query: '?raw',
+      import: 'default',
+      eager: true,
+    });
+    expect(Object.keys(goldens).length).toBeGreaterThan(0);
 
     for (const [name, content] of Object.entries(goldens)) {
-      const raw = content as string
-      const unfolded = raw.replace(/\r\n[ \t]/g, '')
-      const { foldLine } = await import('../src/ical')
+      const raw = content as string;
+      const unfolded = raw.replace(/\r\n[ \t]/g, '');
+      const { foldLine } = await import('../src/ical');
       const refolded =
         unfolded
           .split('\r\n')
           .filter((l) => l !== '')
           .flatMap(foldLine)
-          .join('\r\n') + '\r\n'
-      expect(refolded, name).toBe(raw)
+          .join('\r\n') + '\r\n';
+      expect(refolded, name).toBe(raw);
     }
-  })
-})
+  });
+});

@@ -1,15 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "ES2022"
-    ],
+    "lib": ["ES2022"],
     "module": "ES2022",
     "moduleResolution": "Bundler",
-    "types": [
-      "@cloudflare/workers-types",
-      "vite/client"
-    ],
+    "types": ["@cloudflare/workers-types", "vite/client"],
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
     "strict": true,
@@ -20,10 +15,5 @@
     "verbatimModuleSyntax": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "test/**/*.ts",
-    "test/**/*.d.ts"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "test/**/*.ts", "test/**/*.d.ts"]
 }

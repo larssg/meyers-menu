@@ -1,11 +1,11 @@
 /** Port of Home.razor. */
-import { cleanupTitle } from '../ical'
-import { addDays, dayOfWeek } from '../time'
-import { ORDERED_DAYS } from '../config'
-import { CopyButton, CustomRadio, CustomSelect } from './components'
-import type { MenuEntry, MenuStore, MenuType } from '../types'
+import { cleanupTitle } from '../ical';
+import { addDays, dayOfWeek } from '../time';
+import { ORDERED_DAYS } from '../config';
+import { CopyButton, CustomRadio, CustomSelect } from './components';
+import type { MenuEntry, MenuStore, MenuType } from '../types';
 
-const DEFAULT_SLUG = 'det-velkendte'
+const DEFAULT_SLUG = 'det-velkendte';
 
 /** Per-weekday defaults, matching the selected="" logic in Home.razor. */
 const DEFAULT_DAY_SLUGS: Record<number, string> = {
@@ -14,26 +14,39 @@ const DEFAULT_DAY_SLUGS: Record<number, string> = {
   3: DEFAULT_SLUG,
   4: 'den-groenne',
   5: DEFAULT_SLUG,
-}
+};
 
-const WEEKDAY_ABBR = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const MONTH_ABBR = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const WEEKDAY_ABBR = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MONTH_ABBR = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
 
 /** "Wed 20 Aug", matching the C# "ddd d MMM" under InvariantCulture. */
 function formatShortDate(date: string): string {
-  const [, month, day] = date.split('-') as [string, string, string]
-  return `${WEEKDAY_ABBR[dayOfWeek(date)]} ${Number(day)} ${MONTH_ABBR[Number(month) - 1]}`
+  const [, month, day] = date.split('-') as [string, string, string];
+  return `${WEEKDAY_ABBR[dayOfWeek(date)]} ${Number(day)} ${MONTH_ABBR[Number(month) - 1]}`;
 }
 
 export function formatLastUpdated(updatedAt: string | null, now: Date): string {
-  if (!updatedAt) return 'Menu data not available'
+  if (!updatedAt) return 'Menu data not available';
 
-  const updated = new Date(updatedAt)
-  const minutes = (now.getTime() - updated.getTime()) / 60000
+  const updated = new Date(updatedAt);
+  const minutes = (now.getTime() - updated.getTime()) / 60000;
 
-  if (minutes < 1) return 'Menu updated just now'
-  if (minutes < 60) return `Menu updated ${Math.floor(minutes)} minutes ago`
-  if (minutes < 1440) return `Menu updated ${Math.floor(minutes / 60)} hours ago`
+  if (minutes < 1) return 'Menu updated just now';
+  if (minutes < 60) return `Menu updated ${Math.floor(minutes)} minutes ago`;
+  if (minutes < 1440) return `Menu updated ${Math.floor(minutes / 60)} hours ago`;
 
   // Rendered in Copenhagen time so the page reads the same for everyone.
   const parts = new Intl.DateTimeFormat('en-US', {
@@ -44,29 +57,29 @@ export function formatLastUpdated(updatedAt: string | null, now: Date): string {
     hour: 'numeric',
     minute: '2-digit',
     hour12: true,
-  }).formatToParts(updated)
-  const get = (type: string) => parts.find((p) => p.type === type)?.value ?? ''
-  return `Menu updated ${get('month')} ${get('day')}, ${get('year')} at ${get('hour')}:${get('minute')} ${get('dayPeriod')}`
+  }).formatToParts(updated);
+  const get = (type: string) => parts.find((p) => p.type === type)?.value ?? '';
+  return `Menu updated ${get('month')} ${get('day')}, ${get('year')} at ${get('hour')}:${get('minute')} ${get('dayPeriod')}`;
 }
 
 /** Menu entries for the 7-day preview, indexed by menuTypeId then date. */
 function buildWeeklyData(store: MenuStore, today: string): Map<number, Map<string, MenuEntry>> {
-  const end = addDays(today, 6)
-  const byType = new Map<number, Map<string, MenuEntry>>()
+  const end = addDays(today, 6);
+  const byType = new Map<number, Map<string, MenuEntry>>();
 
-  for (const type of store.menuTypes) byType.set(type.id, new Map())
+  for (const type of store.menuTypes) byType.set(type.id, new Map());
 
   for (const entry of store.entries) {
-    if (entry.date < today || entry.date > end) continue
-    let bucket = byType.get(entry.menuTypeId)
+    if (entry.date < today || entry.date > end) continue;
+    let bucket = byType.get(entry.menuTypeId);
     if (!bucket) {
-      bucket = new Map()
-      byType.set(entry.menuTypeId, bucket)
+      bucket = new Map();
+      byType.set(entry.menuTypeId, bucket);
     }
-    bucket.set(entry.date, entry)
+    bucket.set(entry.date, entry);
   }
 
-  return byType
+  return byType;
 }
 
 /**
@@ -92,18 +105,18 @@ function menuDataScript(
       ]),
     ),
     startDate: today,
-  }
+  };
 
   // </script> inside JSON would close the tag early.
-  const json = JSON.stringify(payload).replaceAll('</', '<\\/')
-  return `<script>window.menuData = ${json};</script>`
+  const json = JSON.stringify(payload).replaceAll('</', '<\\/');
+  return `<script>window.menuData = ${json};</script>`;
 }
 
 export function Home(props: { store: MenuStore; today: string; now: Date }) {
-  const { store, today } = props
-  const menuTypes = store.menuTypes.filter((t) => t.isActive)
-  const defaultMenuType = menuTypes.find((t) => t.slug === DEFAULT_SLUG) ?? menuTypes[0]
-  const weeklyData = buildWeeklyData(store, today)
+  const { store, today } = props;
+  const menuTypes = store.menuTypes.filter((t) => t.isActive);
+  const defaultMenuType = menuTypes.find((t) => t.slug === DEFAULT_SLUG) ?? menuTypes[0];
+  const weeklyData = buildWeeklyData(store, today);
 
   const body = (
     <div class="max-w-2xl mx-auto">
@@ -185,13 +198,11 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
           <div id="weeklyPreview">
             {defaultMenuType &&
               Array.from({ length: 7 }, (_, i) => {
-                const date = addDays(today, i)
-                const dow = dayOfWeek(date)
-                const isWeekend = dow === 0 || dow === 6
-                const entry = isWeekend
-                  ? undefined
-                  : weeklyData.get(defaultMenuType.id)?.get(date)
-                const title = entry ? cleanupTitle(entry.mainDish) : ''
+                const date = addDays(today, i);
+                const dow = dayOfWeek(date);
+                const isWeekend = dow === 0 || dow === 6;
+                const entry = isWeekend ? undefined : weeklyData.get(defaultMenuType.id)?.get(date);
+                const title = entry ? cleanupTitle(entry.mainDish) : '';
 
                 return (
                   <div class={`menu-row ${i === 0 ? 'menu-row-today' : ''}`}>
@@ -216,7 +227,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
                       )}
                     </div>
                   </div>
-                )
+                );
               })}
           </div>
         </div>
@@ -275,10 +286,10 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
         </p>
       </div>
     </div>
-  )
+  );
 
   return {
     body,
     script: menuTypes.length > 0 ? menuDataScript(menuTypes, weeklyData, today) : undefined,
-  }
+  };
 }

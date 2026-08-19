@@ -1,42 +1,42 @@
 /** Port of the shared Razor components: CustomSelect, CustomRadio, CopyButton. */
-import type { Child } from 'hono/jsx'
+import type { Child } from 'hono/jsx';
 
-type SelectSize = 'small' | 'medium' | 'large'
-type RadioSize = 'small' | 'medium' | 'large'
+type SelectSize = 'small' | 'medium' | 'large';
+type RadioSize = 'small' | 'medium' | 'large';
 
 const SELECT_BASE =
   'appearance-none cursor-pointer bg-transparent font-display text-ink ' +
   'border-0 border-b border-ink-faint rounded-none ' +
   'hover:border-ink focus:border-madder focus:outline-none ' +
   'transition-colors duration-200 ' +
-  'custom-select-arrow bg-no-repeat'
+  'custom-select-arrow bg-no-repeat';
 
 const SELECT_SIZES: Record<SelectSize, string> = {
   small: 'px-1 py-1.5 pr-7 text-sm custom-select-small',
   large: 'px-2 py-2.5 pr-9 text-xl custom-select-large',
   medium: 'px-1 py-2 pr-8 text-base custom-select-medium',
-}
+};
 
 export function CustomSelect(props: {
-  children?: Child
-  class?: string
-  size?: SelectSize
-  centered?: boolean
-  id?: string
-  onchange?: string
-  'data-day'?: number
+  children?: Child;
+  class?: string;
+  size?: SelectSize;
+  centered?: boolean;
+  id?: string;
+  onchange?: string;
+  'data-day'?: number;
 }) {
-  const { children, class: extra = '', size = 'medium', centered, ...rest } = props
+  const { children, class: extra = '', size = 'medium', centered, ...rest } = props;
   const classes = [SELECT_BASE, SELECT_SIZES[size], centered ? 'text-center' : '', extra]
     .filter(Boolean)
     .join(' ')
-    .trim()
+    .trim();
 
   return (
     <select class={classes} {...rest}>
       {children}
     </select>
-  )
+  );
 }
 
 const RADIO_INPUT_BASE =
@@ -47,30 +47,30 @@ const RADIO_INPUT_BASE =
   'relative cursor-pointer ' +
   "before:content-[''] before:absolute before:inset-[3px] before:rounded-full " +
   'before:bg-cream before:scale-0 before:transition-transform ' +
-  'checked:before:scale-100'
+  'checked:before:scale-100';
 
 const RADIO_INPUT_SIZES: Record<RadioSize, string> = {
   small: 'w-3 h-3 mr-2',
   large: 'w-5 h-5 mr-4',
   medium: 'w-4 h-4 mr-3',
-}
+};
 
 const RADIO_TEXT_SIZES: Record<RadioSize, string> = {
   small: 'text-sm',
   large: 'text-lg',
   medium: 'text-base',
-}
+};
 
 export function CustomRadio(props: {
-  children?: Child
-  class?: string
-  size?: RadioSize
-  name: string
-  value: string
-  checked?: boolean
-  onchange?: string
+  children?: Child;
+  class?: string;
+  size?: RadioSize;
+  name: string;
+  value: string;
+  checked?: boolean;
+  onchange?: string;
 }) {
-  const { children, class: extra = '', size = 'medium', ...rest } = props
+  const { children, class: extra = '', size = 'medium', ...rest } = props;
 
   return (
     <label class={`flex items-center cursor-pointer ${extra}`.trim()}>
@@ -84,7 +84,7 @@ export function CustomRadio(props: {
         {children}
       </span>
     </label>
-  )
+  );
 }
 
 export function CopyButton(props: { children?: Child; inputId: string; class?: string }) {
@@ -96,7 +96,7 @@ export function CopyButton(props: { children?: Child; inputId: string; class?: s
     >
       {props.children}
     </button>
-  )
+  );
 }
 
 /** The GitHub mark, shared by the header and footer. */
@@ -109,5 +109,5 @@ export function GithubIcon(props: { class: string }) {
         clip-rule="evenodd"
       />
     </svg>
-  )
+  );
 }

@@ -35,6 +35,18 @@ npm run deploy
 - The weekly preview in `src/views/home.tsx` is server-rendered for crawlers and
   re-rendered by `public/js/menu-app.js`. Both must emit the same markup.
 
+## Formatting
+
+Prettier, semicolons on. `npm run format` to apply, `npm run format:check` in CI.
+
+`embeddedLanguageFormatting` is **off** on purpose: Prettier otherwise reflows the
+` html` `` template in `src/views/layout.tsx` as HTML, which changes the bytes served
+and the markup `menu-app.js` re-renders against. Do not turn it on.
+
+`.prettierignore` covers `test/golden`, `test/oracle`, `test/vps`, `test/__snapshots__`
+and `test/fixtures`. Those are byte-exact oracles; formatting them breaks the parity,
+folding and backfill-fidelity tests.
+
 ## Conventions
 
 - Views are Hono JSX in `src/views/`. `Layout` uses the `html` tagged template; use

@@ -11,16 +11,16 @@ same menu type ids, so existing subscriptions keep working.
 
 ## Architecture
 
-| Piece | Where |
-| --- | --- |
-| HTTP routing | Hono, `src/index.ts` |
-| Views | Hono JSX, `src/views/` |
-| Scraper | `src/scrape.ts` |
-| iCal serialiser | `src/ical.ts` |
-| Persistence | Workers KV, one JSON document, `src/store.ts` |
-| Refresh | Cron trigger every 6 hours, `scheduled()` in `src/index.ts` |
-| Static assets | Workers Static Assets, `public/` |
-| Styling | Tailwind CSS v4, `styles/app.css` |
+| Piece           | Where                                                       |
+| --------------- | ----------------------------------------------------------- |
+| HTTP routing    | Hono, `src/index.ts`                                        |
+| Views           | Hono JSX, `src/views/`                                      |
+| Scraper         | `src/scrape.ts`                                             |
+| iCal serialiser | `src/ical.ts`                                               |
+| Persistence     | Workers KV, one JSON document, `src/store.ts`               |
+| Refresh         | Cron trigger every 6 hours, `scheduled()` in `src/index.ts` |
+| Static assets   | Workers Static Assets, `public/`                            |
+| Styling         | Tailwind CSS v4, `styles/app.css`                           |
 
 There is no database. The full dataset is a rolling two-month window over seven menu
 types, comfortably under 100 KB, stored as a single KV value. The cron trigger is the
@@ -45,6 +45,7 @@ npm install
 npm run dev          # wrangler dev on http://localhost:8787
 npm test             # vitest, runs inside workerd
 npm run typecheck
+npm run format         # prettier, semicolons on
 ```
 
 The KV namespace is simulated locally by miniflare. To populate it, hit

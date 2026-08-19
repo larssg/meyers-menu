@@ -1,17 +1,17 @@
 /** Port of App.razor + MainLayout.razor: document shell, SEO head, header, footer. */
-import { html, raw } from 'hono/html'
-import type { Child } from 'hono/jsx'
-import { GithubIcon } from './components'
+import { html, raw } from 'hono/html';
+import type { Child } from 'hono/jsx';
+import { GithubIcon } from './components';
 
 export const DESCRIPTION =
   'Get the weekly Meyers lunch menu in your calendar. Free iCal feeds for all Meyers Kantiner menu types, ' +
-  'with support for Google Calendar, Outlook and Apple Calendar.'
+  'with support for Google Calendar, Outlook and Apple Calendar.';
 
 const FAVICON =
   "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>" +
   "<circle cx='50' cy='50' r='48' fill='%23a93b28'/>" +
   "<text x='50' y='70' font-size='58' font-family='Georgia,serif' font-style='italic' " +
-  "fill='%23fdfaf1' text-anchor='middle'>M</text></svg>"
+  "fill='%23fdfaf1' text-anchor='middle'>M</text></svg>";
 
 function structuredData(baseUrl: string): string {
   return JSON.stringify({
@@ -23,15 +23,15 @@ function structuredData(baseUrl: string): string {
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'DKK' },
-  })
+  });
 }
 
 export function Layout(props: {
-  children: Child
-  canonicalUrl: string
-  baseUrl: string
+  children: Child;
+  canonicalUrl: string;
+  baseUrl: string;
   /** Serialised window.menuData, injected before menu-app.js runs. */
-  menuDataScript?: string
+  menuDataScript?: string;
 }) {
   return html`<!DOCTYPE html>
 <html lang="en">
@@ -67,7 +67,7 @@ ${raw(renderShell(props.children))}
 ${props.menuDataScript ? raw(props.menuDataScript) : ''}
 </body>
 </html>
-`
+`;
 }
 
 /** Header, main and footer chrome. Kept separate so the JSX tree stays readable. */
@@ -128,7 +128,7 @@ function renderShell(children: Child): string {
         </div>
       </footer>
     </div>
-  )
+  );
 
-  return shell.toString()
+  return shell.toString();
 }

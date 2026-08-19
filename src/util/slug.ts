@@ -1,6 +1,6 @@
 /** Port of Meyers.Core.Utilities.SlugHelper. */
 export function generateSlug(name: string): string {
-  if (!name || !name.trim()) return ''
+  if (!name || !name.trim()) return '';
 
   return name
     .toLowerCase()
@@ -11,5 +11,5 @@ export function generateSlug(name: string): string {
     .replaceAll('ü', 'u')
     .replace(/[^a-z0-9-]/g, '-')
     .replace(/-+/g, '-')
-    .replace(/^-+|-+$/g, '')
+    .replace(/^-+|-+$/g, '');
 }

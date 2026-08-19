@@ -7,36 +7,34 @@
 
   "assets": {
     "directory": "./public",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
   },
 
   "kv_namespaces": [
     {
       "binding": "MENU_KV",
-      "id": "cb6a9971ee9444059617f78be764669e"
-    }
+      "id": "cb6a9971ee9444059617f78be764669e",
+    },
   ],
 
   // Keep the workers.dev URL alive alongside the custom domain so the Worker stays
   // testable while menu.smartcode.dk is still served by the old VPS.
   "workers_dev": true,
 
-  "routes": [
-    { "pattern": "menu.smartcode.dk", "custom_domain": true }
-  ],
+  "routes": [{ "pattern": "menu.smartcode.dk", "custom_domain": true }],
 
   "triggers": {
     // Every 6 hours, matching the old MenuCacheBackgroundService refresh interval.
-    "crons": ["17 */6 * * *"]
+    "crons": ["17 */6 * * *"],
   },
 
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
 
   "vars": {
-    "SITE_URL": "https://menu.smartcode.dk"
-  }
+    "SITE_URL": "https://menu.smartcode.dk",
+  },
 
   // REFRESH_SECRET is set with: wrangler secret put REFRESH_SECRET
 }
