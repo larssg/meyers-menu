@@ -16,14 +16,14 @@
     "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.22.0",
-    "@cloudflare/workers-types": "^5.20260818.1",
+    "@cloudflare/vitest-pool-workers": "^0.23.0",
+    "@cloudflare/workers-types": "^5.20261011.1",
     "@tailwindcss/cli": "^4.3.3",
     "prettier": "^3.9.6",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
-    "vitest": "^4.1.11",
-    "wrangler": "^4.124.0"
+    "vitest": "^5.0.3",
+    "wrangler": "^4.149.0"
   },
   "dependencies": {
     "hono": "^4.13.3"
