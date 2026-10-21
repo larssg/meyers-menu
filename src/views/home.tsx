@@ -1,7 +1,7 @@
 /** Port of Home.razor. */
 import { cleanupTitle } from '../ical';
 import { addDays, dayOfWeek } from '../time';
-import { ORDERED_DAYS } from '../config';
+import { feedContract, ORDERED_DAYS } from '../config';
 import { CopyButton, CustomRadio, CustomSelect } from './components';
 import type { MenuEntry, MenuStore, MenuType } from '../types';
 
@@ -105,6 +105,7 @@ function menuDataScript(
       ]),
     ),
     startDate: today,
+    feed: feedContract(),
   };
 
   // </script> inside JSON would close the tag early.
@@ -117,6 +118,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
   const menuTypes = store.menuTypes.filter((t) => t.isActive);
   const defaultMenuType = menuTypes.find((t) => t.slug === DEFAULT_SLUG) ?? menuTypes[0];
   const weeklyData = buildWeeklyData(store, today);
+  const { defaultStart, defaultEnd } = feedContract();
 
   const body = (
     <div class="max-w-2xl mx-auto">
@@ -278,7 +280,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
             <input
               type="time"
               id="startTime"
-              value="12:00"
+              value={defaultStart}
               aria-label="Lunch start time"
               aria-describedby="timeError"
               class="time-input"
@@ -288,7 +290,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
             <input
               type="time"
               id="endTime"
-              value="13:00"
+              value={defaultEnd}
               aria-label="Lunch end time"
               aria-describedby="timeError"
               class="time-input"

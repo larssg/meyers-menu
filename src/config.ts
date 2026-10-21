@@ -54,6 +54,13 @@ export function parseTimeOfDay(value: string): number | null {
   return Number(match[1]) * 60 + Number(match[2]);
 }
 
+/** Formats minutes since midnight as "HH:MM". Inverse of parseTimeOfDay. */
+export function formatTimeOfDay(minutes: number): string {
+  const hh = String(Math.floor(minutes / 60)).padStart(2, '0');
+  const mm = String(minutes % 60).padStart(2, '0');
+  return `${hh}:${mm}`;
+}
+
 /**
  * Resolves the optional ?start= and ?end= feed parameters. Either may be omitted
  * and falls back to the default. Returns null when a value is malformed or the
@@ -67,4 +74,38 @@ export function decodeEventTimes(
   const endMinutes = end === undefined ? DEFAULT_END_MINUTES : parseTimeOfDay(end);
   if (startMinutes === null || endMinutes === null || endMinutes <= startMinutes) return null;
   return { startMinutes, endMinutes };
+}
+
+/**
+ * Feed URL contract. index.ts derives its routes from these templates and Home()
+ * ships them to menu-app.js in window.menuData, so the URL the homepage hands out
+ * is always one the router serves.
+ */
+export const FEED_PATHS = {
+  simple: '/calendar/{slug}.ics',
+  custom: '/calendar/custom/{config}.ics',
+} as const;
+
+/** Query parameters every feed accepts. */
+export const FEED_PARAMS = { alarm: 'alarm', start: 'start', end: 'end' } as const;
+
+/** Turns a feed template into a Hono route: "/calendar/{slug}.ics" -> "/calendar/:slug{.+\.ics}". */
+export function feedRoute<T extends string>(template: T): FeedRoute<T> {
+  return template.replace(/\{(\w+)\}\.ics$/, ':$1{.+\\.ics}') as FeedRoute<T>;
+}
+
+/** The same rewrite at the type level, so Hono still types c.req.param() for the route. */
+type FeedRoute<T extends string> = T extends `${infer Prefix}{${infer Name}}.ics`
+  ? `${Prefix}:${Name}{.+\\.ics}`
+  : never;
+
+/** Everything menu-app.js needs to build a feed URL, as serialised into window.menuData. */
+export function feedContract() {
+  return {
+    paths: FEED_PATHS,
+    params: FEED_PARAMS,
+    dayChars: Object.fromEntries(ORDERED_DAYS.map((d) => [d.dayOfWeek, d.char])),
+    defaultStart: formatTimeOfDay(DEFAULT_START_MINUTES),
+    defaultEnd: formatTimeOfDay(DEFAULT_END_MINUTES),
+  };
 }

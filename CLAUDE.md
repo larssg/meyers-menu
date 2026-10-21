@@ -12,7 +12,7 @@ TypeScript rewrite of a .NET 10 Blazor SSR app; see README.md for the layout.
 
 ```bash
 npm run dev          # wrangler dev
-npm test             # vitest inside workerd (83 tests)
+npm test             # vitest inside workerd (88 tests)
 npm run typecheck
 npm run css:build    # Tailwind v4 -> public/css/app.css
 npm run deploy
@@ -59,6 +59,9 @@ editor set to "use workspace TypeScript" needs its own bundled copy instead.
 
 ## Conventions
 
+- Feed URLs are defined once, in `FEED_PATHS`/`FEED_PARAMS` in `src/config.ts`. The router
+  derives its routes from them and `menu-app.js` builds URLs from the copy shipped in
+  `window.menuData.feed`. Never hardcode a feed path, param or default time in either.
 - Views are Hono JSX in `src/views/`. `Layout` uses the `html` tagged template; use
   `raw()` for anything that must not be escaped.
 - Only the FoodOp `__NUXT_DATA__` format is parsed. The legacy Sanity `menuBlock` format

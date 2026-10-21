@@ -4,7 +4,7 @@
  */
 import { Hono } from 'hono';
 import { generateCalendar } from './ical';
-import { decodeCustomConfig, decodeEventTimes } from './config';
+import { decodeCustomConfig, decodeEventTimes, FEED_PARAMS, FEED_PATHS, feedRoute } from './config';
 import { addMonths, copenhagenDate, dayOfWeek } from './time';
 import {
   emptyStore,
@@ -131,14 +131,15 @@ app.get('/', async (c) => {
   );
 });
 
-app.get('/calendar/custom/:config{.+\\.ics}', async (c) => {
+// Registered before the simple route, whose pattern would also match custom/*.ics.
+app.get(feedRoute(FEED_PATHS.custom), async (c) => {
   const now = new Date();
   const config = c.req.param('config').replace(/\.ics$/, '');
 
   const weekdayConfig = decodeCustomConfig(config);
   if (!weekdayConfig) return c.text('Invalid calendar configuration', 400);
 
-  const times = decodeEventTimes(c.req.query('start'), c.req.query('end'));
+  const times = decodeEventTimes(c.req.query(FEED_PARAMS.start), c.req.query(FEED_PARAMS.end));
   if (!times) return c.text(INVALID_TIMES, 400);
 
   const store = await loadStore(c.env);
@@ -151,7 +152,7 @@ app.get('/calendar/custom/:config{.+\\.ics}', async (c) => {
 
   const content = generateCalendar(toMenuDays(store, selected), {
     menuTypeName: 'Custom Menu Selection',
-    includeAlarms: c.req.query('alarm') === 'true',
+    includeAlarms: c.req.query(FEED_PARAMS.alarm) === 'true',
     ...times,
     now,
     today,
@@ -160,7 +161,7 @@ app.get('/calendar/custom/:config{.+\\.ics}', async (c) => {
   return calendarResponse(content, new Date(store.updatedAt), now, c.req.header('If-None-Match'));
 });
 
-app.get('/calendar/:slug{.+\\.ics}', async (c) => {
+app.get(feedRoute(FEED_PATHS.simple), async (c) => {
   const now = new Date();
   const slug = c.req.param('slug').replace(/\.ics$/, '');
 
@@ -168,7 +169,7 @@ app.get('/calendar/:slug{.+\\.ics}', async (c) => {
   const menuType = findTypeBySlug(store, slug);
   if (!menuType) return c.text(`Menu '${slug}' not found`, 404);
 
-  const times = decodeEventTimes(c.req.query('start'), c.req.query('end'));
+  const times = decodeEventTimes(c.req.query(FEED_PARAMS.start), c.req.query(FEED_PARAMS.end));
   if (!times) return c.text(INVALID_TIMES, 400);
 
   const today = copenhagenDate(now);
@@ -176,7 +177,7 @@ app.get('/calendar/:slug{.+\\.ics}', async (c) => {
 
   const content = generateCalendar(toMenuDays(store, selected), {
     menuTypeName: menuType.name,
-    includeAlarms: c.req.query('alarm') === 'true',
+    includeAlarms: c.req.query(FEED_PARAMS.alarm) === 'true',
     ...times,
     now,
     today,
