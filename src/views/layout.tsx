@@ -113,7 +113,15 @@ function renderShell(children: Child): string {
               Built by Lars Sehested &middot; Not affiliated with Meyers Kantiner
             </p>
             <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-faint">
-              Open-source friendly &middot; Feedback welcome
+              Open-source friendly &middot;{' '}
+              <a
+                href="https://github.com/larssg/meyers-menu/issues/new"
+                target="_blank"
+                rel="noopener"
+                class="underline decoration-rule underline-offset-4 hover:text-ink hover:decoration-ink transition-colors"
+              >
+                Feedback welcome
+              </a>
             </p>
             <a
               href="https://github.com/larssg/meyers-menu"
