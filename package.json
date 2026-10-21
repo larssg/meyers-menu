@@ -19,7 +19,7 @@
     "@cloudflare/vitest-pool-workers": "^0.23.0",
     "@cloudflare/workers-types": "^5.20261018.1",
     "@tailwindcss/cli": "^4.3.3",
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "vitest": "^4.1.12",
