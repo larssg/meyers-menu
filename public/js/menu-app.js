@@ -2,8 +2,13 @@
 const TOAST_DURATION = 1800;
 const AUTO_REFRESH_INTERVAL = 3600000; // 1 hour
 const BASE_URL = window.location.origin;
-const DEFAULT_START_TIME = '12:00';
-const DEFAULT_END_TIME = '13:00';
+
+// Feed URL contract from the server (feedContract() in src/config.ts): paths, query
+// params, weekday letters and default times. Never hardcode these here, or the URL
+// handed out can drift from the routes that serve it.
+const FEED = window.menuData.feed;
+const DEFAULT_START_TIME = FEED.defaultStart;
+const DEFAULT_END_TIME = FEED.defaultEnd;
 
 // Current state
 let currentMenuMode = 'simple';
@@ -12,21 +17,11 @@ let isInitializing = false;
 
 // URL Codec Class
 class MenuUrlCodec {
-  static DAY_CHARS = {
-    1: 'M', // Monday
-    2: 'T', // Tuesday
-    3: 'W', // Wednesday
-    4: 'R', // Thursday
-    5: 'F', // Friday
-  };
+  static DAY_CHARS = FEED.dayChars;
 
-  static CHAR_TO_DAY = {
-    M: 1, // Monday
-    T: 2, // Tuesday
-    W: 3, // Wednesday
-    R: 4, // Thursday
-    F: 5, // Friday
-  };
+  static CHAR_TO_DAY = Object.fromEntries(
+    Object.entries(FEED.dayChars).map(([dayOfWeek, dayChar]) => [dayChar, Number(dayOfWeek)]),
+  );
 
   static DEFAULT_MENU_SLUG = 'det-velkendte';
 
@@ -90,7 +85,7 @@ class MenuUrlCodec {
 
     if (!configString) return dayMenuMap;
 
-    const matches = configString.match(/([MTWRF])(\d+)/g);
+    const matches = configString.match(/([A-Z])(\d+)/g);
     if (matches) {
       matches.forEach((match) => {
         const dayChar = match[0];
@@ -104,10 +99,6 @@ class MenuUrlCodec {
     }
 
     return dayMenuMap;
-  }
-
-  static getDayChar(dayOfWeek) {
-    return this.DAY_CHARS[dayOfWeek] || null;
   }
 
   static getDayOfWeek(dayChar) {
@@ -179,6 +170,19 @@ function getEventTimes() {
   };
 }
 
+/** Custom-mode selections as { dayOfWeek: menuTypeId }, skipping unset days. */
+function getCustomDayMenuMap() {
+  const dayMenuMap = {};
+  document.querySelectorAll('.custom-day-select').forEach((select) => {
+    const dayOfWeek = parseInt(select.getAttribute('data-day'));
+    const menuTypeId = select.value;
+    if (menuTypeId && menuTypeId !== '') {
+      dayMenuMap[dayOfWeek] = menuTypeId;
+    }
+  });
+  return dayMenuMap;
+}
+
 function formatDate(dateStr) {
   const date = new Date(dateStr + 'T12:00:00');
   return {
@@ -204,20 +208,7 @@ function updateUrlParameters() {
       state.menuSlug = selectedOption.getAttribute('data-slug');
     }
   } else {
-    // Custom mode
-    const daySelects = document.querySelectorAll('.custom-day-select');
-    const dayMenuMap = {};
-
-    daySelects.forEach((select) => {
-      const dayOfWeek = parseInt(select.getAttribute('data-day'));
-      const menuTypeId = select.value;
-
-      if (menuTypeId && menuTypeId !== '') {
-        dayMenuMap[dayOfWeek] = menuTypeId;
-      }
-    });
-
-    state.config = MenuUrlCodec.encodeCustomConfig(dayMenuMap);
+    state.config = MenuUrlCodec.encodeCustomConfig(getCustomDayMenuMap());
   }
 
   // Add alarm parameter if checkbox is checked
@@ -335,52 +326,35 @@ function updateCalendarUrl() {
       const selectedOption = simpleSelect.selectedOptions[0];
       const slug = selectedOption.getAttribute('data-slug');
       if (slug) {
-        calendarUrl = `${baseUrl}/calendar/${slug}.ics`;
+        calendarUrl = baseUrl + FEED.paths.simple.replace('{slug}', slug);
       }
     }
   } else {
-    // Custom mode
-    const daySelects = document.querySelectorAll('.custom-day-select');
-    const config = [];
-
-    daySelects.forEach((select) => {
-      const dayOfWeek = parseInt(select.getAttribute('data-day'));
-      const menuTypeId = select.value;
-
-      if (menuTypeId && menuTypeId !== '') {
-        const dayChar = getDayChar(dayOfWeek);
-        if (dayChar) {
-          config.push(dayChar + menuTypeId);
-        }
-      }
-    });
-
-    if (config.length > 0) {
-      const configString = config.join('');
-      calendarUrl = `${baseUrl}/calendar/custom/${configString}.ics`;
+    const configString = MenuUrlCodec.encodeCustomConfig(getCustomDayMenuMap());
+    if (configString) {
+      calendarUrl = baseUrl + FEED.paths.custom.replace('{config}', configString);
     }
   }
 
-  // Add alarm parameter if checkbox is checked
+  // Built by hand rather than with URLSearchParams, which would encode "12:30" as "12%3A30".
+  const query = [];
+
   const alarmCheckbox = $('alarmCheckbox');
-  if (calendarUrl && alarmCheckbox && alarmCheckbox.checked) {
-    const separator = calendarUrl.includes('?') ? '&' : '?';
-    calendarUrl += `${separator}alarm=true`;
+  if (alarmCheckbox && alarmCheckbox.checked) {
+    query.push(`${FEED.params.alarm}=true`);
   }
 
-  // Add lunch times if they differ from the 12:00-13:00 default.
+  // Add lunch times if they differ from the default slot.
   // "HH:MM" strings compare correctly as plain strings.
   const times = getEventTimes();
   const timesValid = times.end > times.start;
-  if (calendarUrl && timesValid) {
-    if (times.start !== DEFAULT_START_TIME) {
-      const separator = calendarUrl.includes('?') ? '&' : '?';
-      calendarUrl += `${separator}start=${times.start}`;
-    }
-    if (times.end !== DEFAULT_END_TIME) {
-      const separator = calendarUrl.includes('?') ? '&' : '?';
-      calendarUrl += `${separator}end=${times.end}`;
-    }
+  if (timesValid) {
+    if (times.start !== DEFAULT_START_TIME) query.push(`${FEED.params.start}=${times.start}`);
+    if (times.end !== DEFAULT_END_TIME) query.push(`${FEED.params.end}=${times.end}`);
+  }
+
+  if (calendarUrl && query.length > 0) {
+    calendarUrl += `?${query.join('&')}`;
   }
 
   // Don't offer a feed URL the server would reject.
@@ -408,10 +382,6 @@ function updateCalendarUrl() {
   // Also update the preview whenever URL changes
   updateWeeklyPreview();
   updateUrlParameters();
-}
-
-function getDayChar(dayOfWeek) {
-  return MenuUrlCodec.getDayChar(dayOfWeek);
 }
 
 // Weekly Preview

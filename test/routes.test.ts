@@ -6,6 +6,7 @@ import { createExecutionContext, env, waitOnExecutionContext } from 'cloudflare:
 import { beforeEach, describe, expect, it } from 'vitest';
 import worker from '../src/index';
 import { STORE_KEY, seedFixtureStore } from './helpers';
+import { decodeEventTimes, feedContract } from '../src/config';
 import type { Env } from '../src/index';
 
 const testEnv = env as Env & { REFRESH_SECRET?: string };
@@ -168,6 +169,59 @@ describe('GET /calendar/custom/:config.ics', () => {
     const res = await get('/calendar/custom/M999.ics');
     expect(res.status).toBe(200);
     expect(await res.text()).toContain('BEGIN:VCALENDAR');
+  });
+});
+
+describe('homepage feed contract', () => {
+  type Feed = ReturnType<typeof feedContract>;
+
+  /** Reads the contract out of window.menuData, the way menu-app.js gets it. */
+  async function pageFeed(): Promise<Feed> {
+    const html = await get('/').then((r) => r.text());
+    const json = /window\.menuData = (.*?);<\/script>/s.exec(html)![1]!;
+    return JSON.parse(json).feed;
+  }
+
+  /** Same substitution and query building as updateCalendarUrl() in menu-app.js. */
+  function feedQuery(feed: Feed): string {
+    return `?${feed.params.alarm}=true&${feed.params.start}=11:30&${feed.params.end}=12:15`;
+  }
+
+  it('describes simple feed URLs the router serves', async () => {
+    const { thursday } = await seed();
+    const feed = await pageFeed();
+    const res = await get(feed.paths.simple.replace('{slug}', 'det-velkendte') + feedQuery(feed));
+    const body = await res.text();
+    const day = thursday.replaceAll('-', '');
+
+    expect(res.status).toBe(200);
+    expect(body).toContain(`UID:meyers-menu-${thursday}-det-velkendte`);
+    expect(body).toContain('BEGIN:VALARM');
+    expect(body).toContain(`DTSTART;TZID=Europe/Copenhagen:${day}T113000`);
+    expect(body).toContain(`DTEND;TZID=Europe/Copenhagen:${day}T121500`);
+  });
+
+  it('describes custom feed URLs the router serves', async () => {
+    const { thursday } = await seed();
+    const feed = await pageFeed();
+    // Den Grønne (3) on Thursday, Det velkendte (1) otherwise.
+    const config = Object.entries(feed.dayChars)
+      .map(([dayOfWeek, dayChar]) => `${dayChar}${dayOfWeek === '4' ? 3 : 1}`)
+      .join('');
+    const res = await get(feed.paths.custom.replace('{config}', config) + feedQuery(feed));
+    const body = await res.text();
+
+    expect(res.status).toBe(200);
+    expect(body).toContain('PRODID:Meyers Menu Calendar - Custom Menu Selection');
+    expect(body).toContain(`UID:meyers-menu-${thursday}-den-grønne`);
+    expect(body).toContain('BEGIN:VALARM');
+  });
+
+  it('advertises the defaults the server falls back to', async () => {
+    const feed = await pageFeed();
+    expect(decodeEventTimes(feed.defaultStart, feed.defaultEnd)).toEqual(
+      decodeEventTimes(undefined, undefined),
+    );
   });
 });
 

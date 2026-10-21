@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { decodeCustomConfig, decodeEventTimes, encodeCustomConfig } from '../src/config';
+import {
+  decodeCustomConfig,
+  decodeEventTimes,
+  encodeCustomConfig,
+  FEED_PATHS,
+  feedRoute,
+  formatTimeOfDay,
+  parseTimeOfDay,
+} from '../src/config';
 import { emptyStore, mergeMenuDays, SEED_MENU_TYPES } from '../src/store';
 import { addDays, addMonths, copenhagenDate, dayOfWeek } from '../src/time';
 import { generateSlug } from '../src/util/slug';
@@ -32,6 +40,19 @@ describe('custom config codec', () => {
 
   it('accepts a partial week', () => {
     expect(decodeCustomConfig('M1F2')!.size).toBe(2);
+  });
+});
+
+describe('feed contract', () => {
+  it('turns feed templates into the Hono routes', () => {
+    expect(feedRoute(FEED_PATHS.simple)).toBe('/calendar/:slug{.+\\.ics}');
+    expect(feedRoute(FEED_PATHS.custom)).toBe('/calendar/custom/:config{.+\\.ics}');
+  });
+
+  it('formats times as the inverse of parseTimeOfDay', () => {
+    expect(formatTimeOfDay(720)).toBe('12:00');
+    expect(formatTimeOfDay(65)).toBe('01:05');
+    expect(parseTimeOfDay(formatTimeOfDay(23 * 60 + 59))).toBe(23 * 60 + 59);
   });
 });
 
