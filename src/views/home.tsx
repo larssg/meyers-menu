@@ -256,6 +256,30 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
             <span class="text-[15px] text-ink-soft">Ring a bell five minutes before lunch</span>
           </label>
         </div>
+
+        <div class="mt-3 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-2 text-[15px] text-ink-soft">
+          <span>Lunch runs from</span>
+          <input
+            type="time"
+            id="startTime"
+            value="12:00"
+            aria-label="Lunch start time"
+            class="time-input"
+            onchange="updateCalendarUrl()"
+          />
+          <span>to</span>
+          <input
+            type="time"
+            id="endTime"
+            value="13:00"
+            aria-label="Lunch end time"
+            class="time-input"
+            onchange="updateCalendarUrl()"
+          />
+        </div>
+        <p id="timeError" class="mt-2 text-center text-sm text-madder hidden">
+          Lunch has to end after it starts.
+        </p>
       </section>
 
       {/* How to subscribe */}

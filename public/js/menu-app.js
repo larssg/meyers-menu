@@ -2,6 +2,8 @@
 const TOAST_DURATION = 1800;
 const AUTO_REFRESH_INTERVAL = 3600000; // 1 hour
 const BASE_URL = window.location.origin;
+const DEFAULT_START_TIME = '12:00';
+const DEFAULT_END_TIME = '13:00';
 
 // Current state
 let currentMenuMode = 'simple';
@@ -35,6 +37,8 @@ class MenuUrlCodec {
       menu: params.get('menu'),
       config: params.get('config'),
       alarm: params.get('alarm') === 'true',
+      start: params.get('start'),
+      end: params.get('end'),
     };
   }
 
@@ -55,6 +59,13 @@ class MenuUrlCodec {
 
     if (state.alarm) {
       params.set('alarm', 'true');
+    }
+
+    if (state.start && state.start !== DEFAULT_START_TIME) {
+      params.set('start', state.start);
+    }
+    if (state.end && state.end !== DEFAULT_END_TIME) {
+      params.set('end', state.end);
     }
 
     const paramString = params.toString();
@@ -125,6 +136,16 @@ function copyToClipboard(text) {
   });
 }
 
+/** Selected lunch times as "HH:MM", falling back to the defaults when a field is cleared. */
+function getEventTimes() {
+  const startInput = $('startTime');
+  const endInput = $('endTime');
+  return {
+    start: (startInput && startInput.value) || DEFAULT_START_TIME,
+    end: (endInput && endInput.value) || DEFAULT_END_TIME,
+  };
+}
+
 function formatDate(dateStr) {
   const date = new Date(dateStr + 'T12:00:00');
   return {
@@ -171,6 +192,10 @@ function updateUrlParameters() {
   if (alarmCheckbox && alarmCheckbox.checked) {
     state.alarm = true;
   }
+
+  const times = getEventTimes();
+  state.start = times.start;
+  state.end = times.end;
 
   // Update URL without reloading the page
   const newUrl = MenuUrlCodec.buildUrl(state);
@@ -230,6 +255,16 @@ function loadFromUrlParameters() {
   const alarmCheckbox = $('alarmCheckbox');
   if (alarmCheckbox) {
     alarmCheckbox.checked = params.alarm;
+  }
+
+  // Set lunch times
+  const startInput = $('startTime');
+  if (startInput && params.start) {
+    startInput.value = params.start;
+  }
+  const endInput = $('endTime');
+  if (endInput && params.end) {
+    endInput.value = params.end;
   }
 
   isInitializing = false;
@@ -298,6 +333,30 @@ function updateCalendarUrl() {
   if (calendarUrl && alarmCheckbox && alarmCheckbox.checked) {
     const separator = calendarUrl.includes('?') ? '&' : '?';
     calendarUrl += `${separator}alarm=true`;
+  }
+
+  // Add lunch times if they differ from the 12:00-13:00 default.
+  // "HH:MM" strings compare correctly as plain strings.
+  const times = getEventTimes();
+  const timesValid = times.end > times.start;
+  if (calendarUrl && timesValid) {
+    if (times.start !== DEFAULT_START_TIME) {
+      const separator = calendarUrl.includes('?') ? '&' : '?';
+      calendarUrl += `${separator}start=${times.start}`;
+    }
+    if (times.end !== DEFAULT_END_TIME) {
+      const separator = calendarUrl.includes('?') ? '&' : '?';
+      calendarUrl += `${separator}end=${times.end}`;
+    }
+  }
+
+  // Don't offer a feed URL the server would reject.
+  const timeError = $('timeError');
+  if (timeError) {
+    timeError.classList.toggle('hidden', timesValid);
+  }
+  if (!timesValid) {
+    calendarUrl = '';
   }
 
   const input = $('calendarUrl');

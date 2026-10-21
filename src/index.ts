@@ -4,7 +4,7 @@
  */
 import { Hono } from 'hono';
 import { generateCalendar } from './ical';
-import { decodeCustomConfig } from './config';
+import { decodeCustomConfig, decodeEventTimes } from './config';
 import { addMonths, copenhagenDate, dayOfWeek } from './time';
 import {
   emptyStore,
@@ -30,6 +30,8 @@ const app = new Hono<{ Bindings: Env }>();
 /** Refresh cadence the cron runs at; drives the Cache-Control math below. */
 const REFRESH_INTERVAL_SECONDS = 6 * 60 * 60;
 const MIN_CACHE_SECONDS = 5 * 60;
+
+const INVALID_TIMES = 'Invalid start or end time: use HH:MM, with end after start';
 
 /** Keep non-content endpoints out of search indexes. Port of the Program.cs middleware. */
 app.use('*', async (c, next) => {
@@ -136,6 +138,9 @@ app.get('/calendar/custom/:config{.+\\.ics}', async (c) => {
   const weekdayConfig = decodeCustomConfig(config);
   if (!weekdayConfig) return c.text('Invalid calendar configuration', 400);
 
+  const times = decodeEventTimes(c.req.query('start'), c.req.query('end'));
+  if (!times) return c.text(INVALID_TIMES, 400);
+
   const store = await loadStore(c.env);
   const today = copenhagenDate(now);
 
@@ -147,6 +152,7 @@ app.get('/calendar/custom/:config{.+\\.ics}', async (c) => {
   const content = generateCalendar(toMenuDays(store, selected), {
     menuTypeName: 'Custom Menu Selection',
     includeAlarms: c.req.query('alarm') === 'true',
+    ...times,
     now,
     today,
   });
@@ -162,12 +168,16 @@ app.get('/calendar/:slug{.+\\.ics}', async (c) => {
   const menuType = findTypeBySlug(store, slug);
   if (!menuType) return c.text(`Menu '${slug}' not found`, 404);
 
+  const times = decodeEventTimes(c.req.query('start'), c.req.query('end'));
+  if (!times) return c.text(INVALID_TIMES, 400);
+
   const today = copenhagenDate(now);
   const selected = windowedEntries(store, today).filter((e) => e.menuTypeId === menuType.id);
 
   const content = generateCalendar(toMenuDays(store, selected), {
     menuTypeName: menuType.name,
     includeAlarms: c.req.query('alarm') === 'true',
+    ...times,
     now,
     today,
   });

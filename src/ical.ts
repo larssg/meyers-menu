@@ -6,6 +6,7 @@
  * 75-octet folding and escaping are reproduced here byte for byte. The golden
  * files in test/golden are the oracle for that.
  */
+import { DEFAULT_END_MINUTES, DEFAULT_START_MINUTES } from './config';
 import { htmlDecode } from './util/html-entities';
 import { formatDescription, formatMenuItemsGrouped } from './util/strings';
 import type { MenuDay } from './types';
@@ -49,9 +50,11 @@ export function foldLine(line: string): string[] {
   return out;
 }
 
-/** "20260720T120000" in Copenhagen local time for a "YYYY-MM-DD" date plus an hour. */
-function localDateTime(date: string, hour: number): string {
-  return `${date.replaceAll('-', '')}T${String(hour).padStart(2, '0')}0000`;
+/** "20260720T123000" in Copenhagen local time for a "YYYY-MM-DD" date plus minutes since midnight. */
+function localDateTime(date: string, minutes: number): string {
+  const hh = String(Math.floor(minutes / 60)).padStart(2, '0');
+  const mm = String(minutes % 60).padStart(2, '0');
+  return `${date.replaceAll('-', '')}T${hh}${mm}00`;
 }
 
 /** "20260818T231406Z" */
@@ -126,6 +129,9 @@ function eventUid(date: string, menuType: string): string {
 export interface GenerateCalendarOptions {
   menuTypeName?: string;
   includeAlarms?: boolean;
+  /** Event start and end in minutes since midnight. Default 12:00-13:00. */
+  startMinutes?: number;
+  endMinutes?: number;
   /** Injected so output is deterministic under test. */
   now?: Date;
   /** Fallback "today" used only for the empty-menu placeholder event. */
@@ -136,7 +142,13 @@ export function generateCalendar(
   menuDays: MenuDay[],
   options: GenerateCalendarOptions = {},
 ): string {
-  const { menuTypeName, includeAlarms = false, now = new Date() } = options;
+  const {
+    menuTypeName,
+    includeAlarms = false,
+    startMinutes = DEFAULT_START_MINUTES,
+    endMinutes = DEFAULT_END_MINUTES,
+    now = new Date(),
+  } = options;
 
   const calendarName = menuTypeName
     ? `Meyers Menu Calendar - ${menuTypeName}`
@@ -160,9 +172,9 @@ export function generateCalendar(
     lines.push(
       'BEGIN:VEVENT',
       `DESCRIPTION:${escapeText(description)}`,
-      `DTEND;TZID=${TZID}:${localDateTime(date, 13)}`,
+      `DTEND;TZID=${TZID}:${localDateTime(date, endMinutes)}`,
       `DTSTAMP:${dtstamp}`,
-      `DTSTART;TZID=${TZID}:${localDateTime(date, 12)}`,
+      `DTSTART;TZID=${TZID}:${localDateTime(date, startMinutes)}`,
       'SEQUENCE:0',
       `SUMMARY:${escapeText(summary)}`,
       `UID:${escapeText(uid)}`,

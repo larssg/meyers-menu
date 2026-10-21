@@ -146,6 +146,22 @@
     outline: none;
   }
 
+  .time-input {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--color-rule);
+    border-radius: 2px;
+    background-color: var(--color-cream);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--color-ink);
+    accent-color: var(--color-madder);
+  }
+
+  .time-input:focus {
+    outline: 2px solid var(--color-madder);
+    outline-offset: 1px;
+  }
+
   .kicker {
     font-family: var(--font-mono);
     font-size: 0.68rem;
