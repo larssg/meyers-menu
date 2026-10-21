@@ -6,7 +6,7 @@
  * A surprise change here means the two renderers have drifted apart.
  */
 import { createExecutionContext, env, waitOnExecutionContext } from 'cloudflare:test';
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import worker from '../src/index';
 import { generateCalendar } from '../src/ical';
 import { seedFixtureStore, toMenuDaysForTest } from './helpers';
@@ -32,7 +32,15 @@ function normaliseDates(html: string): string {
 }
 
 describe('homepage render', () => {
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
   it('matches the committed markup snapshot', async () => {
+    // Which preview rows show a dish depends on the weekday the page starts from,
+    // so pin "today" to a Wednesday. The fixture's own week needs no shifting.
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-04-08T10:00:00Z'));
     await seedFixtureStore(testEnv.MENU_KV);
 
     const ctx = createExecutionContext();
