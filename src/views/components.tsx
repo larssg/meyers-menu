@@ -25,6 +25,7 @@ export function CustomSelect(props: {
   id?: string;
   onchange?: string;
   'data-day'?: number;
+  'aria-label'?: string;
 }) {
   const { children, class: extra = '', size = 'medium', centered, ...rest } = props;
   const classes = [SELECT_BASE, SELECT_SIZES[size], centered ? 'text-center' : '', extra]
@@ -87,10 +88,17 @@ export function CustomRadio(props: {
   );
 }
 
-export function CopyButton(props: { children?: Child; inputId: string; class?: string }) {
+export function CopyButton(props: {
+  children?: Child;
+  inputId: string;
+  id?: string;
+  class?: string;
+}) {
   return (
     <button
-      onclick={`copyToClipboard(document.getElementById('${props.inputId}').value)`}
+      type="button"
+      id={props.id}
+      onclick={`copyToClipboard(document.getElementById('${props.inputId}').value, this)`}
       class={props.class ?? 'btn-primary'}
       title="Copy to clipboard"
     >
