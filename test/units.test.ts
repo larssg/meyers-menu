@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { decodeCustomConfig, encodeCustomConfig } from '../src/config';
+import { decodeCustomConfig, decodeEventTimes, encodeCustomConfig } from '../src/config';
 import { emptyStore, mergeMenuDays, SEED_MENU_TYPES } from '../src/store';
 import { addDays, addMonths, copenhagenDate, dayOfWeek } from '../src/time';
 import { generateSlug } from '../src/util/slug';
@@ -32,6 +32,28 @@ describe('custom config codec', () => {
 
   it('accepts a partial week', () => {
     expect(decodeCustomConfig('M1F2')!.size).toBe(2);
+  });
+});
+
+describe('event time params', () => {
+  it('defaults to 12:00-13:00', () => {
+    expect(decodeEventTimes(undefined, undefined)).toEqual({ startMinutes: 720, endMinutes: 780 });
+  });
+
+  it('accepts either bound on its own', () => {
+    expect(decodeEventTimes(undefined, '12:30')).toEqual({ startMinutes: 720, endMinutes: 750 });
+    expect(decodeEventTimes('11:30', undefined)).toEqual({ startMinutes: 690, endMinutes: 780 });
+  });
+
+  it('rejects malformed times', () => {
+    for (const bad of ['', '1230', '12.30', '24:00', '12:60', '9:30', '12:30:00']) {
+      expect(decodeEventTimes(bad, undefined)).toBeNull();
+    }
+  });
+
+  it('rejects an end that is not after the start', () => {
+    expect(decodeEventTimes('12:30', '12:30')).toBeNull();
+    expect(decodeEventTimes('13:30', undefined)).toBeNull();
   });
 });
 

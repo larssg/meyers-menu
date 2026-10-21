@@ -88,6 +88,33 @@ describe('GET /calendar/:slug.ics', () => {
     expect(withAlarm).toContain('TRIGGER:-PT5M');
   });
 
+  it('keeps the 12:00-13:00 slot by default', async () => {
+    const { thursday } = await seed();
+    const body = await get('/calendar/det-velkendte.ics').then((r) => r.text());
+    const day = thursday.replaceAll('-', '');
+
+    expect(body).toContain(`DTSTART;TZID=Europe/Copenhagen:${day}T120000`);
+    expect(body).toContain(`DTEND;TZID=Europe/Copenhagen:${day}T130000`);
+  });
+
+  it('honours custom start and end times', async () => {
+    const { thursday } = await seed();
+    const body = await get('/calendar/det-velkendte.ics?start=11:45&end=12:30').then((r) =>
+      r.text(),
+    );
+    const day = thursday.replaceAll('-', '');
+
+    expect(body).toContain(`DTSTART;TZID=Europe/Copenhagen:${day}T114500`);
+    expect(body).toContain(`DTEND;TZID=Europe/Copenhagen:${day}T123000`);
+    expect(body).toContain(`UID:meyers-menu-${thursday}-det-velkendte`);
+  });
+
+  it('rejects invalid times', async () => {
+    await seed();
+    expect((await get('/calendar/det-velkendte.ics?end=noon')).status).toBe(400);
+    expect((await get('/calendar/det-velkendte.ics?start=13:00&end=12:00')).status).toBe(400);
+  });
+
   it('sets caching headers and answers 304 to a matching ETag', async () => {
     await seed();
     const first = await get('/calendar/det-velkendte.ics');
@@ -118,6 +145,16 @@ describe('GET /calendar/custom/:config.ics', () => {
     expect(body).toContain(`UID:meyers-menu-${thursday}-den-grønne`);
     expect(body).not.toContain(`UID:meyers-menu-${thursday}-det-velkendte`);
     expect(body).toContain(`UID:meyers-menu-${tuesday}-det-velkendte`);
+  });
+
+  it('honours custom start and end times', async () => {
+    const { thursday } = await seed();
+    const body = await get('/calendar/custom/M1T1W1R3F1.ics?end=12:30').then((r) => r.text());
+    const day = thursday.replaceAll('-', '');
+
+    expect(body).toContain(`DTSTART;TZID=Europe/Copenhagen:${day}T120000`);
+    expect(body).toContain(`DTEND;TZID=Europe/Copenhagen:${day}T123000`);
+    expect((await get('/calendar/custom/M1.ics?start=25:00')).status).toBe(400);
   });
 
   it('rejects a malformed config', async () => {

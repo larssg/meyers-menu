@@ -12,7 +12,7 @@ TypeScript rewrite of a .NET 10 Blazor SSR app; see README.md for the layout.
 
 ```bash
 npm run dev          # wrangler dev
-npm test             # vitest inside workerd (67 tests)
+npm test             # vitest inside workerd (83 tests)
 npm run typecheck
 npm run css:build    # Tailwind v4 -> public/css/app.css
 npm run deploy

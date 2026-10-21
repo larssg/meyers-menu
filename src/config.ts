@@ -42,3 +42,29 @@ export function encodeCustomConfig(weekdayMenuConfig: Map<number, number>): stri
     .map((d) => `${d.char}${weekdayMenuConfig.get(d.dayOfWeek)}`)
     .join('');
 }
+
+/** Default lunch slot, in minutes since midnight. Matches the original 12:00-13:00 events. */
+export const DEFAULT_START_MINUTES = 12 * 60;
+export const DEFAULT_END_MINUTES = 13 * 60;
+
+/** Parses "HH:MM" (24-hour) into minutes since midnight, or null if malformed. */
+export function parseTimeOfDay(value: string): number | null {
+  const match = /^([01]\d|2[0-3]):([0-5]\d)$/.exec(value);
+  if (!match) return null;
+  return Number(match[1]) * 60 + Number(match[2]);
+}
+
+/**
+ * Resolves the optional ?start= and ?end= feed parameters. Either may be omitted
+ * and falls back to the default. Returns null when a value is malformed or the
+ * event would not end after it starts.
+ */
+export function decodeEventTimes(
+  start: string | undefined,
+  end: string | undefined,
+): { startMinutes: number; endMinutes: number } | null {
+  const startMinutes = start === undefined ? DEFAULT_START_MINUTES : parseTimeOfDay(start);
+  const endMinutes = end === undefined ? DEFAULT_END_MINUTES : parseTimeOfDay(end);
+  if (startMinutes === null || endMinutes === null || endMinutes <= startMinutes) return null;
+  return { startMinutes, endMinutes };
+}
