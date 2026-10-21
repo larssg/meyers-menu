@@ -35,6 +35,14 @@ updates:
           - 'patch'
     # hono is the only runtime dependency and is left ungrouped so every update to
     # it gets reviewed on its own.
+    ignore:
+      # vitest-pool-workers 0.23 still peer-depends on vitest ^4.1. Grouping vitest 5
+      # with it yields a peer-conflicted lockfile that npm ci crashes on. Remove once
+      # a vitest-pool-workers release accepts vitest 5.
+      - dependency-name: 'vitest'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@vitest/*'
+        update-types: ['version-update:semver-major']
 
   - package-ecosystem: 'github-actions'
     directory: '/'
