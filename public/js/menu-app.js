@@ -120,20 +120,53 @@ function $(id) {
   return document.getElementById(id);
 }
 
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text).then(() => {
-    const existing = $('copy-toast');
-    if (existing) existing.remove();
+/** Menu titles are scraped text; escape them before they go into innerHTML. */
+function escapeHtml(text) {
+  return String(text)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+}
 
-    const toast = document.createElement('div');
-    toast.id = 'copy-toast';
-    toast.textContent = 'Copied to clipboard';
-    toast.className =
-      'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 ' +
-      'rounded-sm bg-ink text-cream font-mono text-[11px] uppercase tracking-[0.18em] shadow-lg';
-    document.body.appendChild(toast);
-    setTimeout(() => toast.remove(), TOAST_DURATION);
-  });
+function showToast(message) {
+  const existing = $('copy-toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.id = 'copy-toast';
+  toast.setAttribute('role', 'status');
+  toast.textContent = message;
+  toast.className =
+    'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 ' +
+    'rounded-sm bg-ink text-cream font-mono text-[11px] uppercase tracking-[0.18em] shadow-lg';
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), TOAST_DURATION);
+}
+
+function copyToClipboard(text, button) {
+  if (!text) return;
+
+  const copied = () => {
+    showToast('Copied to clipboard');
+    if (!button) return;
+    clearTimeout(button.resetTimer);
+    button.textContent = 'Copied';
+    button.resetTimer = setTimeout(() => (button.textContent = 'Copy'), TOAST_DURATION);
+  };
+
+  // Clipboard access can be missing or refused; leave the URL selected to copy by hand.
+  const failed = () => {
+    const input = $('calendarUrl');
+    if (input) {
+      input.focus();
+      input.select();
+    }
+    showToast('Copy failed, URL selected');
+  };
+
+  if (!navigator.clipboard) return failed();
+  navigator.clipboard.writeText(text).then(copied, failed);
 }
 
 /** Selected lunch times as "HH:MM", falling back to the defaults when a field is cleared. */
@@ -355,6 +388,10 @@ function updateCalendarUrl() {
   if (timeError) {
     timeError.classList.toggle('hidden', timesValid);
   }
+  ['startTime', 'endTime'].forEach((id) => {
+    const timeInput = $(id);
+    if (timeInput) timeInput.toggleAttribute('aria-invalid', !timesValid);
+  });
   if (!timesValid) {
     calendarUrl = '';
   }
@@ -362,6 +399,10 @@ function updateCalendarUrl() {
   const input = $('calendarUrl');
   if (input) {
     input.value = calendarUrl;
+  }
+  const copyButton = $('copyButton');
+  if (copyButton) {
+    copyButton.disabled = !calendarUrl;
   }
 
   // Also update the preview whenever URL changes
@@ -438,9 +479,9 @@ function updateWeeklyPreview() {
       line = '<span class="menu-dish menu-dish-muted">Weekend &mdash; the kitchen rests</span>';
     } else if (menuEntry) {
       line =
-        `<span class="menu-dish" title="${menuEntry.title}">${menuEntry.title}</span>` +
+        `<span class="menu-dish" title="${escapeHtml(menuEntry.title)}">${escapeHtml(menuEntry.title)}</span>` +
         '<span class="menu-leader"></span>' +
-        `<span class="menu-type">${menuTypeName}</span>`;
+        `<span class="menu-type">${escapeHtml(menuTypeName)}</span>`;
     } else {
       line = '<span class="menu-dish menu-dish-muted">No menu published yet</span>';
     }

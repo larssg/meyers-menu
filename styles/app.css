@@ -107,8 +107,18 @@
     transition: background-color 150ms ease;
   }
 
-  .btn-primary:hover {
+  .btn-primary:hover:enabled {
     background-color: var(--color-madder-deep);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 2px solid var(--color-madder);
+    outline-offset: 2px;
+  }
+
+  .btn-primary:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
   }
 
   .btn-ghost {
@@ -160,6 +170,11 @@
   .time-input:focus {
     outline: 2px solid var(--color-madder);
     outline-offset: 1px;
+  }
+
+  .time-input[aria-invalid] {
+    border-color: var(--color-madder);
+    background-color: var(--color-madder-wash);
   }
 
   .kicker {
@@ -323,6 +338,12 @@
   border: 1.5px dashed var(--color-ink-faint);
   border-radius: 4px;
   background: var(--color-cream);
+  transition: border-color 150ms ease;
+}
+
+/* The URL input drops its own outline, so the ticket edge shows focus instead */
+.ticket:has(.copy-input:focus-visible) {
+  border-color: var(--color-madder);
 }
 
 .ticket-label {

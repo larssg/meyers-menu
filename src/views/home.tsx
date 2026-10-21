@@ -122,7 +122,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
     <div class="max-w-2xl mx-auto">
       {/* Intro */}
       <section class="text-center mb-12 reveal">
-        <p class="font-display text-xl leading-relaxed text-ink-soft max-w-xl mx-auto">
+        <p class="font-display text-xl leading-relaxed text-ink-soft max-w-xl mx-auto text-balance">
           Choose a menu for each weekday, subscribe once, and the day&rsquo;s dish appears in your
           calendar <em class="text-madder">before you&rsquo;re hungry</em>.
         </p>
@@ -133,7 +133,11 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
         <div class="card menu-frame px-6 py-8 sm:px-10 sm:py-9">
           <h2 class="section-title mb-7">Compose your calendar</h2>
 
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 mb-7">
+          <div
+            role="radiogroup"
+            aria-label="Calendar mode"
+            class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 mb-7"
+          >
             <CustomRadio name="menuMode" value="simple" checked onchange="toggleMenuMode()">
               One menu, every day
             </CustomRadio>
@@ -146,6 +150,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
             <div class="max-w-sm mx-auto">
               <CustomSelect
                 id="simpleMenuSelect"
+                aria-label="Menu"
                 class="w-full"
                 size="large"
                 centered
@@ -171,6 +176,7 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
                     class="custom-day-select w-full sm:w-64"
                     size="medium"
                     data-day={day.dayOfWeek}
+                    aria-label={day.label}
                     onchange="updateCalendarUrl()"
                   >
                     {menuTypes.map((mt) => (
@@ -238,8 +244,16 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
         <div class="ticket">
           <span class="ticket-label">&#9988; Your calendar feed</span>
           <div class="flex items-stretch p-1.5 gap-1.5">
-            <input type="text" id="calendarUrl" value="" readonly class="copy-input" />
-            <CopyButton inputId="calendarUrl" class="btn-primary shrink-0">
+            <input
+              type="text"
+              id="calendarUrl"
+              value=""
+              readonly
+              aria-label="Calendar feed URL"
+              class="copy-input"
+              onfocus="this.select()"
+            />
+            <CopyButton inputId="calendarUrl" id="copyButton" class="btn-primary shrink-0 min-w-24">
               Copy
             </CopyButton>
           </div>
@@ -259,25 +273,30 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
 
         <div class="mt-3 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-2 text-[15px] text-ink-soft">
           <span>Lunch runs from</span>
-          <input
-            type="time"
-            id="startTime"
-            value="12:00"
-            aria-label="Lunch start time"
-            class="time-input"
-            onchange="updateCalendarUrl()"
-          />
-          <span>to</span>
-          <input
-            type="time"
-            id="endTime"
-            value="13:00"
-            aria-label="Lunch end time"
-            class="time-input"
-            onchange="updateCalendarUrl()"
-          />
+          {/* Kept together so narrow screens wrap before the first time, not before "to". */}
+          <span class="inline-flex items-center gap-2.5">
+            <input
+              type="time"
+              id="startTime"
+              value="12:00"
+              aria-label="Lunch start time"
+              aria-describedby="timeError"
+              class="time-input"
+              onchange="updateCalendarUrl()"
+            />
+            <span>to</span>
+            <input
+              type="time"
+              id="endTime"
+              value="13:00"
+              aria-label="Lunch end time"
+              aria-describedby="timeError"
+              class="time-input"
+              onchange="updateCalendarUrl()"
+            />
+          </span>
         </div>
-        <p id="timeError" class="mt-2 text-center text-sm text-madder hidden">
+        <p id="timeError" role="alert" class="mt-2 text-center text-sm text-madder hidden">
           Lunch has to end after it starts.
         </p>
       </section>

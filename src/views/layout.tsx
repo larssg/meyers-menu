@@ -38,6 +38,7 @@ export function Layout(props: {
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#f5f0e4"/>
     <base href="/"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -92,7 +93,7 @@ function renderShell(children: Child): string {
 
           <a href="/" class="block text-center group">
             <p class="kicker">Man &ndash; Fre &middot; Frokost &middot; K&oslash;benhavn</p>
-            <h1 class="mt-3 font-display text-4xl md:text-5xl font-semibold tracking-tight text-ink group-hover:text-madder-deep transition-colors">
+            <h1 class="mt-3 font-display text-4xl md:text-5xl font-semibold tracking-tight text-balance text-ink group-hover:text-madder-deep transition-colors">
               Meyers Menu Calendar
             </h1>
             <p class="mt-2 font-display italic text-ink-soft">
