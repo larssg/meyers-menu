@@ -125,8 +125,8 @@ export function Home(props: { store: MenuStore; today: string; now: Date }) {
       {/* Intro */}
       <section class="text-center mb-12 reveal">
         <p class="font-display text-xl leading-relaxed text-ink-soft max-w-xl mx-auto text-balance">
-          Choose a menu for each weekday, subscribe once, and the day&rsquo;s dish appears in your
-          calendar <em class="text-madder">before you&rsquo;re hungry</em>.
+          One subscription, and every weekday&rsquo;s lunch shows up{' '}
+          <em class="text-madder">in the calendar you already check</em>.
         </p>
       </section>
 
